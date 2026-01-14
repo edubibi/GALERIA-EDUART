@@ -1,31 +1,31 @@
 /**
  * BASE DE DATOS DE OBRAS
- * Generada automaticamente el 2026-01-14 09:30
+ * Generada automaticamente el 2026-01-14 11:16
  */
 
 // Mapa de Portadas por Estilo
-const categoryCovers = {    "20BORASSIE": "assets/PORTADILLAS_ESTILOS/20BORASSIE.jpg",
-    "08BORACARBON": "assets/PORTADILLAS_ESTILOS/08BORACARBON.jpg",
-    "photo_3_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_3_2025-12-15_18-32-25.jpg",
-    "04APLICC": "assets/PORTADILLAS_ESTILOS/04APLICC.jpg",
-    "10OLEOCUBBO": "assets/PORTADILLAS_ESTILOS/10OLEOCUBBO.jpg",
-    "photo_4_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_4_2025-12-15_18-32-25.jpg",
-    "06IDE_CLASSIC": "assets/PORTADILLAS_ESTILOS/06IDE_CLASSIC.jpg",
+const categoryCovers = {    "05PLUMINK": "assets/PORTADILLAS_ESTILOS/05PLUMINK.jpg",
     "CRISTAL_CUBICO": "assets/PORTADILLAS_ESTILOS/CRISTAL_CUBICO.jpg",
     "09FRACNEO": "assets/PORTADILLAS_ESTILOS/09FRACNEO.jpg",
-    "photo_10_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_10_2025-12-15_18-32-25.jpg",
-    "01EXP_NEOCIRC": "assets/PORTADILLAS_ESTILOS/01EXP_NEOCIRC.jpg",
     "07NEOINK_stilo": "assets/PORTADILLAS_ESTILOS/07NEOINK_stilo.jpg",
     "photo_7_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_7_2025-12-15_18-32-25.jpg",
-    "03EXPNEOPLUS": "assets/PORTADILLAS_ESTILOS/03EXPNEOPLUS.jpg",
-    "photo_11_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_11_2025-12-15_18-32-25.jpg",
-    "photo_12_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_12_2025-12-15_18-32-25.jpg",
-    "11URBANSPHERIC": "assets/PORTADILLAS_ESTILOS/11URBANSPHERIC.png",
-    "05PLUMINK": "assets/PORTADILLAS_ESTILOS/05PLUMINK.jpg",
+    "photo_4_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_4_2025-12-15_18-32-25.jpg",
     "photo_8_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_8_2025-12-15_18-32-25.jpg",
-    "00EDUSSE": "assets/PORTADILLAS_ESTILOS/00EDUSSE.jpg",
+    "03EXPNEOPLUS": "assets/PORTADILLAS_ESTILOS/03EXPNEOPLUS.jpg",
+    "photo_12_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_12_2025-12-15_18-32-25.jpg",
+    "20BORASSIE": "assets/PORTADILLAS_ESTILOS/20BORASSIE.jpg",
+    "02CUBESSE_stilo": "assets/PORTADILLAS_ESTILOS/02CUBESSE_stilo.jpg",
+    "10OLEOCUBBO": "assets/PORTADILLAS_ESTILOS/10OLEOCUBBO.jpg",
     "photo_2_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_2_2025-12-15_18-32-25.jpg",
-    "02CUBESSE_stilo": "assets/PORTADILLAS_ESTILOS/02CUBESSE_stilo.jpg"
+    "01EXP_NEOCIRC": "assets/PORTADILLAS_ESTILOS/01EXP_NEOCIRC.jpg",
+    "06IDE_CLASSIC": "assets/PORTADILLAS_ESTILOS/06IDE_CLASSIC.jpg",
+    "photo_10_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_10_2025-12-15_18-32-25.jpg",
+    "photo_11_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_11_2025-12-15_18-32-25.jpg",
+    "11URBANSPHERIC": "assets/PORTADILLAS_ESTILOS/11URBANSPHERIC.png",
+    "00EDUSSE": "assets/PORTADILLAS_ESTILOS/00EDUSSE.jpg",
+    "photo_3_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_3_2025-12-15_18-32-25.jpg",
+    "08BORACARBON": "assets/PORTADILLAS_ESTILOS/08BORACARBON.jpg",
+    "04APLICC": "assets/PORTADILLAS_ESTILOS/04APLICC.jpg"
 };
 
 const artworkData = [    {
@@ -810,7 +810,7 @@ const artworkData = [    {
     },
     {
         id:  "03expneoplus_029",
-        title:  "Playas De",
+        title:  "Playa mediterránea",
         category:  "03EXPNEOPLUS",
         src:  "assets/03EXPNEOPLUS/03expneoplus_029.jpg",
         description:  "Obra de la colección 03EXPNEOPLUS",
