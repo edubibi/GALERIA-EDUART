@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito | Tu Arte</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
+            <li><a href="memorandum.html">Universo EDUSSE</a></li><li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="galeria.html">Galer&iacute;a</a></li>
+            <li><a href="compra.html">Cómo Comprar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html" class="active">Carrito <span class="cart-badge"></span></a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Tu Selección de Arte</h1>
+            <p>Revisa tus obras antes de solicitar el pedido.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container" style="max-width:900px; margin:0 auto;">
+
+            <div id="empty-cart-msg" style="text-align:center; padding:3rem; display:none;">
+                <p style="font-size:1.2rem; color:#666;">Tu carrito está vacío.</p>
+                <a href="galeria.html" class="btn primary-btn"
+                    style="margin-top:1rem; display:inline-block; border:1px solid #333;">Ver Galería</a>
+            </div>
+
+            <div id="cart-content" style="display:none;">
+                <table class="cart-table" style="width:100%; border-collapse: collapse; margin-bottom:2rem;">
+                    <thead>
+                        <tr style="border-bottom:2px solid #eee;">
+                            <th style="text-align:left; padding:1rem;">Obra</th>
+                            <th style="padding:1rem;">Precio</th>
+                            <th style="padding:1rem;">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-body">
+                        <!-- JS populated -->
+                    </tbody>
+                </table>
+
+                <div
+                    style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3rem; border-top:1px solid #ddd; padding-top:1rem;">
+                    <button onclick="clearCart()"
+                        style="color:#666; background:none; border:1px solid #ccc; padding:0.5rem 1rem; cursor:pointer; border-radius:4px;">
+                        🗑️ Vaciar Cesta
+                    </button>
+                    <div style="text-align:right; font-size:1.2rem;">
+                        <strong>Total Estimado: <span id="cart-total">0€</span></strong>
+                        <p style="font-size:0.8rem; color:#888;">*El precio final puede incluir gastos de gestión.</p>
+                    </div>
+                </div>
+
+                <div style="background:#f9f9f9; padding:2rem; border-radius:8px; text-align:center;">
+                    <h3 style="margin-bottom:1rem; font-family:'Playfair Display', serif;">Finalizar Solicitud</h3>
+                    <p style="margin-bottom:2rem; color:#555;">Elige cómo quieres enviarnos tu pedido para formalizar la
+                        compra.</p>
+
+                    <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+                        <button onclick="checkoutWhatsApp()" class="btn primary-btn"
+                            style="background:#25D366; border:none; color:white;">
+                            Pedir por WhatsApp
+                        </button>
+                        <button onclick="checkoutEmail()" class="btn primary-btn"
+                            style="background:#333; border:none; color:white;">
+                            Pedir por Email
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tu Arte. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script>
+        // PAGE LOGIC
+        window.addEventListener('cartUpdated', renderPage);
+
+        function renderPage() {
+            const cart = getCart();
+            const emptyMsg = document.getElementById('empty-cart-msg');
+            const content = document.getElementById('cart-content');
+            const tbody = document.getElementById('cart-items-body');
+            const totalEl = document.getElementById('cart-total');
+
+            if (cart.length === 0) {
+                emptyMsg.style.display = 'block';
+                content.style.display = 'none';
+                return;
+            }
+
+            emptyMsg.style.display = 'none';
+            content.style.display = 'block';
+            tbody.innerHTML = '';
+
+            let total = 0;
+
+            cart.forEach(item => {
+                // Parse Price
+                let priceNum = 0;
+                let priceStr = item.price || '';
+                // Simple parser: remove € and dots
+                let clean = priceStr.toLowerCase().replace('€', '').replace('.', '').replace(',', '.');
+                let parsed = parseFloat(clean);
+                if (!isNaN(parsed)) {
+                    total += parsed;
+                }
+
+                // Fix path for root - ensure no '../' and valid start
+                let thumbPath = item.thumb || 'assets/logo.png';
+                if (thumbPath.startsWith('../')) thumbPath = thumbPath.replace('../', '');
+                if (thumbPath.startsWith('/')) thumbPath = thumbPath.substring(1);
+
+                // Fallback for very broken paths
+                if (!thumbPath.includes('assets/') && !thumbPath.startsWith('http') && !thumbPath.startsWith('data:')) {
+                    // Maybe it's just filename? try prepending assets/ (risky but better than broken)
+                    // thumbPath = 'assets/' + thumbPath; 
+                }
+
+                const tr = document.createElement('tr');
+                tr.style.borderBottom = '1px solid #eee';
+                tr.innerHTML = `
+                    <td style="padding:1rem; display:flex; align-items:center; gap:1rem;">
+                        <img src="${thumbPath}" style="width:60px; height:60px; object-fit:cover; border-radius:4px;" onerror="this.src='../logo_banner.png'">
+                        <div>
+                            <div style="font-weight:bold;">${item.title}</div>
+                            <div style="font-size:0.8rem; color:#888;">Ref: ${item.id}</div> 
+                        </div>
+                    </td>
+                    <td style="padding:1rem; text-align:center;">${item.price}</td>
+                    <td style="padding:1rem; text-align:center;">
+                        <button onclick="removeFromCart('${item.id}')" style="color:red; background:none; border:none; cursor:pointer; font-weight:bold;">X</button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            totalEl.innerText = total + '€';
+        }
+
+        function checkoutWhatsApp() {
+            const cart = getCart();
+            if (cart.length === 0) return;
+
+            let msg = "Hola! Quiero comprar las siguientes obras:\n\n";
+            cart.forEach(item => {
+                msg += `- ${item.title} (${item.price})\n`;
+            });
+            let total = document.getElementById('cart-total').innerText;
+            msg += `\nTotal Estimado: ${total}\n\n¿Me indicas cómo proceder?`;
+
+            // Replace YOUR_NUMBER with actual number if known, or leave blank to let user pick contact
+            // Using a generic format that opens app
+            const url = `https://wa.me/?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+
+        function checkoutEmail() {
+            const cart = getCart();
+            if (cart.length === 0) return;
+
+            let msg = "Hola! Estoy interesado en adquirir las siguientes obras de tu catálogo:\n\n";
+            cart.forEach(item => {
+                msg += `- ${item.title} (Ref: ${item.id}) - Precio: ${item.price}\n`;
+            });
+            let total = document.getElementById('cart-total').innerText;
+            msg += `\nTotal Estimado: ${total}\n\nQuedo a la espera de instrucciones de pago.\nGracias.`;
+
+            const subject = "Pedido de Arte - " + new Date().toLocaleDateString();
+            const url = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
+            window.location.href = url;
+        }
+
+        // Initial Render
+        renderPage();
+    </script>
+</body>
+
+</html>

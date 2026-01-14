@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière | Catálogo de Marcos</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CRITICAL CSS PATCHES (INLINE TO AVOID CACHE) -->
+    <style>
+        /* 1. Global Logo Constraint (Desktop & Mobile) */
+        .brand img {
+            max-width: 180px !important;
+            height: auto !important;
+            margin: 0 auto 1.5rem auto !important;
+            display: block;
+        }
+
+        /* 2. Desktop Layout Check (Sidebar LEFT) */
+        @media (min-width: 901px) {
+            .app-container {
+                flex-direction: row !important;
+            }
+
+            .controls-sidebar {
+                order: 1 !important;
+                /* Forces Sidebar to Left */
+                width: 300px !important;
+            }
+
+            .gallery-container {
+                order: 2 !important;
+                /* Forces Photo to Right */
+                flex: 1;
+            }
+        }
+
+        /* 3. Mobile Layout Fixes */
+        @media (max-width: 900px) {
+            .app-container {
+                flex-direction: column !important;
+            }
+
+            /* Visor/Photo goes FIRST on mobile */
+            .gallery-container {
+                order: 1 !important;
+                height: 65vh !important;
+                /* Ensure height */
+                min-height: 400px;
+            }
+
+            /* Controls go BELOW */
+            .controls-sidebar {
+                order: 2 !important;
+                width: 100% !important;
+                height: auto !important;
+                border-right: none;
+                border-top: 1px solid #ddd;
+                padding-top: 1rem;
+            }
+
+            /* Smaller logo on mobile sidebar */
+            .controls-sidebar .brand img {
+                max-width: 120px !important;
+                margin-bottom: 0.5rem !important;
+            }
+
+            /* Landing page fixes */
+            .landing-title {
+                font-size: 2rem !important;
+            }
+        }
+
+        /* 4. FIX FRAME SELECTOR OVERFLOW (The "Huge" list issue) */
+        .frame-selector-row {
+            display: flex;
+            flex-wrap: wrap !important;
+            /* Force wrapping to next line */
+            gap: 0.5rem;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .frame-selector-row .frame-option {
+            flex: 1 1 auto;
+            min-width: 80px;
+            max-width: 48%;
+            /* 2 per line mostly */
+            text-align: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            /* Ensure visibility */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen">
+        <div class="splash-content">
+            <!-- Added Logo -->
+            <img src="../assets/logo_banner.png" alt="Logo"
+                style="max-height: 80px; margin-bottom: 2rem; display: block; margin-left: auto; margin-right: auto;">
+            <div class="splash-icon">🖼️</div>
+            <h1 class="splash-text">Iniciar Experiencia</h1>
+        </div>
+    </div>
+
+    <!-- Landing Page (Welcome) -->
+    <div id="landingPage" class="landing-page">
+        <!-- Logo Absolute Top Left -->
+        <div style="position: absolute; top: 2rem; left: 2rem; z-index: 2001;">
+            <img src="../assets/logo_banner.png" alt="Logo" style="height: 60px; width: auto;">
+        </div>
+
+        <div class="landing-content">
+            <h1 class="landing-title">Bienvenido a la Galería</h1>
+            <p class="landing-subtitle">Una experiencia visual inmersiva</p>
+
+            <div class="formats-guide">
+                <div class="format-item">
+                    <div class="icon-box size-small"></div>
+                    <span>Pequeño</span>
+                </div>
+                <div class="format-item">
+                    <div class="icon-box size-medium"></div>
+                    <span>Medio</span>
+                </div>
+                <div class="format-item">
+                    <div class="icon-box size-large"></div>
+                    <span>Grande</span>
+                </div>
+            </div>
+
+            <p class="landing-instruction">Explora nuestra colección de cuadros en diferentes formatos y estilos.</p>
+
+            <button id="enterBtn" class="enter-btn">
+                <div class="arrow-icon">➜</div>
+                <span>Entrar al Visor</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="appContainer" class="container" style="display:none; opacity:0; transition: opacity 0.8s ease;">
+        <!-- Sidebar Controls -->
+        <aside class="controls-sidebar">
+            <div style="display: flex; gap: 0.5rem;">
+                <button id="backBtn" class="home-btn" title="Volver atrás">
+                    ⬅ Volver
+                </button>
+                <button id="homeBtn" class="home-btn" title="Volver al Inicio">
+                    🏠 Inicio
+                </button>
+            </div>
+
+            <div class="brand">
+                <img src="../assets/logo_banner.png" alt="Logo"
+                    style="max-width: 100%; height: auto; display: block; margin-bottom: 1rem;">
+                <!-- <h1>Tu Marca</h1> <p>Tu Subtítulo</p> -->
+            </div>
+
+
+
+            <div class="control-group">
+                <label>Estilo de Marco Global</label>
+                <div class="frame-selector" id="frameSelector">
+                    <!-- Javascript will populate this -->
+                </div>
+            </div>
+
+            <!-- New Customization Section -->
+            <!-- New Customization Section -->
+            <div class="control-group" id="customizationPanel"
+                style="border-top: 1px solid #eee; padding-top: 1.5rem; margin-top: 1rem; display: none;">
+                <label>Personalización</label>
+
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-size: 0.7rem; color: #999; display:block; margin-bottom:0.3rem;">Logo de
+                        Marca</span>
+                    <input type="file" id="logoInput" accept="image/*" hidden>
+                    <button class="btn-secondary" onclick="document.getElementById('logoInput').click()"
+                        style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; background: #fff; cursor: pointer; font-size: 0.8rem;">
+                        Subir Tu Logo
+                    </button>
+                    <span id="removeLogo"
+                        style="font-size: 0.7rem; color: #999; cursor: pointer; display: none; text-align: center; margin-top: 5px; text-decoration: underline;">Eliminar
+                        Logo</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-size: 0.7rem; color: #999; display:block; margin-bottom:0.3rem;">Fondo de la
+                        App</span>
+                    <input type="file" id="bgInput" accept="image/*" hidden>
+                    <button class="btn-secondary" onclick="document.getElementById('bgInput').click()"
+                        style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; background: #fff; cursor: pointer; font-size: 0.8rem;">
+                        Subir Fondo
+                    </button>
+                    <span id="removeBg"
+                        style="font-size: 0.7rem; color: #999; cursor: pointer; display: none; text-align: center; margin-top: 5px; text-decoration: underline;">Eliminar
+                        Fondo</span>
+
+                    <div style="margin-top: 10px;">
+                        <span style="font-size: 0.7rem; color: #999; display:block; margin-bottom:0.3rem;">Zoom
+                            Fondo</span>
+                        <input type="range" id="bgSizeInput" min="10" max="250" step="5" value="100"
+                            style="width: 100%;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-size: 0.7rem; color: #999; display:block; margin-bottom:0.3rem;">Grosor del
+                        Marco</span>
+                    <input type="range" id="frameThickness" min="0.5" max="3" step="0.1" value="1" style="width: 100%;">
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-size: 0.7rem; color: #999; display:block; margin-bottom:0.3rem;">Título de la
+                        App</span>
+                    <input type="text" id="appTitleInput" value="Tu Marca"
+                        style="width: 100%; padding: 0.3rem; border:1px solid #ddd;">
+                </div>
+
+                <div>
+                    <span style="font-size: 0.7rem; color: #999; display:block; margin-bottom:0.3rem;">Subtítulo</span>
+                    <input type="text" id="appSubtitleInput" value="Tu Subtítulo"
+                        style="width: 100%; padding: 0.3rem; border:1px solid #ddd;">
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <p id="adminToggle" title="Admin Mode" style="cursor: pointer; user-select: none;">Drag & Drop
+                    habilitado</p>
+            </div>
+        </aside>
+
+        <!-- Main Gallery Area -->
+        <main class="gallery-container">
+            <header class="top-bar">
+                <h2>Galería de Colección</h2>
+                <div class="view-options" style="display: items; gap: 1rem; align-items: center;">
+                    <a href="../carrito.html" class="btn"
+                        style="text-decoration: none; color: #333; font-weight: bold;">
+                        🛒 Carrito <span id="visorCartBadge" class="cart-badge"
+                            style="background:#000; color:#fff; padding:2px 6px; border-radius:10px; font-size:0.8rem;"></span>
+                    </a>
+                    <span id="photoCount">0 fotos</span>
+                </div>
+            </header>
+
+            <div class="photo-grid" id="photoGrid">
+                <!-- Javascript will populate grid items -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Detailed View -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <div class="modal-frame-container" id="modalFrameContainer">
+                <img src="" alt="Full View" id="modalImage">
+                <!-- Visual Reference (Human Scale) -->
+                <div id="scaleReference" class="scale-reference" style="display: none;">
+                    <svg viewBox="0 0 100 300" preserveAspectRatio="none">
+                        <!-- Simple abstract human silhouette -->
+                        <path
+                            d="M50,20 C60,20 68,28 68,38 C68,48 60,56 50,56 C40,56 32,48 32,38 C32,28 40,20 50,20 Z M50,60 C75,60 85,90 85,110 L85,180 C85,190 80,195 75,195 C70,195 65,190 65,180 L65,140 L65,180 L65,290 C65,298 58,300 50,300 C42,300 35,298 35,290 L35,180 L35,140 L35,180 C35,190 30,195 25,195 C20,195 15,190 15,180 L15,110 C15,90 25,60 50,60 Z"
+                            fill="#333" opacity="0.8" />
+                    </svg>
+                    <span
+                        style="display: block; text-align: center; font-size: 0.7rem; color: #555; margin-top: 5px;">1.70m</span>
+                </div>
+            </div>
+            <div class="modal-controls">
+                <div id="artDetails" class="art-details"
+                    style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 2rem; background: #fafafa; padding: 1.5rem; border-radius: 8px;">
+                    <div
+                        style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; align-items:start; margin-bottom: 0.5rem;">
+                        <h2 id="artTitle"
+                            style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #111; line-height: 1.2; margin:0;">
+                            Título de la Obra
+                        </h2>
+                        <!-- Technical Info Box (New Request) -->
+                        <div id="artTechInfo"
+                            style="border:1px solid #ccc; background:#f4f4f4; padding:1.2rem; font-size:1rem; color:#333; border-radius:6px; display:none; line-height:1.5; min-height: 80px;">
+                            <!-- Content will be injected by JS -->
+                        </div>
+                    </div>
+
+                    <p id="artCatalog"
+                        style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 1rem;">
+                        Colección</p>
+                    <p id="artDesc"
+                        style="font-family: 'Lato', sans-serif; color: #555; font-size: 1.1rem; margin-bottom: 1rem; line-height: 1.6;">
+                        Descripción</p>
+
+                    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                        <p id="artPrice"
+                            style="font-weight: 700; color: #000; font-size: 1.2rem; letter-spacing: 0.5px; margin-bottom: 0.5rem;">
+                            Precio</p>
+                    </div>
+                    <p id="artSize" style="font-family: 'Lato', sans-serif; color: #555; font-size: 1rem;">
+                        Tamaño</p>
+
+                    <button id="addToCartBtn" class="btn-primary"
+                        style="width:100%; margin-top:1.5rem; background:#1a1a1a; color:white; border:none; padding:1rem; cursor:pointer; font-weight:bold;">
+                        Añadir al Carrito
+                    </button>
+                    <div id="cartMsg"
+                        style="text-align:center; color:green; margin-top:0.5rem; display:none; font-weight:bold;">
+                        ¡Añadido! <a href="../carrito.html" style="color:green; text-decoration:underline;">Ver
+                            Carrito</a>
+                    </div>
+                </div>
+
+                <!-- Environment Selector (Moved to Top) -->
+                <div style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 2rem;">
+                    <h3
+                        style="font-size: 1.1rem; color: #333; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">
+                        ¿Dónde lo pondrías?
+                    </h3>
+                    <div class="size-selector" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <button class="btn-size active" id="btnEnvNeutral" onclick="changeEnvironment('bedroom')"
+                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Tu
+                            Habitación?</button>
+                        <button class="btn-size" id="btnEnvRoom" onclick="changeEnvironment('room')"
+                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Tu
+                            Salón?</button>
+                        <!-- <button class="btn-size" id="btnEnvClassic" onclick="changeEnvironment('neutral')"
+                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">Solo
+                            Cuadro</button> -->
+                        <button class="btn-size" id="btnEnvTable" onclick="changeEnvironment('table')"
+                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Sobremesa?</button>
+                    </div>
+                    <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem; font-style: italic;">
+                        *Visualización aproximada con boceto decorativo.
+                    </p>
+                </div>
+
+                <h3 style="font-size: 1rem; color: #999; text-transform: uppercase; letter-spacing: 1px;">Editar Marco
+                </h3>
+                <div class="frame-selector-row" id="modalFrameSelector">
+                    <!-- JS populated -->
+                </div>
+
+                <div style="margin-top: 2rem; border-top: 1px solid #eee; padding-top: 2rem;">
+                    <h3>Tamaño</h3>
+                    <div class="size-selector">
+                        <button class="btn-size" onclick="changePreviewSize('small')">S</button>
+                        <button class="btn-size" onclick="changePreviewSize('medium')">M</button>
+                        <button class="btn-size active" onclick="changePreviewSize('large')">L</button>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; border-top: 1px solid #eee; padding-top: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" id="showScaleRef" style="cursor: pointer;">
+                        <label for="showScaleRef" style="cursor: pointer; font-size: 0.9rem; color: #555;">Ver
+                            Referencia Humana (Escala)</label>
+                    </div>
+                </div>
+
+
+
+                <button id="confirmSelectionBtn" class="btn-primary" style="margin-top: 2rem;">
+                    Lo quiero en este formato
+                </button>
+            </div>
+            <script>console.log("HTML loaded, waiting for scripts...");</script>
+        </div>
+    </div>
+
+    <script src="../js/data.js?v=63"></script>
+    <script src="../js/cart.js?v=63"></script>
+    <script src="app.js?v=63"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadroteca 3D | Tu Arte</title>
+
+    <!-- ERROR TRAP: Para depurar si no carga -->
+    <script>
+        window.onerror = function (msg, url, line, col, error) {
+            alert("Error JS: " + msg + "\nEn: " + url + ":" + line);
+            // También lo ponemos visualmente por si acaso
+            const errDiv = document.createElement('div');
+            errDiv.style.position = 'fixed';
+            errDiv.style.top = '0';
+            errDiv.style.left = '0';
+            errDiv.style.background = 'red';
+            errDiv.style.color = 'white';
+            errDiv.style.zIndex = '9999';
+            errDiv.style.padding = '20px';
+            errDiv.innerText = "ERROR CRÍTICO: " + msg + " (Línea " + line + ")";
+            document.body.appendChild(errDiv);
+        };
+    </script>
+
+    <link rel="stylesheet" href="style.css?v=111">
+    <!-- Importamos los datos de la web principal -->
+    <script src="../js/data.js?v=111"></script>
+    <!-- AUDIO PLAYER -->
+    <audio id="bgMusic" loop class="audio-hidden">
+        <source src="../assets/music.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+
+    <div class="library-container">
+        <div class="scene">
+            <div id="shelf-container" class="shelf-tower">
+                <!-- Las estanterías se generarán aquí con JS -->
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <a href="../colecciones.html" class="back-btn"
+            style="text-decoration:none; color:white; background:#444; padding:8px 15px; border-radius:4px; margin-right:10px;">⬅
+            Volver</a>
+        <input type="text" id="search-input" placeholder="Buscar cuadro..." autocomplete="off">
+        <button id="reset-view-btn">Vista General</button>
+        <button id="musicBtn" style="background: #e6b800; color: #000; padding:8px 15px; border-radius:4px;">
+            🎵 Música
+        </button>
+        <a href="../index.html" id="homeBtn"
+            style="text-decoration:none; color:white; background:#444; padding:8px 15px; border-radius:4px;">
+            🏠 Inicio
+        </a>
+    </div>
+
+    <div id="hero-overlay"></div>
+    <script src="script.js?v=111"></script>
+</body>
+
+</html>

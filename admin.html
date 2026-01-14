@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin: Generador de Obras</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .help-text {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        button {
+            background: #222;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        #result-area {
+            margin-top: 2rem;
+            border-top: 2px solid #eee;
+            padding-top: 2rem;
+            display: none;
+        }
+
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+
+        .success-msg {
+            color: green;
+            font-weight: bold;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>ðŸŽ¨ Generador de Obras</h1>
+        <p>Usa esta herramienta para crear el código de tus nuevas obras sin errores.</p>
+
+        <div class="form-group">
+            <label>1. Nombre del Archivo de Imagen</label>
+            <input type="text" id="imgName" placeholder="Ej: mi_cuadro.jpg">
+            <div class="help-text">âš ï¸ Asegúrate de que este archivo ya esté dentro de la carpeta <b>assets</b>.</div>
+        </div>
+
+        <div class="form-group">
+            <label>2. Título de la Obra</label>
+            <input type="text" id="title" placeholder="Ej: Atardecer en la Playa">
+        </div>
+
+        <div class="form-group">
+            <label>3. Categoría</label>
+            <input type="text" id="category" list="cat-suggestions" placeholder="Ej: Paisaje">
+            <datalist id="cat-suggestions">
+                <option value="Abstracto">
+                <option value="Naturaleza">
+                <option value="Retratos">
+                <option value="Urbano">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label>4. Descripción / Técnica</label>
+            <textarea id="desc" rows="3" placeholder="Ej: Óleo sobre lienzo, 2025. Una obra inspirada en..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>5. Tamaño (Opcional)</label>
+            <input type="text" id="size" placeholder="Ej: 100x80cm">
+        </div>
+
+        <div class="form-group">
+            <label>6. Precio (Opcional)</label>
+            <input type="text" id="price" placeholder="Ej: 1200â‚¬ (o deja en blanco para 'Consultar')">
+        </div>
+
+        <button onclick="generateCode()">âœ¨ Generar Código</button>
+
+        <div id="result-area">
+            <h3>¡Código Listo!</h3>
+            <p>1. Dale al botón "Copiar".<br>2. Abre el archivo <code>js/data.js</code>.<br>3. Pégalo al final de la
+                lista.</p>
+
+            <div class="code-block" id="codeOutput"></div>
+
+            <button onclick="copyToClipboard()" style="background: #28a745;">ðŸ“‹ Copiar al Portapapeles</button>
+            <p class="success-msg" id="successMsg">¡Copiado! Ahora pégalo en data.js</p>
+        </div>
+    </div>
+
+    <script>
+        function generateCode() {
+            const img = document.getElementById('imgName').value.trim();
+            const title = document.getElementById('title').value.trim();
+            const category = document.getElementById('category').value.trim();
+            const desc = document.getElementById('desc').value.trim();
+            const size = document.getElementById('size').value.trim();
+            const price = document.getElementById('price').value.trim();
+
+            if (!img || !title) {
+                alert("Por favor, rellena al menos el Nombre del Archivo y el Título.");
+                return;
+            }
+
+            // Clean ID generation
+            const id = title.toLowerCase().replace(/[^a-z0-9]/g, '_') + '_' + Math.floor(Math.random() * 1000);
+
+            const code = `    {
+        id: "${id}",
+        title: "${title}",
+        category: "${category}",
+        src: "${img}",
+        description: "${desc}",
+        size: "${size || 'Consultar'}",
+        price: "${price || 'Consultar'}"
+    },`;
+
+            document.getElementById('codeOutput').textContent = code;
+            document.getElementById('result-area').style.display = 'block';
+        }
+
+        function copyToClipboard() {
+            const code = document.getElementById('codeOutput').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const msg = document.getElementById('successMsg');
+                msg.style.display = 'block';
+                setTimeout(() => msg.style.display = 'none', 3000);
+            });
+        }
+    </script>
+</body>
+
+</html>

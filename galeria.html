@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galer&iacute;a | Tu Arte</title>
+    <link rel="stylesheet" href="main.css?v=101">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
+            <li><a href="memorandum.html">Universo EDUSSE</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="galeria.html" class="active">Galer&iacute;a</a></li>
+            <li><a href="compra.html">Cómo Comprar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito <span class="cart-badge"></span></a></li>
+            <li><a href="colecciones.html" class="btn-highlight">Probador Virtual</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Galer&iacute;a Completa</h1>
+            <p>Una selecci&oacute;n curada de todas las obras disponibles. <span id="total-count"
+                    style="font-size: 0.8em; color: #888; font-weight: normal; margin-left: 10px;"></span></p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container margin-bottom">
+            <!-- Simplified Masonry/Grid -->
+            <!-- Dynamic Gallery Grid -->
+            <div id="gallery-container" class="collections-grid">
+                <!-- Content loaded via js/loader.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tu Arte. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <script src="js/data.js?v=101"></script>
+    <script src="js/cart.js?v=101"></script>
+    <script src="js/loader.js?v=101"></script>
+</body>
+
+</html>

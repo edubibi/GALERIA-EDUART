@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones | Tu Arte</title>
+    <link rel="stylesheet" href="main.css?v=101">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
+            <li><a href="memorandum.html">Universo EDUSSE</a></li>
+            <li><a href="colecciones.html" class="active">Colecciones</a></li>
+            <li><a href="galeria.html">Galer&iacute;a</a></li>
+            <li><a href="compra.html">Cómo Comprar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito <span class="cart-badge"></span></a></li>
+            <li><a href="colecciones.html" class="btn-highlight">Probador Virtual</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Mis Colecciones</h1>
+            <p>Explora las series tem&aacute;ticas y encuentra la pieza perfecta.</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="cuadroteca/index.html" class="btn btn-primary"
+                    style="background-color: #D4AF37; color: #000; font-weight: bold; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    🏛️ Ver en Modo Biblioteca 3D
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collections Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Buttons Container -->
+            <div id="collection-filters" class="filters-container"
+                style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem;">
+                <!-- Buttons loaded via js/loader.js -->
+            </div>
+
+            <!-- Results Grid -->
+            <div id="collections-results" class="collections-grid">
+                <p style="text-align: center; width: 100%; color: #888;">Selecciona una categor&iacute;a arriba para ver
+                    las
+                    obras.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tu Arte. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js?v=101"></script>
+    <script src="js/cart.js?v=101"></script>
+    <script src="js/loader.js?v=101"></script>
+</body>
+
+</html>
