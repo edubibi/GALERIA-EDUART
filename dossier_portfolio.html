@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dossier Artístico - Eduardo Ramírez (EDUSSE)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap');
+
+        :root {
+            --primary: #1a1a1a;
+            --accent: #D4AF37;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Lato', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--primary);
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+
+        /* Print Settings */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm;
+            box-sizing: border-box;
+            position: relative;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cover-page {
+            text-align: center;
+            justify-content: center;
+            background: #111;
+            color: #fff;
+        }
+
+        .cover-page h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .cover-page p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .intro-page {
+            justify-content: flex-start;
+            padding-top: 40mm;
+        }
+
+        .intro-page h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .artwork-page {
+            align-items: center;
+        }
+
+        .artwork-image-container {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .artwork-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .artwork-info {
+            text-align: left;
+            width: 100%;
+            padding: 0 10%;
+            box-sizing: border-box;
+        }
+
+        .artwork-title {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            margin: 0 0 0.5rem 0;
+            color: var(--primary);
+        }
+
+        .artwork-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        .artwork-desc {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10mm;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+    <div class="page cover-page">
+        <h1>UNIVERSO EDUSSE</h1>
+        <p>Portfolio de Artista</p>
+        <div
+            style="margin-top: 2rem; width: 100px; height: 2px; background: #D4AF37; margin-left: auto; margin-right: auto;">
+        </div>
+        <p style="margin-top: 2rem; font-size: 1rem; text-transform: none;">Eduardo Ramírez de Cartagena</p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">2026 Collection Selection</p>
+    </div>
+
+    <!-- BIO -->
+    <div class="page intro-page">
+        <h2>Statement del Artista</h2>
+        <p><strong>¿Cómo sueña la tecnología cuando es guiada por la mano humana?</strong></p>
+        <p>Como artista visual, utilizo la Inteligencia Artificial no como un generador automático, sino como un pincel
+            complejo y sofisticado. Cada pieza en el "Universo EDUSSE" comienza con una visión personal —un recuerdo,
+            una emoción o un imposible arquitectónico— que moldeo meticulosamente a través de iteraciones digitales
+            hasta alcanzar la imagen exacta que vive en mi mente.</p>
+        <p>Mi trabajo invita al espectador a ventanas de realidades alternativas: ciudades neofuturistas, naturalezas
+            reinventadas y figuras atemporales. No busco replicar la realidad, sino expandirla.</p>
+
+        <br>
+        <h3>Estilos Principales</h3>
+        <ul>
+            <li><strong>NeoCirc:</strong> Paisajes oníricos y arquitectura imposible.</li>
+            <li><strong>Boracarbon:</strong> Minimalismo en blanco y negro con carga emocional.</li>
+            <li><strong>Cubesse:</strong> Geometría vibrante y movimiento.</li>
+            <li><strong>Fracneo:</strong> Exploración fractal y patrones naturales.</li>
+        </ul>
+
+        <footer>Eduardo Ramírez | Portfolio Selection</footer>
+    </div>
+
+    <!-- OBRAS -->
+    <!-- 1. El Guardian -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/00EDUSSE/00edusse_003.png" class="artwork-image" alt="El Guardián">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">El Guardián Del Circuito Solar</h3>
+            <div class="artwork-meta">Colección: 00EDUSSE | Digital Art</div>
+            <p class="artwork-desc">
+                Una pieza central del universo Edusse, representando la vigilancia eterna sobre la tecnología y la
+                naturaleza. Destaca por sus tonos dorados y la fusión entre lo orgánico y lo mecánico.
+            </p>
+        </div>
+        <footer>1 / 10</footer>
+    </div>
+
+    <!-- 2. Catedral -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/01EXP_NEOCIRC/01exp_neocirc_017.jpg" class="artwork-image" alt="Catedral">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Catedral En Las Nubes</h3>
+            <div class="artwork-meta">Colección: 01EXP_NEOCIRC | Architecture Dream</div>
+            <p class="artwork-desc">
+                Una visión etérea de una arquitectura sacra suspendida en el cielo. La obra explora la ingravidez y la
+                espiritualidad a través de estructuras clásicas reinventadas en un entorno onírico.
+            </p>
+        </div>
+        <footer>2 / 10</footer>
+    </div>
+
+    <!-- 3. Hollywood -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/01EXP_NEOCIRC/01exp_neocirc_001.jpg" class="artwork-image" alt="Hollywood">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Hollywood</h3>
+            <div class="artwork-meta">Colección: 01EXP_NEOCIRC | Pop Urban</div>
+            <p class="artwork-desc">
+                Una reinterpretación vibrante de la cultura pop y el paisaje urbano. Colores saturados y formas audaces
+                capturan la energía frenética del sueño americano.
+            </p>
+        </div>
+        <footer>3 / 10</footer>
+    </div>
+
+    <!-- 4. Colibri -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/02CUBESSE stilo/02cubesse_stilo_001.jpeg" class="artwork-image" alt="Colibrí">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Flotando como un colibrí</h3>
+            <div class="artwork-meta">Colección: 02CUBESSE | Geometric Motion</div>
+            <p class="artwork-desc">
+                Dinamsimo puro. La fragmentación cubista se encuentra con la velocidad de la naturaleza. Una explosión
+                de color que captura el instante preciso del vuelo.
+            </p>
+        </div>
+        <footer>4 / 10</footer>
+    </div>
+
+    <!-- 5. Pesca Andaluz -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/03EXPNEOPLUS/03expneoplus_001.png" class="artwork-image" alt="Pesca">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Pesca bajo el sol andaluz</h3>
+            <div class="artwork-meta">Colección: 03EXPNEOPLUS | Cultural Roots</div>
+            <p class="artwork-desc">
+                Un homenaje a la luz del sur y la tradición. La técnica digital exalta los colores cálidos y la
+                serenidad del mar, creando una atmósfera de calma y pertenencia.
+            </p>
+        </div>
+        <footer>5 / 10</footer>
+    </div>
+
+    <!-- 6. Abuelo Lluvia -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/08BORACARBON/08boracarbon_001.png" class="artwork-image" alt="Abuelo">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Abuelo Paseando Bajo La Lluvia</h3>
+            <div class="artwork-meta">Colección: 08BORACARBON | Mono Noir</div>
+            <p class="artwork-desc">
+                El estilo Boracarbon se define por el contraste y la emoción. Esta pieza, desprovista de color, centra
+                toda su atención en la atmósfera, la textura de la lluvia y la soledad de la figura.
+            </p>
+        </div>
+        <footer>6 / 10</footer>
+    </div>
+
+    <!-- 7. Señora Sentada -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/08BORACARBON/08boracarbon_004.png" class="artwork-image" alt="Señora">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Señora sentada</h3>
+            <div class="artwork-meta">Colección: 08BORACARBON | Portrait</div>
+            <p class="artwork-desc">
+                Un retrato costumbrista llevado al terreno del arte digital de alto contraste. La dignidad del personaje
+                y la composición clásica demuestran la capacidad de la técnica moderna para capturar el alma humana.
+            </p>
+        </div>
+        <footer>7 / 10</footer>
+    </div>
+
+    <!-- 8. Cisne-->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/09FRACNEO/09fracneo_002.png" class="artwork-image" alt="Cisne">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Cisne</h3>
+            <div class="artwork-meta">Colección: 09FRACNEO | Fractal Nature</div>
+            <p class="artwork-desc">
+                La naturaleza vista a través de la matemática. Patrones fractales y repeticiones geométricas construyen
+                la forma orgánica del cisne, sugiriendo el orden oculto tras la belleza natural.
+            </p>
+        </div>
+        <footer>8 / 10</footer>
+    </div>
+
+    <!-- 9. Guerrera -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/10OLEOCUBBO/10oleocubbo_006.jpg" class="artwork-image" alt="Guerrera">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Guerrera de la Amazonia</h3>
+            <div class="artwork-meta">Colección: 10OLEOCUBBO | Character Character</div>
+            <p class="artwork-desc">
+                Fuerza, mirada y textura. El estilo Oleocubbo simula la densidad del óleo tradicional para dar peso y
+                presencia física a este retrato de poder y resistencia.
+            </p>
+        </div>
+        <footer>9 / 10</footer>
+    </div>
+
+    <!-- 10. Avestruz -->
+    <div class="page artwork-page">
+        <div class="artwork-image-container">
+            <img src="assets/00EDUSSE/00edusse_001.png" class="artwork-image" alt="Avestruz">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Avestruz Del Universo Edusse</h3>
+            <div class="artwork-meta">Colección: 00EDUSSE | Iconic Surrealism</div>
+            <p class="artwork-desc">
+                La pieza que lo inició todo. Una síntesis de humor, surrealismo y técnica refinada. Un icono del
+                "Universo Edusse" que desafía la lógica con una estética impecable.
+            </p>
+        </div>
+        <footer>10 / 10</footer>
+    </div>
+
+</body>
+
+</html>

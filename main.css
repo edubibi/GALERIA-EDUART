@@ -381,3 +381,10 @@ footer {
     min-width: 18px;
     text-align: center;
 }
+
+/* Frame Style (Passe-partout) */
+#gallery-container .collection-card .card-image {
+    border: 16px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

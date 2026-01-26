@@ -1,0 +1,43 @@
+Loading metadata.json...
+Backup created at metadata.backup.json
+Scanning assets...
+DEBUG: Scanning root='assets', rel_path='.'
+DEBUG: Scanning root='assets\00EDUSSE', rel_path='00EDUSSE'
+DEBUG: Scanning root='assets\01EXP_NEOCIRC', rel_path='01EXP_NEOCIRC'
+DEBUG: Scanning root='assets\02CUBESSE stilo', rel_path='02CUBESSE stilo'
+DEBUG: Scanning root='assets\03EXPNEOPLUS', rel_path='03EXPNEOPLUS'
+DEBUG: Scanning root='assets\04APLICC', rel_path='04APLICC'
+DEBUG: Scanning root='assets\05PLUMINK', rel_path='05PLUMINK'
+DEBUG: Scanning root='assets\06IDE_CLASSIC', rel_path='06IDE_CLASSIC'
+DEBUG: Scanning root='assets\07NEOINK stilo', rel_path='07NEOINK stilo'
+DEBUG: Scanning root='assets\08BORACARBON', rel_path='08BORACARBON'
+DEBUG: Scanning root='assets\09FRACNEO', rel_path='09FRACNEO'
+DEBUG: Scanning root='assets\10OLEOCUBBO', rel_path='10OLEOCUBBO'
+DEBUG: Scanning root='assets\11URBANSPHERIC', rel_path='11URBANSPHERIC'
+DEBUG: Scanning root='assets\12CRISTAL_CUBICO', rel_path='12CRISTAL_CUBICO'
+DEBUG: Scanning root='assets\13RECTESSE', rel_path='13RECTESSE'
+DEBUG: Scanning root='assets\14TEREXSE', rel_path='14TEREXSE'
+DEBUG: Scanning root='assets\15CUBESSEPLUS', rel_path='15CUBESSEPLUS'
+DEBUG: Scanning root='assets\16EXPNEO', rel_path='16EXPNEO'
+DEBUG: Scanning root='assets\17FUZZTESS', rel_path='17FUZZTESS'
+DEBUG: Scanning root='assets\18ABSTRACTO_CONFLUENCIA', rel_path='18ABSTRACTO_CONFLUENCIA'
+DEBUG: Scanning root='assets\19FUZZLINE_ABS', rel_path='19FUZZLINE_ABS'
+DEBUG: Scanning root='assets\20BORASSIE', rel_path='20BORASSIE'
+DEBUG: Scanning root='assets\21OCE-BURST', rel_path='21OCE-BURST'
+DEBUG: Scanning root='assets\22NEO-LUMINA', rel_path='22NEO-LUMINA'
+DEBUG: Scanning root='assets\23TRIDIM-BURST', rel_path='23TRIDIM-BURST'
+DEBUG: Scanning root='assets\24BORACARBON MONUMENTOS', rel_path='24BORACARBON MONUMENTOS'
+DEBUG: Scanning root='assets\25CAPLIVE', rel_path='25CAPLIVE'
+DEBUG: Scanning root='assets\26CARL_LINE', rel_path='26CARL_LINE'
+DEBUG: Scanning root='assets\27LINEVORT', rel_path='27LINEVORT'
+DEBUG: Scanning root='assets\28ESPATAC', rel_path='28ESPATAC'
+DEBUG: Scanning root='assets\bg', rel_path='bg'
+DEBUG: Scanning root='assets\music', rel_path='music'
+DEBUG: Scanning root='assets\SAGA CUBESSEPLUS', rel_path='SAGA CUBESSEPLUS'
+DEBUG: Scanning root='assets\SELLOS_MAGICOS', rel_path='SELLOS_MAGICOS'
+DEBUG: Skipping 00edusse_001, ALREADY EXISTS in metadata.
+DEBUG: Skipping 00edusse_002, ALREADY EXISTS in metadata.
+DEBUG: Skipping 00edusse_003, ALREADY EXISTS in metadata.
+DEBUG: Skipping caballo_flaco, ALREADY EXISTS in metadata.
+
+No new unindexed files found.
