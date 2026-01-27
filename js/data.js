@@ -31,7 +31,7 @@ const categoryCovers = {    "05PLUMINK": "assets/PORTADILLAS_ESTILOS/05PLUMINK.j
 const artworkData = [
     {
         "id": "00edusse_001",
-        "title": "Avestruz Del Universo Edusse",
+        "title": "Avestruz Del Universo",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/00edusse_001.png",
         "description": "Técnica Visual: Presenta una pincelada vibrante y arremolinada que recuerda a La noche estrellada de Van Gogh. La textura es densa y táctil, con un flujo de energía que emana del animal hacia el fondo.\nNarrativa: El cuerpo del ave funciona como un portal. En su interior se observa una aldea bajo un sol dorado, sugiriendo que el animal es el contenedor de un ecosistema o de la memoria de un lugar.\nSimbolismo: Representa la libertad y la vigilancia espiritual; el ave no solo vuela por el mundo, sino que lo lleva dentro de sí.",
@@ -61,6 +61,15 @@ const artworkData = [
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
         "sold": false
+    },
+    {
+        "id": "campo_solar",
+        "title": "Campo Solar",
+        "category": "00EDUSSE",
+        "src": "assets/00EDUSSE/campo_solar.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
     },
     {
         "id": "cervatillo",
@@ -126,7 +135,7 @@ const artworkData = [
     },
     {
         "id": "01exp_neocirc_005",
-        "title": "Nepal",
+        "title": "India",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_005.jpg",
         "description": "o\tSimetría: Es la obra más equilibrada. El centro del vórtice se sitúa exactamente sobre la cúpula principal.\no\tPaleta: Los tonos violetas y malvas dominan el cielo, dándole un aire regio y espiritual que encaja con el monumento.\no\tReflejo: El estanque repite el patrón del cielo pero con trazos más horizontales, creando una base sólida para el edificio.",
@@ -225,7 +234,7 @@ const artworkData = [
     },
     {
         "id": "01exp_neocirc_014",
-        "title": "05 Bahia De Faros Y Redes Doradas",
+        "title": "Bahia De Faros Y Redes Doradas",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_014.png",
         "description": "•\tTécnica: El agua está tratada con una técnica de \"escama de pez\", donde cada pincelada de blanco representa el brillo de una ola. Los faros verticales rompen la hegemonía circular del cielo.\n•\tLuz: El sol está bajo, casi en el horizonte, creando un reflejo dorado largo y vibrante en el canal central.\n•\tNarrativa: Representa la guía y la seguridad; los barcos navegan en una calma tensa bajo un cielo que parece girar a gran velocidad.",
@@ -566,7 +575,7 @@ const artworkData = [
     },
     {
         "id": "03expneoplus_012",
-        "title": "Canada",
+        "title": "Australia",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_012.jpg",
         "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Canada', es un ejemplo vibrante de la narrativa visual de la colección.",
@@ -1094,7 +1103,7 @@ const artworkData = [
     },
     {
         "id": "07neoink_stilo_006",
-        "title": "Girl angel dorado",
+        "title": "Angel dorado",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_006.png",
         "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Girl angel dorado', es un ejemplo vibrante de la narrativa visual de la colección.",
@@ -1230,17 +1239,6 @@ const artworkData = [
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_018.png",
         "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Barco pesquero en altamar', la técnica realza este concepto con una ejecución precisa.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
-        "sold": false
-    },
-    {
-        "id": "07neoink_stilo_019",
-        "title": "Barco pesquero en altamar menor",
-        "category": "07NEOINK stilo",
-        "src": "assets/07NEOINK stilo/07neoink_stilo_019.png",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Barco pesquero en altamar menor', la técnica realza este concepto con una ejecución precisa.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Inking digital vectorial con coloración cel-shading.",
@@ -1512,7 +1510,7 @@ const artworkData = [
     },
     {
         "id": "09fracneo_005",
-        "title": "Abs green",
+        "title": "Estrecho de Green",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_005.jpeg",
         "description": "La belleza matemática de la naturaleza. Formas que se repiten a diferentes escalas, creando estructuras orgánicas complejas y fascinantes. Esta obra, 'Abs green', es un ejemplo vibrante de la narrativa visual de la colección.",
@@ -1523,7 +1521,7 @@ const artworkData = [
     },
     {
         "id": "09fracneo_006",
-        "title": "Abs blue",
+        "title": "Azote en la costa",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_006.jpeg",
         "description": "La belleza matemática de la naturaleza. Formas que se repiten a diferentes escalas, creando estructuras orgánicas complejas y fascinantes. Esta obra, 'Abs blue', es un ejemplo vibrante de la narrativa visual de la colección.",
@@ -1545,7 +1543,7 @@ const artworkData = [
     },
     {
         "id": "09fracneo_008",
-        "title": "En un pueblo de la costa espanola",
+        "title": "En un pueblo de la costa española",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_008.jpeg",
         "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'En un pueblo de la costa espanola', la técnica realza este concepto con una ejecución precisa.",
@@ -1710,7 +1708,7 @@ const artworkData = [
     },
     {
         "id": "12cristal_cubico_001",
-        "title": "Bodegon Masa Y Pan Estilo Cristal",
+        "title": "Bodegon Masa Y Pan",
         "category": "12CRISTAL_CUBICO",
         "src": "assets/12CRISTAL_CUBICO/12cristal_cubico_001.png",
         "description": "Técnica: Aunque está en este bloque, es la pieza puente. Usa la base del cubismo pero con las grietas del estilo cristal.\nVisual: La luz es mucho más suave y los bordes menos afilados que en la versión pura de CUBESSE.",
@@ -1875,7 +1873,7 @@ const artworkData = [
     },
     {
         "id": "19fuzzline_abs_004",
-        "title": "Coche En Londres 1920",
+        "title": "Red Bus Londres 1920",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_004.png",
         "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'Coche En Londres 1920', es un ejemplo vibrante de la narrativa visual de la colección.",
@@ -2029,7 +2027,7 @@ const artworkData = [
     },
     {
         "id": "20borassie_006",
-        "title": "En El Pueblo Borassie Minimal",
+        "title": "En El Pueblo Minimal",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_006.png",
         "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'En El Pueblo Borassie Minimal', la técnica realza este concepto con una ejecución precisa.",
@@ -2348,7 +2346,7 @@ const artworkData = [
     },
     {
         "id": "23tridim_burst_007",
-        "title": "23Tridim Burst 007",
+        "title": "Cascada en Choki",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_007.jpg",
         "description": "Nueva obra añadida recientemente.",
@@ -2357,7 +2355,7 @@ const artworkData = [
     },
     {
         "id": "23tridim_burst_008",
-        "title": "23Tridim Burst 008",
+        "title": "Colapso en el puerto",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_008.png",
         "description": "Nueva obra añadida recientemente.",
@@ -2496,7 +2494,7 @@ const artworkData = [
     },
     {
         "id": "capitana caplive",
-        "title": "Capitana Caplive",
+        "title": "Capitana",
         "category": "25CAPLIVE",
         "src": "assets/25CAPLIVE/CAPITANA CAPLIVE.png",
         "description": "Captura de vida. Escenas cotidianas con un toque vibrante y contemporáneo. Esta obra, 'Capitana Caplive', es un ejemplo vibrante de la narrativa visual de la colección.",
@@ -2646,6 +2644,15 @@ const artworkData = [
         "size": "Consultar"
     },
     {
+        "id": "bufalo",
+        "title": "Bufalo",
+        "category": "28ESPATAC",
+        "src": "assets/28ESPATAC/bufalo.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
         "id": "caballo_flaco",
         "title": "Caballo Flaco",
         "category": "28ESPATAC",
@@ -2704,6 +2711,24 @@ const artworkData = [
         "title": "Javali",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/javali.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "leopardo_de_las_nives",
+        "title": "Leopardo De Las Nives",
+        "category": "28ESPATAC",
+        "src": "assets/28ESPATAC/leopardo_de_las_nives.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "leopardo_en_asia",
+        "title": "Leopardo En Asia",
+        "category": "28ESPATAC",
+        "src": "assets/28ESPATAC/leopardo_en_asia.png",
         "description": "Nueva obra añadida recientemente.",
         "price": "19,99",
         "size": "Consultar"
@@ -2791,7 +2816,7 @@ const artworkData = [
     },
     {
         "id": "altamar_espatac-mat",
-        "title": "Altamar Espatac Mat",
+        "title": "Altamar",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/altamar_espatac-mat.png",
         "description": "Nueva obra añadida recientemente.",
@@ -2926,17 +2951,6 @@ const artworkData = [
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_008.png",
         "description": "Una obra singular dentro del catalogo Edusse, explorando la relación entre forma y color. Esta obra, 'Poseidon', es un ejemplo vibrante de la narrativa visual de la colección.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
-        "sold": false
-    },
-    {
-        "id": "saga_cubesseplus_009",
-        "title": "Toro 2",
-        "category": "SAGA CUBESSEPLUS",
-        "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_009.png",
-        "description": "Fuerza bruta y mitología ibérica se sincretizan en una forma poderosa y telúrica. En 'Toro 2', la técnica realza este concepto con una ejecución precisa.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Arte digital de alta resolución.",

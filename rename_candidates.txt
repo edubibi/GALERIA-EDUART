@@ -1,0 +1,5 @@
+[00EDUSSE] 00edusse_001 : Avestruz Del Universo Edusse -> Avestruz Del Universo
+[12CRISTAL_CUBICO] 12cristal_cubico_001 : Bodegon Masa Y Pan Estilo Cristal -> Bodegon Masa Y Pan Estilo
+[20BORASSIE] 20borassie_006 : En El Pueblo Borassie Minimal -> En El Pueblo Minimal
+[25CAPLIVE] capitana caplive : Capitana Caplive -> Capitana
+[29ESPATAC-MAT] altamar_espatac-mat : Altamar Espatac Mat -> Altamar
