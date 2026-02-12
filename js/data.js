@@ -1,31 +1,35 @@
-/**
+﻿/**
  * BASE DE DATOS DE OBRAS
- * Generada automaticamente el 2026-01-14 11:16
+ * Generada automaticamente el 2026-01-28 16:15
  */
 
 // Mapa de Portadas por Estilo
-const categoryCovers = {    "05PLUMINK": "assets/PORTADILLAS_ESTILOS/05PLUMINK.jpg",
-    "CRISTAL_CUBICO": "assets/PORTADILLAS_ESTILOS/CRISTAL_CUBICO.jpg",
-    "09FRACNEO": "assets/PORTADILLAS_ESTILOS/09FRACNEO.jpg",
-    "07NEOINK_stilo": "assets/PORTADILLAS_ESTILOS/07NEOINK_stilo.jpg",
-    "photo_7_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_7_2025-12-15_18-32-25.jpg",
-    "photo_4_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_4_2025-12-15_18-32-25.jpg",
-    "photo_8_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_8_2025-12-15_18-32-25.jpg",
-    "03EXPNEOPLUS": "assets/PORTADILLAS_ESTILOS/03EXPNEOPLUS.jpg",
-    "photo_12_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_12_2025-12-15_18-32-25.jpg",
+const categoryCovers = {
+    "photo_3_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_3_2025-12-15_18-32-25.jpg",
     "20BORASSIE": "assets/PORTADILLAS_ESTILOS/20BORASSIE.jpg",
+    "04APLICC": "assets/PORTADILLAS_ESTILOS/04APLICC.jpg",
+    "photo_7_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_7_2025-12-15_18-32-25.jpg",
+    "07NEOINK_stilo": "assets/PORTADILLAS_ESTILOS/07NEOINK_stilo.jpg",
     "02CUBESSE_stilo": "assets/PORTADILLAS_ESTILOS/02CUBESSE_stilo.jpg",
     "10OLEOCUBBO": "assets/PORTADILLAS_ESTILOS/10OLEOCUBBO.jpg",
-    "photo_2_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_2_2025-12-15_18-32-25.jpg",
-    "01EXP_NEOCIRC": "assets/PORTADILLAS_ESTILOS/01EXP_NEOCIRC.jpg",
-    "06IDE_CLASSIC": "assets/PORTADILLAS_ESTILOS/06IDE_CLASSIC.jpg",
-    "photo_10_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_10_2025-12-15_18-32-25.jpg",
-    "photo_11_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_11_2025-12-15_18-32-25.jpg",
-    "11URBANSPHERIC": "assets/PORTADILLAS_ESTILOS/11URBANSPHERIC.png",
     "00EDUSSE": "assets/PORTADILLAS_ESTILOS/00EDUSSE.jpg",
-    "photo_3_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_3_2025-12-15_18-32-25.jpg",
+    "photo_11_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_11_2025-12-15_18-32-25.jpg",
+    "photo_4_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_4_2025-12-15_18-32-25.jpg",
+    "09FRACNEO": "assets/PORTADILLAS_ESTILOS/09FRACNEO.jpg",
+    "06IDE_CLASSIC": "assets/PORTADILLAS_ESTILOS/06IDE_CLASSIC.jpg",
+    "05PLUMINK": "assets/PORTADILLAS_ESTILOS/05PLUMINK.jpg",
+    "photo_8_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_8_2025-12-15_18-32-25.jpg",
+    "11URBANSPHERIC": "assets/PORTADILLAS_ESTILOS/11URBANSPHERIC.png",
+    "photo_10_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_10_2025-12-15_18-32-25.jpg",
+    "CRISTAL_CUBICO": "assets/PORTADILLAS_ESTILOS/CRISTAL_CUBICO.jpg",
+    "03EXPNEOPLUS": "assets/PORTADILLAS_ESTILOS/03EXPNEOPLUS.jpg",
+    "photo_12_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_12_2025-12-15_18-32-25.jpg",
     "08BORACARBON": "assets/PORTADILLAS_ESTILOS/08BORACARBON.jpg",
-    "04APLICC": "assets/PORTADILLAS_ESTILOS/04APLICC.jpg"
+    "01EXP_NEOCIRC": "assets/PORTADILLAS_ESTILOS/01EXP_NEOCIRC.jpg",
+    "photo_2_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_2_2025-12-15_18-32-25.jpg",
+    "30OLONATUR-COLOR": "assets/30OLONATUR-COLOR/Côte de Granit Rose de Francia.png",
+    "31OLENATUR": "assets/31OLENATUR/ARC DU TRIUMPH.png",
+    "32SINNOIR": "assets/32SINNOIR/banco de piedra.png"
 };
 
 const artworkData = [
@@ -34,7 +38,7 @@ const artworkData = [
         "title": "Avestruz Del Universo",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/00edusse_001.png",
-        "description": "Técnica Visual: Presenta una pincelada vibrante y arremolinada que recuerda a La noche estrellada de Van Gogh. La textura es densa y táctil, con un flujo de energía que emana del animal hacia el fondo.\nNarrativa: El cuerpo del ave funciona como un portal. En su interior se observa una aldea bajo un sol dorado, sugiriendo que el animal es el contenedor de un ecosistema o de la memoria de un lugar.\nSimbolismo: Representa la libertad y la vigilancia espiritual; el ave no solo vuela por el mundo, sino que lo lleva dentro de sí.",
+        "description": "La imagen fusiona la naturaleza animal con el paisaje, sugiriendo que el ave lleva un mundo entero en su interior. Es una pieza melancólica pero vibrante, llena de textura y fantasía.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -45,7 +49,7 @@ const artworkData = [
         "title": "La Vaca Solar Y El Rio De Signos",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/00edusse_002.png",
-        "description": "Técnica Visual: Aquí el estilo evoluciona hacia una geometría más definida, integrando bloques de color que forman estructuras urbanas y celestiales dentro de la anatomía del animal.\nComposición: El toro está posado sobre un mandala rúnico o calendario antiguo lleno de glifos, lo que le otorga una jerarquía divina o ancestral. El fondo utiliza círculos concéntricos para representar un sol radiante que organiza todo el espacio.\nNarrativa: Representa la fuerza de la tierra y la civilización. Es la \"Bestia del Mundo\" que sostiene el conocimiento y las ciudades sobre su lomo y en sus entrañas.",
+        "description": "Una majestuosa vaca que actúa como guardiana de un cosmos interior, donde el firmamento y las montañas se entrelazan con sus formas. Bajo un sol radiante que organiza el universo, la figura se asienta sobre un suelo de símbolos antiguos, conectando lo terrenal con lo infinito.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -56,7 +60,7 @@ const artworkData = [
         "title": "El Guardian Del Circuito Solar",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/00edusse_003.png",
-        "description": "Técnica Visual: Similar al toro, pero con una paleta más cálida y terrosa. La integración de los símbolos en el pelaje del perro es más sutil, mezclándose con patrones orgánicos y mandalas circulares.\nComposición: Mantiene el río serpenteante en el fondo, que simboliza el paso del tiempo o el flujo de la vida, contrastando con la figura sólida y estática del perro.\nNarrativa: El mastín actúa como un guardián. Su mirada es profunda y humana, sugiriendo sabiduría. Los símbolos a sus pies refuerzan la idea de un protector de antiguos secretos o de la propia historia de la humanidad.\nAnálisis Exhaustivo Bloque EXP_NEOCIRC",
+        "description": "Un mastín de mirada sabia y protectora cuya piel narra historias de paisajes olvidados. La obra captura la lealtad absoluta en un entorno místico, donde el río de la vida fluye eternamente bajo la vigilancia de un sol que parece bendecir cada rincón de su existencia.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -67,34 +71,37 @@ const artworkData = [
         "title": "Campo Solar",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/campo_solar.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Energía de oro; mil soles de cristal recogen el aliento del día, un paisaje de futuro donde la luz se convierte en el latido de la tierra.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "cervatillo",
         "title": "Cervatillo",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/CERVATILLO.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Inocencia silvestre; la mirada frágil del bosque capturada en un instante de calma, un soplo de vida entre la hojarasca.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "javali edusse",
         "title": "Javali",
         "category": "00EDUSSE",
         "src": "assets/00EDUSSE/JAVALI EDUSSE.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Fuerza del sotobosque; el poder bruto y la determinación del jabalí, un retrato de la naturaleza indómita que respira en la espesura.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "01exp_neocirc_001",
         "title": "Hollywood",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_001.jpg",
-        "description": "o\tTécnica: El uso de la espátula es agresivo en el monte Lee, creando aristas que contrastan con la fluidez del cielo.\no\tLuz: El centro del vórtice no coincide con el sol, sino que es una fuente de luz blanca pura que \"succiona\" las nubes hacia arriba.\no\tDetalle: La ciudad abajo está simplificada en bloques cromáticos que parecen píxeles de pintura, dando una sensación de vibración urbana.",
+        "description": "Un vórtice de luz cinematográfica envuelve las icónicas colinas de Hollywood, transformando el paisaje urbano en un sueño vibrante. Los bloques cromáticos de la ciudad abajo palpitan con la energía de una metrópolis que nunca duerme.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -105,7 +112,7 @@ const artworkData = [
         "title": "La selva africana congo",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_002.jpg",
-        "description": "o\tComposición: Es una de las más complejas por la doble curva. El río fluye hacia el horizonte mientras el cielo gira en sentido contrario.\no\tColor: Introduce tonos rosados y turquesas en el agua, sugiriendo reflejos de un atardecer que no vemos pero que sentimos en la atmósfera.\no\tPincelada: Los árboles de la selva están hechos con \"golpes\" verticales, rompiendo la tónica circular predominante.",
+        "description": "El río fluye como un camino de plata a través de la densa selva, mientras el cielo gira en una danza de tonos rosados y turquesas. Es un ritmo vital donde el agua y la atmósfera se funden en una calma rítmica.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -116,7 +123,7 @@ const artworkData = [
         "title": "Las Piramides",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_003.jpg",
-        "description": "o\tTextura: La arena del desierto tiene un relieve mucho más denso que el resto. Se nota el grosor del pigmento para dar peso a la tierra.\no\tGeometría: El contraste entre la rigidez triangular de las pirámides y el cielo en espiral crea una tensión visual muy potente.\no\tNarrativa: Parece representar el paso del tiempo circular sobre monumentos eternos.",
+        "description": "La eternidad de Egipto bajo un sol que es puro movimiento circular. La rigidez de las pirámides contrasta con un cielo eléctrico que parece absorber el tiempo mismo sobre la arena densa del desierto.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -127,7 +134,7 @@ const artworkData = [
         "title": "Luarca",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_004.jpg",
-        "description": "o\tPerspectiva: El muelle circular acentúa la sensación de abrazo de la bahía.\no\tLuz: El reflejo del sol en el agua es una columna de blanco puro que corta las ondas circulares, un detalle técnico difícil de ejecutar con esta textura.\no\tPersonajes: Las figuras humanas son meras manchas de color que, sin embargo, transmiten una vida tranquila y costera.",
+        "description": "La bahía abraza al pueblo en una curva perfecta, mientras el sol proyecta un haz de luz pura sobre el agua tranquila. Es un instante de vida costera capturado en el epicentro de una calma rotatoria.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -138,7 +145,7 @@ const artworkData = [
         "title": "India",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_005.jpg",
-        "description": "o\tSimetría: Es la obra más equilibrada. El centro del vórtice se sitúa exactamente sobre la cúpula principal.\no\tPaleta: Los tonos violetas y malvas dominan el cielo, dándole un aire regio y espiritual que encaja con el monumento.\no\tReflejo: El estanque repite el patrón del cielo pero con trazos más horizontales, creando una base sólida para el edificio.",
+        "description": "El Taj Mahal se alza en una simetría espiritual absoluta, coronado por un vórtice celestial que emana de su propia cúpula. Los tonos violetas y malvas bañan el monumento en un aura rala y mística, reflejada en las aguas quietas.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -149,7 +156,7 @@ const artworkData = [
         "title": "Peces En El Fondo",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_006.jpg",
-        "description": "o\tVariación de Estilo: Es la única donde el centro de energía es orgánico (el coral) y no atmosférico.\no\tDinámica: Los peces se mueven en un banco circular perfecto, reforzando la idea de que la vida sigue el mismo patrón que el cosmos.\no\tProfundidad: Logra profundidad no con perspectiva lineal, sino con la degradación del azul hacia un centro luminoso.",
+        "description": "Bajo la superficie, la vida marina sigue el patrón rítmico del cosmos. Los peces nadan en un banco circular perfecto alrededor de un coral luminoso, recordándonos que el orden del universo se encuentra también en las profundidades del océano.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -160,7 +167,7 @@ const artworkData = [
         "title": "Pekin",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_007.jpg",
-        "description": "o\tContraste: El rojo imperial de los muros rompe la paleta pastel del resto de la serie, siendo el punto de mayor peso visual.\no\tAtmósfera: Las nubes tienen un aspecto mucho más \"algodonoso\" y pesado, con aplicaciones de pintura muy gruesas que casi parecen salirse del cuadro.\no\tSuelo: El patio está pintado con trazos amarillos que parecen energía fluyendo hacia el templo.",
+        "description": "El rojo imperial de los muros de la Ciudad Prohibida resalta bajo un cielo de nubes algodonosas que giran con pesadez histórica. Una pieza donde la herencia de una civilización milenaria se encuentra con la energía desbordante del presente.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -171,7 +178,7 @@ const artworkData = [
         "title": "New York Estatua",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_008.jpg",
-        "description": "o\tComposición: El skyline de Manhattan se ve envuelto por las ondas del cielo. La estatua actúa como un pararrayos de la luz central.\no\tMovimiento: El agua en el primer plano tiene una rotación muy marcada hacia la derecha, creando una sensación de remolino marino.\no\tCielo: Los rayos de luz están marcados con líneas blancas finas que atraviesan los círculos, una técnica mixta dentro del estilo.",
+        "description": "La Estatua de la Libertad emerge como un faro de esperanza en medio de un Manhattan envuelto por las ondas de un cielo dinámico. El agua del puerto gira en un remolino suave, reflejando el pulso constante de la libertad.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -182,7 +189,7 @@ const artworkData = [
         "title": "Pueblo En La Costa",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_009.jpg",
-        "description": "o\tSimbolismo: El cielo presenta dos barcos voladores, lo que introduce un elemento fantástico/surrealista que no estaba en las otras.\no\tRitmo: Las sombras de los bailarines en el suelo están pintadas con tonos azulados largos que siguen la rotación de la plaza.\no\tCentro: La fuente es el eje terrestre de la danza, conectando con el eje celestial del cielo.",
+        "description": "Una plaza llena de vida donde la danza de los habitantes se sincroniza con el movimiento celestial. Sobre ellos, barcos fantásticos surcan un cielo de espirales infinitas, borrando la frontera entre el folclore y la fantasía pura.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -193,7 +200,7 @@ const artworkData = [
         "title": "San Sebastian",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_010.jpg",
-        "description": "o\tLuz Solar: Es la imagen más luminosa. El blanco domina casi el 40% del lienzo, representando un sol de mediodía cegador.\no\tDetalle: Los yates y barcos de lujo están representados con una precisión minimalista, solo con los trazos necesarios para que el ojo los identifique.\no\tPerspectiva: La curva de la playa guía la mirada directamente hacia el puerto, creando una composición en \"C\" muy elegante.",
+        "description": "La elegancia de la Concha baña en una luz de mediodía cegadora, donde la curva de la playa guía la mirada hacia un sol central. Los barcos descansan en una bahía que parece ser el centro de una quietud radiante.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -204,7 +211,7 @@ const artworkData = [
         "title": "Los vigias del valle solar",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_011.jpg",
-        "description": "•\tTécnica: Los guerreros en primer plano actúan como siluetas de anclaje frente a una llanura de pinceladas horizontales y empastadas que sugieren ruinas. El cielo es un vórtice perfecto de amarillos y malvas.\n•\tLuz: El foco central emite \"haces\" o rayos definidos que caen directamente sobre la ciudad antigua, dándole un carácter épico y divino.\n•\tNarrativa: Representa la vigilia; los guerreros observan la civilización bajo un sol que parece una entidad consciente que todo lo ilumina.",
+        "description": "Guerreros antiguos custodian una civilización bañada por rayos de luz divina. Un sol consciente domina el valle, emitiendo una energía que parece ser la fuente misma de la historia y el honor de quienes la observan.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -215,7 +222,7 @@ const artworkData = [
         "title": "El Sendero De Los Globos Y Las Casas De Piedra",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_012.jpg",
-        "description": "•\tComposición: Es una de las más dinámicas. Los globos aerostáticos siguen la trayectoria circular del cielo, creando una sensación de ascenso infinito. Las chimeneas de hadas (rocas) tienen una textura porosa lograda con trazos cortos y secos.\n•\tLuz: La luz es cenital y expansiva, bañando los globos de forma que parecen translúcidos en sus bordes.\n•\tNarrativa: Simboliza la ligereza frente a la pesadez de la piedra; el cielo \"absorbe\" a los globos hacia su centro energético.",
+        "description": "Globos aerostáticos ascienden con ligereza infinita sobre las chimeneas de hadas, atrapados en la rotación hipnótica de un cielo color lavanda. La pesadez de la piedra se rinde ante la invitación del firmamento.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -223,10 +230,10 @@ const artworkData = [
     },
     {
         "id": "01exp_neocirc_013",
-        "title": "Mesa De Los Vortices",
+        "title": "Mesa",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_013.png",
-        "description": "•\tVariación Técnica: Aquí el estilo NEOCIRC se vuelve fractal. No hay un solo vórtice en el cielo, sino que la mesa misma es un conjunto de círculos concéntricos y glifos. El fondo y el suelo están fragmentados en múltiples mini-vórtices.\n•\tLuz: Es difusa, no hay un sol claro, la luz emana de los propios objetos.\n•\tNarrativa: Es una pieza de diseño místico. La mesa parece un altar donde la geometría circular es la protagonista absoluta.",
+        "description": "Una mesa que trasciende su forma cotidiana para convertirse en un vórtice fractal de madera y luz. Es una pieza de diseño místico donde cada veta de la madera parece seguir el orden sagrado del universo.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -234,10 +241,10 @@ const artworkData = [
     },
     {
         "id": "01exp_neocirc_014",
-        "title": "Bahia De Faros Y Redes Doradas",
+        "title": "Bahia De Los Faros",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_014.png",
-        "description": "•\tTécnica: El agua está tratada con una técnica de \"escama de pez\", donde cada pincelada de blanco representa el brillo de una ola. Los faros verticales rompen la hegemonía circular del cielo.\n•\tLuz: El sol está bajo, casi en el horizonte, creando un reflejo dorado largo y vibrante en el canal central.\n•\tNarrativa: Representa la guía y la seguridad; los barcos navegan en una calma tensa bajo un cielo que parece girar a gran velocidad.",
+        "description": "Múltiples centinelas de luz guardan una bahía de aguas doradas. Bajo un cielo que se cierra en un abrazo circular de nubes, el mar destella con la promesa de puerto seguro para todos los navegantes del espíritu.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -245,10 +252,10 @@ const artworkData = [
     },
     {
         "id": "01exp_neocirc_015",
-        "title": "Montañas de fuego y espejo otoñal",
+        "title": "Montañas De Fuego",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_015.png",
-        "description": "•\tContraste Cromático: Es la más saturada. El azul cobalto de las sombras de la montaña choca violentamente con el naranja encendido del sol tras las cumbres.\n•\tPincelada: Los árboles (abetos) están hechos con una técnica de \"puntos de presión\", cargando mucho pigmento para darles individualidad frente a la masa de la montaña.\n•\tNarrativa: Fuerza bruta de la naturaleza. El cielo no gira de forma suave, sino que parece una tormenta de fuego circular.",
+        "description": "Picos nevados se incendian con el reflejo de un atardecer que gira en una tormenta de fuego y luz. El lago sereno a sus pies duplica esta energía elemental, capturando el pulso salvaje de la tierra en su estado más puro.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -259,7 +266,7 @@ const artworkData = [
         "title": "Dos Rosas",
         "category": "01EXP_NEOCIRC",
         "src": "assets/01EXP_NEOCIRC/01exp_neocirc_016.png",
-        "description": "•\tTécnica: Primer plano extremo. Los pétalos de las rosas están construidos con trazos curvos que imitan la forma natural de la flor, pero integrándose en el patrón circular del fondo.\n•\tLuz: La luz es interna; las rosas parecen brillar con luz propia, proyectando un halo amarillento sobre el fondo violeta.\n•\tNarrativa: La belleza orgánica en armonía con el orden del universo. Las flores son pequeños \"soles\" de color.",
+        "description": "La delicadeza de dos rosas bloom en un entorno de burbujas cromáticas y espirales pasteles. Es un diálogo silencioso entre la belleza efímera de la flor y el ritmo eterno del cosmos que la rodea.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -303,7 +310,7 @@ const artworkData = [
         "title": "Flotando como un colibri",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_001.jpeg",
-        "description": "Técnica: Fragmentación en astillas largas. El pico es una prolongación de un solo plano geométrico.\nVisual: El dinamismo se logra mediante el contraste de los triángulos fríos del ave contra el fondo cálido y fragmentado.",
+        "description": "El colibrí se descompone en un prisma de mil facetas, capturando el latido frenético de sus alas contra un firmamento de fuego geométrico.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -314,7 +321,7 @@ const artworkData = [
         "title": "Mujer sentada",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_002.jpeg",
-        "description": "Técnica: Cubismo expresionista. El rostro se divide en tres planos de luz principales que marcan la tristeza sin usar líneas curvas.\nVisual: La textura es rugosa, casi como arena mezclada con pintura, lo que le da un aire de mural antiguo.",
+        "description": "Un retrato de melancolía estática, donde el rostro se fragmenta en planos de luz dorada y sombras profundas, revelando la arquitectura interior de la emoción.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -325,7 +332,7 @@ const artworkData = [
         "title": "Toro en la estepa",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_003.png",
-        "description": "Técnica: Simetría facetada. Los cuernos son las únicas líneas que se curvan ligeramente, mientras que el pecho es una coraza de polígonos.\nVisual: El fondo utiliza cuñas de color muy grandes para dar profundidad al horizonte desértico.",
+        "description": "El toro se alza como una muralla de polígonos sobre la estepa, una fuerza ancestral tallada en aristas que desafían el horizonte.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -336,7 +343,7 @@ const artworkData = [
         "title": "Reloj pali",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_005.png",
-        "description": "Técnica: Contradicción visual. Toma la forma fluida de Dalí pero la rellena con un mosaico de cristales amarillos y verdes rígidos.\nVisual: El fondo es una explosión radial de triángulos que parecen emanar del centro del reloj.",
+        "description": "El tiempo se rinde a la geometría; un reloj que gotea entre cristales rígidos, recordándonos la fragilidad de lo efímero frente al orden del espacio.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -347,7 +354,7 @@ const artworkData = [
         "title": "Sunrise valley",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_007.png",
-        "description": "Técnica: Perspectiva forzada. El camino no es una línea, sino una sucesión de polígonos que se estrechan hacia el sol.\nVisual: El cielo está construido con triángulos que \"apuntan\" hacia abajo, creando una presión visual hacia el centro de la tierra.",
+        "description": "Un amanecer capturado en la pureza del triángulo, donde cada rastro de luz y cada curva del camino han sido redescubiertos por la lógica del prisma.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -358,7 +365,7 @@ const artworkData = [
         "title": "Estanque de patos talavera",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_008.png",
-        "description": "Técnica: Es la más pictórica. El cuerpo de los gansos está simplificado en 4 o 5 planos blancos con sombras grises.\nVisual: Los árboles y el reflejo del agua usan una técnica de manchas cuadradas, alejándose de la línea definida para usar el bloque de color.",
+        "description": "La paz de un rincón olvidado donde los gansos descansan bajo árboles de pincelada gruesa. Es un respiro impresionista en un mundo de facetas constantes.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -369,7 +376,7 @@ const artworkData = [
         "title": "Arbol naranjo",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_009.jpeg",
-        "description": "Técnica: Geometrización orgánica. Las hojas son rombos perfectos y el tronco es un cilindro facetado en tres tonos de marrón.\nVisual: El color naranja es el punto de mayor saturación, contrastando con un fondo de tierra fragmentada.",
+        "description": "El naranjo exhala su fragancia en esferas facetadas, una explosión de vida y color que organiza el paisaje en un mosaico de fertilidad.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -380,7 +387,7 @@ const artworkData = [
         "title": "Barco trigonometrico",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_010.jpeg",
-        "description": "Técnica: Abstracción casi total. Las velas son triángulos que se funden entre sí, perdiendo la distinción entre objeto y fondo.\nVisual: La paleta monocromática en ocres le da una apariencia de boceto de madera antigua.",
+        "description": "Un navío de aristas afiladas surca un mar de sombras, navegando hacia el origen de la forma en un viaje puramente trigonométrico.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -391,7 +398,7 @@ const artworkData = [
         "title": "Basilica talavera",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_011.jpeg",
-        "description": "Técnica: Geometría de la luz. Los haces de luz de las farolas son trapecios de color naranja sólido que \"cortan\" el suelo oscuro.\nVisual: El cielo nocturno está fragmentado en cuadrados azules y verdes, sugiriendo una atmósfera densa.",
+        "description": "La noche urbana se fragmenta en bloques de luz y sombra; una basílica que emerge entre los árboles como un faro de orden en el caos de la oscuridad.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -402,7 +409,7 @@ const artworkData = [
         "title": "Bodegon ceramico",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_012.png",
-        "description": "Técnica: Reconstrucción total. A diferencia del estilo cristal, aquí cada objeto (jarra, pan, uvas) se ha vuelto un sólido geométrico independiente.\nVisual: Las cortinas son una cascada de triángulos blancos y azules que guían la mirada hacia el centro de la mesa.\nVariante Bodegón Cristales (Bodegón Masa y Pan):\nTécnica: Aunque está en este bloque, es la pieza puente. Usa la base del cubismo pero con las grietas del estilo cristal.\nVisual: La luz es mucho más suave y los bordes menos afilados que en la versión pura de CUBESSE.\nNaturaleza muerta con jarrón (Pieza final del bloque):\nTécnica: Es la pieza más equilibrada. El jarrón tiene una curvatura sugerida mediante 12 o 14 planos verticales de luz.\nVisual: La mesa se funde con el suelo en un degradado de polígonos marrones, eliminando la línea del horizonte.",
+        "description": "Un desayuno de geometrías puras bajo la luz de la mañana, donde el pan y la jarra celebran la belleza de lo cotidiano reconstruido.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -413,7 +420,7 @@ const artworkData = [
         "title": "Bodegon clasico",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_013.png",
-        "description": "Técnica: Es la pieza más equilibrada. El jarrón tiene una curvatura sugerida mediante 12 o 14 planos verticales de luz.\nVisual: La mesa se funde con el suelo en un degradado de polígonos marrones, eliminando la línea del horizonte.",
+        "description": "La serenidad de un bodegón que encuentra el equilibrio absoluto en la luz cenital, transformando la mesa en un altar de formas esenciales.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -424,10 +431,10 @@ const artworkData = [
         "title": "Caballo al viento",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_014.jpeg",
-        "description": "La nobleza del animal se traduce en líneas de fuerza y libertad, un símbolo de naturaleza indómita. En 'Caballo al viento', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un caballo de oro galopa a través de un valle de facetas, una llamarada de movimiento que rompe la rigidez del plano con su espíritu indómito.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Algoritmos de teselación y fragmentación poligonal. Mapeado de texturas sobre formas geométricas planas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -435,10 +442,10 @@ const artworkData = [
         "title": "Un caballo veloz",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_015.jpeg",
-        "description": "La nobleza del animal se traduce en líneas de fuerza y libertad, un símbolo de naturaleza indómita. En 'Un caballo veloz', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El perfil de la nobleza capturado en un prisma; la fuerza y la gracia de un corcel que mira hacia un futuro de luz fragmentada.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Algoritmos de teselación y fragmentación poligonal. Mapeado de texturas sobre formas geométricas planas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -446,10 +453,10 @@ const artworkData = [
         "title": "Colibri red",
         "category": "02CUBESSE stilo",
         "src": "assets/02CUBESSE stilo/02cubesse_stilo_016.jpeg",
-        "description": "Dinamismo geométrico. La imagen se fragmenta en facetas angulares que sugieren movimiento y velocidad, recordando al cubismo analítico pero con limpieza digital. Esta obra, 'Colibri red', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La precisión del vuelo estático; un colibrí que es puro dinamismo geométrico, suspendido en una atmósfera de vibración naranja.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Algoritmos de teselación y fragmentación poligonal. Mapeado de texturas sobre formas geométricas planas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -457,10 +464,10 @@ const artworkData = [
         "title": "Pesca bajo el sol andaluz",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_001.png",
-        "description": "El oficio ancestral y la relación del hombre con el mar se plasman con respeto y luminosidad. En 'Pesca bajo el sol andaluz', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un dragón de oro emerge de un vórtice celestial, sus escamas talladas con la fuerza del mito y rodeado de un aura de fuego sagrado que consume el horizonte.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -468,10 +475,10 @@ const artworkData = [
         "title": "Barca",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_002.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Barca', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un jinete solitario contempla la inmensidad del Gran Cañón, donde la tierra se abre en estratos de luz y la atmósfera vibra con la energía de los siglos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -479,10 +486,10 @@ const artworkData = [
         "title": "Buda",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_003.png",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Buda', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Ruinas clásicas se alzan frente a un mar embravecido, un portal de piedra que une la gloria del pasado con el ritmo rugiente del océano eterno.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -490,10 +497,10 @@ const artworkData = [
         "title": "Ciervo ocaso",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_004.png",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Ciervo ocaso', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La cima del Fuji se eleva sobre una pagoda de luz, envuelta en un cielo que gira en espirales de nieve y sol, capturando la quietud sagrada de Japón.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -501,10 +508,10 @@ const artworkData = [
         "title": "Pagoda china",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_005.png",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Pagoda china', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Cúpulas azules y muros de cal se precipitan hacia un Egeo de cristal bajo un sol que irradia rayos de oro sobre el laberinto blanco de Santorini.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -512,10 +519,10 @@ const artworkData = [
         "title": "Acantilados De Irlanda",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_006.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Acantilados De Irlanda', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Acantilados monumentales desafían la fuerza del Atlántico bajo un cielo cargado de presagios y energía lumínica, donde la tierra se proclama invicta.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -523,10 +530,10 @@ const artworkData = [
         "title": "Almeria",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_007.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Almeria', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una fortaleza medieval bañada por una luz espectral observa el mar, un baluarte de historia que resiste el paso del tiempo entre nubes de pigmento vibrante.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -534,10 +541,10 @@ const artworkData = [
         "title": "Amsterdam",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_008.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Amsterdam', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Los canales de Ámsterdam se convierten en espejos de un cielo impresionista, donde los puentes y fachadas danzan bajo el reflejo de la luz líquida.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -545,10 +552,10 @@ const artworkData = [
         "title": "Bahia Futura",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_009.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Bahia Futura', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El puerto de Victoria se transforma en un vórtice de luz eléctrica, donde el skyline de Hong Kong flota sobre un mar que parece un ojo cósmico.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -556,10 +563,10 @@ const artworkData = [
         "title": "Basilea",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_010.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Basilea', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El puente de madera de Lucerna atraviesa una mañana de ensueño, bajo un sol que hace vibrar el lago con ondas de luz y color.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -567,10 +574,10 @@ const artworkData = [
         "title": "Big Ben",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_011.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Big Ben', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El Parlamento de Londres y el Big Ben emergen en un torbellino de cielos pasteles, una visión vibrante donde la puntualidad de la piedra se encuentra con el dinamismo del cosmos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -578,10 +585,10 @@ const artworkData = [
         "title": "Australia",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_012.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Canada', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La Ópera de Sídney despliega sus velas de cerámica bajo la luz del sur, en un puerto donde el puente se alza como una costilla de acero sobre un mar radiante.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -589,10 +596,10 @@ const artworkData = [
         "title": "Canmandu",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_013.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Canmandu', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Terrazas de arroz esculpen las montañas en escalones de esmeralda y oro, un ritmo agrícola que sigue el latido circular de un sol generoso.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -600,10 +607,10 @@ const artworkData = [
         "title": "Cataratas Del Niagara",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_014.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Cataratas Del Niagara', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La caída del Niágara se materializa en una explosión de blancos puros y azules profundos, una cortina de agua infinita bajo un velo de luz irisada.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -611,10 +618,10 @@ const artworkData = [
         "title": "Copa Sagrada",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_015.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Copa Sagrada', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un cáliz de oro reluce sobre el altar de piedra, rodeado de una atmósfera mística que parece emanar del mismo centro del universo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -622,10 +629,10 @@ const artworkData = [
         "title": "Cruz",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_016.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Cruz', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una cruz de madera solitaria se eleva sobre un campo de flores silvestres, un símbolo de fe que se funde con un cielo de luz celestial y esperanza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -633,10 +640,10 @@ const artworkData = [
         "title": "Geisers Islandia",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_017.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Geisers Islandia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El aliento de la tierra estalla en una columna de vapor sagrado, un géiser islandés que nace entre rocas volcánicas bajo el abrazo de un sol rotante.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -644,10 +651,10 @@ const artworkData = [
         "title": "Hide Park",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_018.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Hide Park', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un oasis de paz rodeado de rascacielos; el lago de Central Park captura un reflejo perfecto de luz, serenidad y arquitectura entrelazadas.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -655,10 +662,10 @@ const artworkData = [
         "title": "Holland",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_019.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Holland', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El muelle de Liverpool respira la historia de los barcos y el ladrillo, bajo un cielo de nubes blancas que se arremolinan sobre las aguas del Mersey.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -666,10 +673,10 @@ const artworkData = [
         "title": "Kilimanjaro",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_020.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Kilimanjaro', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La majestuosidad del Kilimanjaro preside la sabana africana, donde la vida salvaje camina bajo el refugio de sus nieves eternas y rayos de sol triunfantes.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -677,10 +684,10 @@ const artworkData = [
         "title": "La Puerta De Hercules",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_021.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'La Puerta De Hercules', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Columnas de historia se alzan como centinelas ante un sol que convierte el mar en oro líquido, un portal entre el mito y la realidad.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -688,10 +695,10 @@ const artworkData = [
         "title": "Marrakesh",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_022.jpg",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Marrakesh', la técnica realza este concepto con una ejecución precisa.",
+        "description": "La Koutoubia preside una plaza de luz y movimiento, donde el viento del desierto se encuentra con el ritmo vibrante de la ciudad.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -699,10 +706,10 @@ const artworkData = [
         "title": "Moscou",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_023.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Moscou', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Cúpulas de color y luz celebran el espíritu de Rusia bajo un cielo de energía rotante, una joya arquitectónica en la Plaza Roja.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -710,10 +717,10 @@ const artworkData = [
         "title": "Munchen",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_024.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Munchen', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El Arco del Triunfo ancla una avenida de luz y geometría, donde cada piedra vibra con el pulso histórico de París.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -721,10 +728,10 @@ const artworkData = [
         "title": "New York",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_025.jpg",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'New York', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un cañón de sueños eléctricos y luces de neón, donde el corazón de la ciudad late en un torbellino de color infinito.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -732,10 +739,10 @@ const artworkData = [
         "title": "New york flatiron",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_026.jpg",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'New york flatiron', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El buque de hierro de la arquitectura navega por una calle de reflejos y sol, anclado en el alma de Manhattan.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -743,10 +750,10 @@ const artworkData = [
         "title": "Oporto",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_027.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Oporto', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un tranvía trepa por una calle de luz y azulejos hacia un horizonte de mar y nostalgia lusa en Lisboa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -754,10 +761,10 @@ const artworkData = [
         "title": "Petra",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_028.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Petra', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El Tesoro emerge de la roca roja como un sueño tallado en piedra bajo un cielo de anillos solares.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -765,10 +772,10 @@ const artworkData = [
         "title": "Playa mediterránea",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_029.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Playa mediterránea', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Ondas de textura impasto rompen contra la costa vasca bajo un cielo que celebra el diálogo entre el mar y la orilla.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -776,10 +783,10 @@ const artworkData = [
         "title": "Pueblo Nordico",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_030.jpg",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'Pueblo Nordico', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Casas rojas y aire salino; un pueblo nórdico se acurruca entre montañas donde el mar refleja la danza de las nubes.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -787,10 +794,10 @@ const artworkData = [
         "title": "Puente De Londres",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_031.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Puente De Londres', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Las cadenas azules del Tower Bridge enlazan las riberas del Támesis bajo un sol que refleja la majestad de Londres.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -798,10 +805,10 @@ const artworkData = [
         "title": "Puerto en marsella",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_032.jpg",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Puerto en marsella', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El puerto de Marsella se abre a un Mediterráneo de textura y luz, custodiado por el espíritu de la colina.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -809,10 +816,10 @@ const artworkData = [
         "title": "Rio Congo",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_033.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Rio Congo', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Cascadas de luz se precipitan en el azul profundo de un fiordo noruego, un santuario de naturaleza bajo una corona celestial.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -820,10 +827,10 @@ const artworkData = [
         "title": "Sanlucar",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_034.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Sanlucar', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Velocidad y polvo en la playa; caballos de fuego y jinetes de luz compiten contra el ritmo de la marea en Sanlúcar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -831,10 +838,10 @@ const artworkData = [
         "title": "S Sebastian",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_035.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'S Sebastian', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La bahía de La Concha se curva en un abrazo de arena y mar, bajo la mirada protectora del sagrado corazón en la cima.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -842,10 +849,10 @@ const artworkData = [
         "title": "Torremolinos",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_036.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Torremolinos', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Yates de luz anclan en un puerto de lujo y roca, donde el sol mediterráneo celebra la verticalidad de Montecarlo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -853,10 +860,10 @@ const artworkData = [
         "title": "Torre Eifel",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_037.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Torre Eifel', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El encaje de hierro de la Torre Eiffel se alza sobre una avenida de árboles, un faro de luz en el corazón del mundo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -864,10 +871,10 @@ const artworkData = [
         "title": "Venecia",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_038.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Venecia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Góndolas se deslizan por un canal de reflejos, donde los palacios venecianos sueñan en un mar de color cambiante.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -875,10 +882,10 @@ const artworkData = [
         "title": "Zurich",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_039.jpg",
-        "description": "Una evolución del paisaje clásico hacia una estética hiper-realista y luminosa. Destaca por la claridad atmosférica y la integración de elementos naturales y arquitectónicos. Esta obra, 'Zurich', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Torres gemelas vigilan un río de luz en Zúrich, donde las montañas y la ciudad se encuentran en una sinfonía de azul y blanco.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -886,10 +893,10 @@ const artworkData = [
         "title": "Caballito de Mar",
         "category": "03EXPNEOPLUS",
         "src": "assets/03EXPNEOPLUS/03expneoplus_040.png",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Caballito de Mar', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Una criatura de las profundidades flota en un jardín de coral de luz y textura, un milagro de forma en un universo submarino.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotocomposición de alto rango dinámico (HDR) procesada con filtros de suavizado y realce de detalles finos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -897,10 +904,10 @@ const artworkData = [
         "title": "El ciervo rey",
         "category": "04APLICC",
         "src": "assets/04APLICC/04aplicc_001.png",
-        "description": "Abstracción aplicada con patrones repetitivos y texturas que recuerdan a tejidos o superficies industriales decoradas. Esta obra, 'El ciervo rey', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un ciervo majestuoso preside un bosque de cristal, su figura tejida por facetas de otoño y luz, bajo un sol que fragmenta el horizonte en mil colores.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación procedural de patrones y texturizado UV sobre superficies complejas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -908,10 +915,10 @@ const artworkData = [
         "title": "Aguila real",
         "category": "04APLICC",
         "src": "assets/04APLICC/04aplicc_002.png",
-        "description": "Abstracción aplicada con patrones repetitivos y texturas que recuerdan a tejidos o superficies industriales decoradas. Esta obra, 'Aguila real', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El águila real vigila desde su trono de piedra, una silueta de poder y plumas doradas que se funde con la arquitectura geométrica de las cimas nevadas.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación procedural de patrones y texturizado UV sobre superficies complejas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -919,10 +926,10 @@ const artworkData = [
         "title": "Aguila real volando",
         "category": "04APLICC",
         "src": "assets/04APLICC/04aplicc_003.png",
-        "description": "Abstracción aplicada con patrones repetitivos y texturas que recuerdan a tejidos o superficies industriales decoradas. Esta obra, 'Aguila real volando', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Alas de mosaico se despliegan sobre el abismo, capturando el espíritu del vuelo libre entre montañas de pincelada rítmica y cielos de fuego.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación procedural de patrones y texturizado UV sobre superficies complejas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -930,10 +937,10 @@ const artworkData = [
         "title": "Carcasone",
         "category": "04APLICC",
         "src": "assets/04APLICC/04aplicc_004.png",
-        "description": "Abstracción aplicada con patrones repetitivos y texturas que recuerdan a tejidos o superficies industriales decoradas. Esta obra, 'Carcasone', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La ciudad amurallada se revela como un tapiz de piedra y sol, un laberinto de historia tallado por la geometría del paisaje occitano.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación procedural de patrones y texturizado UV sobre superficies complejas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -941,10 +948,10 @@ const artworkData = [
         "title": "Castillo fra1",
         "category": "04APLICC",
         "src": "assets/04APLICC/04aplicc_005.png",
-        "description": "Abstracción aplicada con patrones repetitivos y texturas que recuerdan a tejidos o superficies industriales decoradas. Esta obra, 'Castillo fra1', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Torres de ensueño se elevan sobre muros de textura ancestral, un baluarte de fantasía que resiste bajo cielos de nubes de algodón y luz.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación procedural de patrones y texturizado UV sobre superficies complejas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -952,10 +959,10 @@ const artworkData = [
         "title": "Mas mastin",
         "category": "04APLICC",
         "src": "assets/04APLICC/04aplicc_006.png",
-        "description": "Abstracción aplicada con patrones repetitivos y texturas que recuerdan a tejidos o superficies industriales decoradas. Esta obra, 'Mas mastin', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La nobleza del mastín se esculpe en un relieve de tonos tierra y luz, una fuerza serena que custodia la inmensidad de los valles.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación procedural de patrones y texturizado UV sobre superficies complejas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -963,10 +970,10 @@ const artworkData = [
         "title": "Un bodegon tinta",
         "category": "05PLUMINK",
         "src": "assets/05PLUMINK/05plumink_001.png",
-        "description": "Una revisión contemporánea de la naturaleza muerta, donde los objetos cotidianos cobran una nueva vida simbólica. En 'Un bodegon tinta', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un bodegón rústico donde el pan y la fruta se presentan en un diálogo de tintas negras y sombras profundas, capturando la esencia de lo cotidiano.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de tinta y pinceles de acuarela digital con control de opacidad y sangrado.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -974,10 +981,10 @@ const artworkData = [
         "title": "Montaña",
         "category": "05PLUMINK",
         "src": "assets/05PLUMINK/05plumink_002.png",
-        "description": "La delicadeza de la tinta china fusionada con la precisión vectorial. Trazos fluidos que parecen flotar sobre el papel digital. Esta obra, 'Montaña', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una cima imponente se alza sobre un río de luz, plasmada con la delicadeza de la acuarela y trazos que parecen flotar en un atardecer de oro y violeta.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de tinta y pinceles de acuarela digital con control de opacidad y sangrado.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -985,10 +992,10 @@ const artworkData = [
         "title": "Toro bravo",
         "category": "05PLUMINK",
         "src": "assets/05PLUMINK/05plumink_003.png",
-        "description": "Fuerza bruta y mitología ibérica se sincretizan en una forma poderosa y telúrica. En 'Toro bravo', la técnica realza este concepto con una ejecución precisa.",
+        "description": "La fuerza ancestral del toro bravo se materializa en trazos de tinta seguros y fluidos, una silueta de poder bajo el sol de la estepa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de tinta y pinceles de acuarela digital con control de opacidad y sangrado.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -996,18 +1003,18 @@ const artworkData = [
         "title": "Cuando camina la raza",
         "category": "05PLUMINK",
         "src": "assets/05PLUMINK/05plumink_004.png",
-        "description": "La delicadeza de la tinta china fusionada con la precisión vectorial. Trazos fluidos que parecen flotar sobre el papel digital. Esta obra, 'Cuando camina la raza', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La nobleza en movimiento; una interpretación elegante del toro donde la tinta y el espacio en blanco celebran la herencia y la raza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de tinta y pinceles de acuarela digital con control de opacidad y sangrado.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "06ide_classic_001",
-        "title": "Puerta corral",
+        "title": "Paisaje andaluz clasico",
         "category": "06IDE_CLASSIC",
         "src": "assets/06IDE_CLASSIC/06ide_classic_001.png",
-        "description": "Un retorno a la estética clásica, con composiciones equilibradas y temas atemporales, reinterpretados con la nitidez del medio digital. Esta obra, 'Puerta corral', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una sencilla puerta de madera se abre al silencio del campo, una obra de texturas curtidas que evoca la paz de la vida rural bajo el sol andaluz.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Pintura digital tradicional (Wacom) emulando técnicas de óleo y barniz.",
@@ -1015,10 +1022,10 @@ const artworkData = [
     },
     {
         "id": "06ide_classic_002",
-        "title": "Dos rosas",
+        "title": "Paisaje andaluz clasico 2",
         "category": "06IDE_CLASSIC",
         "src": "assets/06IDE_CLASSIC/06ide_classic_002.png",
-        "description": "Un retorno a la estética clásica, con composiciones equilibradas y temas atemporales, reinterpretados con la nitidez del medio digital. Esta obra, 'Dos rosas', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Dos rosas, roja y oro, capturadas en su máxima plenitud; una oda a la belleza efímera tratada con el rigor y la luz de los grandes maestros.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Pintura digital tradicional (Wacom) emulando técnicas de óleo y barniz.",
@@ -1051,10 +1058,10 @@ const artworkData = [
         "title": "Aros de cascadas",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_001.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Aros de cascadas', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una isla suspendida en el cielo donde el agua nace de la nada, capitaneada por un barco que navega hacia un sol de anillos concéntricos y nubes de ensueño.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1062,10 +1069,10 @@ const artworkData = [
         "title": "Rio junto al sol",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_002.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Rio junto al sol', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El agua recorre un archipiélago de sueños flotantes, bajo un sol de mosaico que fragmenta la realidad en vibrantes colores primarios.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1073,10 +1080,10 @@ const artworkData = [
         "title": "Terrenos alejados",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_003.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Terrenos alejados', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Puentes inverosímiles unen mundos lejanos sobre un vacío de bruma, mientras un sol benevolente ilumina la travesía de lo imposible.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1084,10 +1091,10 @@ const artworkData = [
         "title": "Casa De Campo Rustic.Jpg",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_004.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Casa De Campo Rustic.Jpg', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una casa de campo reinventada como un mosaico de texturas y luz, un refugio cálido que se asienta sobre colinas de geometría pictórica.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1095,10 +1102,10 @@ const artworkData = [
         "title": "Angel azul",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_005.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Angel azul', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un ser celestial de poder incontenible desciende entre nubes de mármol, sus alas de zafiro expanden una luz que todo lo purifica.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1106,10 +1113,10 @@ const artworkData = [
         "title": "Angel dorado",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_006.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Girl angel dorado', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Gracia divina envuelta en oro y luz; una visión angelical que emana serenidad y fuerza desde el corazón de un sol naciente.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1117,10 +1124,10 @@ const artworkData = [
         "title": "House camp",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_007.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'House camp', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La soledad de una casa en la llanura se transforma en una sinfonía de color y facetas, capturando la luz cambiante del horizonte.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1128,10 +1135,10 @@ const artworkData = [
         "title": "Rio tajo farola",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_008.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Rio tajo farola', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un banco solitario bajo una farola antigua, testigo de una noche que se fragmenta en pinceladas de luz dorada y sombras de jardín.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1139,10 +1146,10 @@ const artworkData = [
         "title": "Parroquia de campi",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_009.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Parroquia de campi', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un templo de piedra se alza entre flores silvestres, coronado por un cielo que estalla en rayos de luz de colores imposibles.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1150,10 +1157,10 @@ const artworkData = [
         "title": "Pueblo futurista 1",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_010.png",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'Pueblo futurista 1', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un valle de cristal y vida, donde la arquitectura del futuro convive en armonía con la naturaleza bajo un sol que es pura energía geométrica.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1161,10 +1168,10 @@ const artworkData = [
         "title": "Pueblo futurista 1b",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_011.png",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'Pueblo futurista 1b', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Una fuente de luz preside el corazón de la aldea del mañana, un oasis de cristal y flores bajo un firmamento de rayos geométricos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1172,10 +1179,10 @@ const artworkData = [
         "title": "Ruinas griegas",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_012.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Ruinas griegas', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El mármol antiguo despierta bajo un cielo de mosaico, donde el eco de Grecia se funde con el azul infinito del Mediterráneo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1183,10 +1190,10 @@ const artworkData = [
         "title": "Sunrise",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_013.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Sunrise', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un sendero de luz atraviesa un mar de pétalos, guiando el alma hacia el corazón ardiente de un nuevo amanecer.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1194,10 +1201,10 @@ const artworkData = [
         "title": "Talavera 1600 Neo.Jpg",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_014.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Talavera 1600 Neo.Jpg', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La historia cruza el río de la mano de viajeros y bestias, bajo un sol que baña el pasado con la frescura de un mosaico impresionista.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1205,10 +1212,10 @@ const artworkData = [
         "title": "Templo egipcio",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_015.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Templo egipcio', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Faraones de piedra custodian el umbral del misterio, iluminados por un cielo que irradia la eternidad de los dioses en fragmentos de luz.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1216,10 +1223,10 @@ const artworkData = [
         "title": "Lago poco color",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_016.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Lago poco color', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un silencio de madera frente al lago plateado, bajo un cielo de pinceladas suaves que invitan a la calma y al susurro del bosque.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1227,10 +1234,10 @@ const artworkData = [
         "title": "Basilica de talavera",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_017.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Basilica de talavera', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La basílica se eleva como un faro de fe en la noche, sus muros de piedra bañados por una luz celestial que irradia desde lo más alto.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1238,10 +1245,10 @@ const artworkData = [
         "title": "Barco pesquero en altamar",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_018.png",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Barco pesquero en altamar', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Resiliencia sobre el abismo; un barco pesquero desafía un mar de texturas profundas bajo una luna que agita el cielo con su luz plateada.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1249,10 +1256,10 @@ const artworkData = [
         "title": "Bodegon",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_020.png",
-        "description": "Una revisión contemporánea de la naturaleza muerta, donde los objetos cotidianos cobran una nueva vida simbólica. En 'Bodegon', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El pan y el vino reposan junto a la ventana, en una sinfonía de luz y color que transforma la mesa diaria en un escenario de nostalgia luminosa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1260,10 +1267,10 @@ const artworkData = [
         "title": "Barcas puerto pesquero",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_021.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Barcas puerto pesquero', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Barcas dormidas en el espejo del puerto, aguardando la marea bajo un sol naciente que estalla en rayos de mosaico y esperanza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1271,10 +1278,10 @@ const artworkData = [
         "title": "Bodegon vino1",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_022.jpg",
-        "description": "Una revisión contemporánea de la naturaleza muerta, donde los objetos cotidianos cobran una nueva vida simbólica. En 'Bodegon vino1', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Flores frescas y vino reposan bajo una aureola de luz, donde cada pincelada celebra la alegría de la mesa y el brillo de lo cotidiano.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1282,10 +1289,10 @@ const artworkData = [
         "title": "Isla en el aire",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_023.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Isla en el aire', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un islote de vida flota en el océano del viento, donde el agua cae hacia el abismo y el sol teje nubes de textura y ensueño.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1293,10 +1300,10 @@ const artworkData = [
         "title": "Islas en el aire",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_024.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Islas en el aire', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un archipiélago celestial unido por puentes de luz, un mundo donde la gravedad se rinde ante la belleza de un sol que todo lo baña.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1304,10 +1311,10 @@ const artworkData = [
         "title": "En un mar de cielo",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_025.jpg",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'En un mar de cielo', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Vértigo y paz se funden en esta vista aérea de islas flotantes, donde la luz emana de un núcleo solar que pulsa con energía de mosaico.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1315,10 +1322,10 @@ const artworkData = [
         "title": "Atenas",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_026.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Atenas', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La Acrópolis de Atenas se mantiene firme bajo un vórtice de luz de mosaico, un encuentro eterno entre el peso del mármol y la levedad del cielo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1326,10 +1333,10 @@ const artworkData = [
         "title": "Buenos Aires",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_027.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Buenos Aires', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El pulso porteño se detiene bajo una explosión solar que corona el Obelisco, transformando la avenida en un torrente de luz e historia.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1337,10 +1344,10 @@ const artworkData = [
         "title": "Cañones de arizona",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_028.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Cañones de arizona', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La herida de la tierra se llena de luz pura, donde el Gran Cañón revela sus secretos en un baile de sombras y rayos de sol infinitos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1348,10 +1355,10 @@ const artworkData = [
         "title": "Cañones en colorado",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_029.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Cañones en colorado', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La roca se rinde ante la caricia del ocaso, en una vista del cañón que captura la majestuosidad de la tierra bajo un sol que se apaga en oro.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1359,10 +1366,10 @@ const artworkData = [
         "title": "Carro Bueyes Fliomise",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_030.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Carro Bueyes Fliomise', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La fuerza bruta y la calma del camino; dos bueyes tiran de la historia bajo un sol de anillos que vibra como el mismo pulso de la tierra.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1370,10 +1377,10 @@ const artworkData = [
         "title": "Carro Bueyes Fliomise Con Nina",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_031.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Carro Bueyes Fliomise Con Nina', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La vida rural se entrelaza con lo divino, en una escena donde la labor diaria es bendecida por un sol inmenso de mosaico y luz.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1381,10 +1388,10 @@ const artworkData = [
         "title": "Cometa",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_032.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Cometa', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La inocencia vuela alto en forma de cometa, bailando entre corrientes de luz y nubes de textura en un cielo que es pura libertad.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1392,10 +1399,10 @@ const artworkData = [
         "title": "Flatiron Ny",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_033.jpg",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'Flatiron Ny', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El Flatiron se alza como una proa de piedra en el mar de Nueva York, bajo un cielo que fragmenta la luz en sueños de metrópolis.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1403,10 +1410,10 @@ const artworkData = [
         "title": "Sao Paulo",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_034.jpg",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Sao Paulo', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Río de Janeiro despierta bajo la mirada del Cristo Redentor y un sol que estalla en gloria, convirtiendo la bahía en un mosaico de vida y color.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1414,10 +1421,10 @@ const artworkData = [
         "title": "Sunrise",
         "category": "07NEOINK stilo",
         "src": "assets/07NEOINK stilo/07neoink_stilo_035.png",
-        "description": "Gráfismo de alto impacto. Líneas negras sólidas definen las formas, con rellenos de color plano o degradados sutiles. Estética cómic/ilustración moderna. Esta obra, 'Sunrise', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La luz del alba se abre paso entre las flores, en una sinfonía de texturas y colores que celebran el eterno retorno de la mañana.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Inking digital vectorial con coloración cel-shading.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1425,10 +1432,10 @@ const artworkData = [
         "title": "Abuelo Paseando Bajo La Lluvia",
         "category": "08BORACARBON",
         "src": "assets/08BORACARBON/08boracarbon_001.png",
-        "description": "La atmósfera se carga de nostalgia bajo la cortina de agua, sugiriendo un tiempo detenido y una reflexión interior. En 'Abuelo Paseando Bajo La Lluvia', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El eco de los pasos sobre el asfalto mojado resuena en esta pieza, donde la lluvia y la memoria se funden en el suave grano del carboncillo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de carboncillo y grafito. Mapeo de tonos a escala de grises con preservación de grano y textura de papel.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1436,10 +1443,10 @@ const artworkData = [
         "title": "En Un Pueblo De La Sierra",
         "category": "08BORACARBON",
         "src": "assets/08BORACARBON/08boracarbon_002.png",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'En Un Pueblo De La Sierra', la técnica realza este concepto con una ejecución precisa.",
+        "description": "La fiesta y el fuego iluminan la noche serrana, capturando la alegría compartida en trazos rápidos y llenos de vida rústica.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de carboncillo y grafito. Mapeo de tonos a escala de grises con preservación de grano y textura de papel.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1447,10 +1454,10 @@ const artworkData = [
         "title": "Niños bosque con lluvia",
         "category": "08BORACARBON",
         "src": "assets/08BORACARBON/08boracarbon_003.png",
-        "description": "La atmósfera se carga de nostalgia bajo la cortina de agua, sugiriendo un tiempo detenido y una reflexión interior. En 'Niños bosque con lluvia', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Risas que desafían la tormenta; cuatro niños corren entre los árboles, sus reflejos en el agua celebrando la magia de un día gris.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de carboncillo y grafito. Mapeo de tonos a escala de grises con preservación de grano y textura de papel.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1458,10 +1465,10 @@ const artworkData = [
         "title": "Señora sentada en la puerta de su casa",
         "category": "08BORACARBON",
         "src": "assets/08BORACARBON/08boracarbon_004.png",
-        "description": "Dramatismo monocromo. Un uso magistral del blanco y negro para evocar soledad, nostalgia o fuerza. El contraste es el protagonista. Esta obra, 'Señora sentada en la puerta de su casa', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La espera silenciosa y la paz de la tarde se graban en la piedra, en un retrato que honra la dignidad del tiempo y la quietud del hogar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de carboncillo y grafito. Mapeo de tonos a escala de grises con preservación de grano y textura de papel.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1469,10 +1476,10 @@ const artworkData = [
         "title": "Abstracto fractal",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_001.png",
-        "description": "La belleza matemática de la naturaleza. Formas que se repiten a diferentes escalas, creando estructuras orgánicas complejas y fascinantes. Esta obra, 'Abstracto fractal', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un mundo circular donde la metrópolis gira en torno a un sol central, creando una danza geométrica de barcos, casas y olas.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1480,10 +1487,10 @@ const artworkData = [
         "title": "Cisne",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_002.png",
-        "description": "La elegancia fractal se manifiesta en la curva del cuello, un estudio sobre la perfección matemática de la biología. En 'Cisne', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Elegancia en movimiento; un cisne surca aguas de cristal facetado, dejando tras de sí un rastro de ondas matemáticas y luz.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1491,10 +1498,10 @@ const artworkData = [
         "title": "Rana",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_003.png",
-        "description": "La belleza matemática de la naturaleza. Formas que se repiten a diferentes escalas, creando estructuras orgánicas complejas y fascinantes. Esta obra, 'Rana', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un habitante de esmeralda en el estanque del infinito, donde el color estalla en cada píxel y el tiempo se detiene en un salto.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1502,10 +1509,10 @@ const artworkData = [
         "title": "Pueblo de la costa in blue",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_004.jpeg",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'Pueblo de la costa in blue', la técnica realza este concepto con una ejecución precisa.",
+        "description": "La arquitectura mediterránea se descompone en un ritmo de azules y naranjas, capturando la esencia vibrante de un pueblo junto al mar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1513,10 +1520,10 @@ const artworkData = [
         "title": "Estrecho de Green",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_005.jpeg",
-        "description": "La belleza matemática de la naturaleza. Formas que se repiten a diferentes escalas, creando estructuras orgánicas complejas y fascinantes. Esta obra, 'Abs green', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Cartografía de lo imposible; donde la tierra y el agua se desafían en un mosaico de formas que parecen respirar el verdor de la costa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1524,10 +1531,10 @@ const artworkData = [
         "title": "Azote en la costa",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_006.jpeg",
-        "description": "La belleza matemática de la naturaleza. Formas que se repiten a diferentes escalas, creando estructuras orgánicas complejas y fascinantes. Esta obra, 'Abs blue', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Fuerza y textura en el límite del mundo. Las olas rompen contra la memoria de la piedra en un estallido de espuma y cubismo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1535,10 +1542,10 @@ const artworkData = [
         "title": "Pueblo on the moon",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_007.jpeg",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'Pueblo on the moon', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Una civilización esculpida en el cráter de la imaginación, donde el relieve lunar se tiñe de óxido y misterio fractal.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1546,10 +1553,10 @@ const artworkData = [
         "title": "En un pueblo de la costa española",
         "category": "09FRACNEO",
         "src": "assets/09FRACNEO/09fracneo_008.jpeg",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'En un pueblo de la costa espanola', la técnica realza este concepto con una ejecución precisa.",
+        "description": "La luz de España bañando el relieve de lo cotidiano, un pueblo que se derrama hacia el mar en cascadas de color y forma.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Geometría fractal generada por algoritmos recursivos. Renderizado de partículas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1557,10 +1564,10 @@ const artworkData = [
         "title": "Belleza En Tres",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_001.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Belleza En Tres', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un rostro de mil facetas; la esencia humana fragmentada en luz y sombra, donde cada pincelada de óleo cuenta una historia de color.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1568,10 +1575,10 @@ const artworkData = [
         "title": "Chimpancé En El Arbol",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_002.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Chimpancé En El Arbol', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La mirada curiosa del bosque; un primate se funde con la corteza y las hojas en un abrazo de óleo salvaje y vibrante.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1579,10 +1586,10 @@ const artworkData = [
         "title": "Chimpancé Sentado",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_003.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Chimpancé Sentado', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La sabiduría de la quietud se captura en esta pieza, donde el pensamiento se vuelve forma y el color es el latido del alma.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1590,7 +1597,7 @@ const artworkData = [
         "title": "El Puente De Mi Pueblo",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_004.png",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'El Puente De Mi Pueblo', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un viaje sobre aguas de cristal y luz; el puente une la historia con el presente en un estallido de pinceladas geométricas.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
@@ -1601,10 +1608,10 @@ const artworkData = [
         "title": "Familia De Esquimales",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_005.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Familia De Esquimales', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Calor humano en el corazón del hielo; una familia desafía el frío bajo un cielo de azules profundos y cortes de óleo glaciar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1612,10 +1619,10 @@ const artworkData = [
         "title": "Guerrera de la amazonia",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_006.jpg",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Guerrera de la amazonia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Misterio y poder en la mirada; una guerrera emerge de la selva de óleo, portando el sol en su escudo y la fuerza en su alma.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1623,10 +1630,10 @@ const artworkData = [
         "title": "Leopardo Buscando",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_007.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Leopardo Buscando', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El sigilo se hace forma; un felino de oro y sombra acecha entre los ángulos de un paisaje que vibra con la tensión de la caza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1634,10 +1641,10 @@ const artworkData = [
         "title": "Oso Polar",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_008.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Oso Polar', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Majestuosidad en blanco y azul; el rey del ártico camina sobre una banquisa de geometría pura y texturas de invierno eterno.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1645,10 +1652,10 @@ const artworkData = [
         "title": "Violin Sin Arco",
         "category": "10OLEOCUBBO",
         "src": "assets/10OLEOCUBBO/10oleocubbo_009.png",
-        "description": "La materialidad del óleo llevada al cubismo. Se puede 'sentir' el grosor de la pintura en cada faceta geométrica. Esta obra, 'Violin Sin Arco', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Música en silencio; las curvas de la madera se rinden ante el estallido de un fondo que pulsa con la energía de una sinfonía inconclusa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de física de fluidos viscosos (Impasto) aplicada sobre una malla geométrica cubista.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1656,10 +1663,10 @@ const artworkData = [
         "title": "Esperando Un Taxi En Ny",
         "category": "11URBANSPHERIC",
         "src": "assets/11URBANSPHERIC/11urbanspheric_001.png",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'Esperando Un Taxi En Ny', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Soledad en la multitud; un hombre aguarda bajo la nieve de Manhattan, mientras la ciudad se disuelve en un sueño de invierno y movimiento.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Proyección panorámica y deformación de lente (Ojo de pez) sobre entornos 3D urbanos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1667,10 +1674,10 @@ const artworkData = [
         "title": "Gran Bullicio En Ny",
         "category": "11URBANSPHERIC",
         "src": "assets/11URBANSPHERIC/11urbanspheric_002.png",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'Gran Bullicio En Ny', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Eléctrico y vibrante. Los taxis amarillos son el pulso de una ciudad que nunca descansa, atrapada en un torbellino de óleo y vida.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Proyección panorámica y deformación de lente (Ojo de pez) sobre entornos 3D urbanos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1678,10 +1685,10 @@ const artworkData = [
         "title": "Regata",
         "category": "11URBANSPHERIC",
         "src": "assets/11URBANSPHERIC/11urbanspheric_003.png",
-        "description": "La ciudad como organismo vivo. Perspectivas esféricas o distorsionadas que capturan la inmensidad del entorno urbano. Esta obra, 'Regata', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Las velas se hinchan con el viento de la urbe, navegando entre rascacielos que se curvan como olas en un mar de asfalto y cristal.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Proyección panorámica y deformación de lente (Ojo de pez) sobre entornos 3D urbanos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1689,10 +1696,10 @@ const artworkData = [
         "title": "Taxis En Invierno Ny",
         "category": "11URBANSPHERIC",
         "src": "assets/11URBANSPHERIC/11urbanspheric_004.png",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'Taxis En Invierno Ny', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Velocidad y frío. Los rascacielos se estiran hacia el infinito mientras el invierno neoyorquino pasa volando a través del parabrisas.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Proyección panorámica y deformación de lente (Ojo de pez) sobre entornos 3D urbanos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1700,10 +1707,10 @@ const artworkData = [
         "title": "Tu Y Yo Por La Avenida En Ny",
         "category": "11URBANSPHERIC",
         "src": "assets/11URBANSPHERIC/11urbanspheric_005.png",
-        "description": "El pulso frenético de la metrópolis se captura en esta pieza, donde el hormigón y los sueños verticales colisionan. En 'Tu Y Yo Por La Avenida En Ny', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Un paseo compartido entre gigantes de cristal; donde la ciudad se rinde ante la calidez de dos figuras que caminan juntas en la tormenta.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Proyección panorámica y deformación de lente (Ojo de pez) sobre entornos 3D urbanos.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1711,7 +1718,7 @@ const artworkData = [
         "title": "Bodegon Masa Y Pan",
         "category": "12CRISTAL_CUBICO",
         "src": "assets/12CRISTAL_CUBICO/12cristal_cubico_001.png",
-        "description": "Técnica: Aunque está en este bloque, es la pieza puente. Usa la base del cubismo pero con las grietas del estilo cristal.\nVisual: La luz es mucho más suave y los bordes menos afilados que en la versión pura de CUBESSE.",
+        "description": "Lo cotidiano se fragmenta en una mañana de luz y cristal, donde el pan y la fruta se vuelven joyas en una danza de reflejos suaves.",
         "size": "Consultar",
         "price": "19,99",
         "tech_info": "Ver descripción detallada.",
@@ -1722,10 +1729,10 @@ const artworkData = [
         "title": "Rascacielos",
         "category": "12CRISTAL_CUBICO",
         "src": "assets/12CRISTAL_CUBICO/12cristal_cubico_002.png",
-        "description": "Transparencia y refracción. El mundo visto a través de un prisma de cristal, descomponiendo la luz y las formas. Esta obra, 'Rascacielos', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La ciudad se eleva en un prisma de oro y ámbar, descomponiendo el horizonte en un mosaico de transparencias y luz vertical.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Renderizado de trazado de rayos (Ray Tracing) calculando refracciones complejas y cáusticas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1733,10 +1740,10 @@ const artworkData = [
         "title": "Cristal Dune",
         "category": "13RECTESSE",
         "src": "assets/13RECTESSE/13rectesse_001.png",
-        "description": "Rigurosidad ortogonal. Composiciones basadas en líneas rectas y ángulos de 90 grados, transmitiendo orden y estructura. Esta obra, 'Cristal Dune', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La calidez orgánica de las dunas se somete al orden de la línea negra, en un diálogo entre la libertad del desierto y la estructura del pensamiento.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Diseño constructivista asistido por rejillas digitales y alineación vectorial perfecta.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1744,10 +1751,10 @@ const artworkData = [
         "title": "Blue Dune",
         "category": "14TEREXSE",
         "src": "assets/14TEREXSE/14terexse_001.jpg",
-        "description": "Exploración de terrenos y texturas orgánicas complejas. Paisajes que parecen de otro planeta. Esta obra, 'Blue Dune', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un paisaje de otro mundo, donde el frío se esculpe en relieves imposibles y el azul es el único protagonista de la geografía.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación de terrenos procedurales mediante mapas de altura y desplazamiento.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1755,10 +1762,10 @@ const artworkData = [
         "title": "Mas Love Tin",
         "category": "15CUBESSEPLUS",
         "src": "assets/15CUBESSEPLUS/MAS LOVE TIN.png",
-        "description": "Cubismo evolucionado con mayor detalle y profundidad de campo. Más complejo que el Cubesse tradicional. Esta obra, 'Mas Love Tin', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Mirada leal en una sinfonía de color; un retrato que eleva la nobleza del perro a una celebración de geometría y equilibrio.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Modelado low-poly con suavizado selectivo y texturizado PBR (Physically Based Rendering).",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1766,10 +1773,10 @@ const artworkData = [
         "title": "Farola En La Plaza",
         "category": "16EXPNEO",
         "src": "assets/16EXPNEO/16expneo_001.png",
-        "description": "Experimentación neofuturista con luces de neón y atmósferas nocturnas. Esta obra, 'Farola En La Plaza', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Una centinela de hierro en la penumbra; su luz cálida desgarra la noche, creando un refugio de resplandor en la plaza dormida.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Iluminación volumétrica y efectos de resplandor (Bloom) digitales.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1777,10 +1784,10 @@ const artworkData = [
         "title": "Una Noche Mas Con Luz",
         "category": "16EXPNEO",
         "src": "assets/16EXPNEO/16expneo_002.png",
-        "description": "El misterio nocturno envuelve la escena, revelando lo que la luz del día esconde. En 'Una Noche Mas Con Luz', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El susurro de la ciudad nocturna; donde los neones y las sombras tejen una historia de misterio y reflejos sobre el asfalto húmedo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Iluminación volumétrica y efectos de resplandor (Bloom) digitales.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1788,10 +1795,10 @@ const artworkData = [
         "title": "Amigo Fiel",
         "category": "16EXPNEO",
         "src": "assets/16EXPNEO/AMIGO FIEL.png",
-        "description": "Experimentación neofuturista con luces de neón y atmósferas nocturnas. Esta obra, 'Amigo Fiel', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Nobleza en movimiento; un retrato donde el afecto se funde en espirales de color líquido y una mirada que lo dice todo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Iluminación volumétrica y efectos de resplandor (Bloom) digitales.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1799,10 +1806,10 @@ const artworkData = [
         "title": "Mar Bravo",
         "category": "17FUZZTESS",
         "src": "assets/17FUZZTESS/17fuzztess_001.jpg",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Mar Bravo', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El rugido del océano convertido en bruma; un mar que azota la memoria con la fuerza de una tormenta de ensueño.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Filtros de desenfoque gaussiano selectivo y ruido procedural suave.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1810,10 +1817,10 @@ const artworkData = [
         "title": "No Hay Moradores",
         "category": "17FUZZTESS",
         "src": "assets/17FUZZTESS/17fuzztess_002.jpg",
-        "description": "Bordes difusos y atmósferas de ensueño ('Fuzzy'). La imagen parece emerger de la niebla. Esta obra, 'No Hay Moradores', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Donde el mundo se desvanece; un paisaje sin voz que emerge de la niebla, invitando a la contemplación del silencio absoluto.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Filtros de desenfoque gaussiano selectivo y ruido procedural suave.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1821,10 +1828,10 @@ const artworkData = [
         "title": "El Laberinto",
         "category": "18ABSTRACTO_CONFLUENCIA",
         "src": "assets/18ABSTRACTO_CONFLUENCIA/18abstracto_confluencia_001.jpg",
-        "description": "El punto de encuentro de formas y colores sin referencia figurativa clara. Pura emoción visual. Esta obra, 'El Laberinto', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Un vórtice de emoción pura; donde el color estalla en un laberinto de texturas que desafían la mirada y celebran el caos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Abstracción generativa basada en campos de flujo y mezcla de color aditiva.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1832,10 +1839,10 @@ const artworkData = [
         "title": "Snow Hills",
         "category": "18ABSTRACTO_CONFLUENCIA",
         "src": "assets/18ABSTRACTO_CONFLUENCIA/SNOW HILLS.png",
-        "description": "El punto de encuentro de formas y colores sin referencia figurativa clara. Pura emoción visual. Esta obra, 'Snow Hills', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Cumbres de calma; un paisaje ondulante en azules y oro que susurra la paz de las montañas bajo un cielo de diseño.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Abstracción generativa basada en campos de flujo y mezcla de color aditiva.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1843,10 +1850,10 @@ const artworkData = [
         "title": "Abuelo",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_001.jpg",
-        "description": "El peso de la experiencia y las arrugas de la historia se dibujan con respeto y profundidad emocional. En 'Abuelo', la técnica realza este concepto con una ejecución precisa.",
+        "description": "La sabiduría surcada en el rostro; un retrato que honra el tiempo a través de pinceladas vibrantes y una mirada de paz infinita.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1854,10 +1861,10 @@ const artworkData = [
         "title": "Bodegon Y Pipa",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_002.jpg",
-        "description": "Una revisión contemporánea de la naturaleza muerta, donde los objetos cotidianos cobran una nueva vida simbólica. En 'Bodegon Y Pipa', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Placeres tranquilos; donde el aroma de la pipa y el vino se funden en un baile de líneas blancas sobre un fondo de recuerdos vivos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1865,10 +1872,10 @@ const artworkData = [
         "title": "Bodegon Zapatos",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_003.jpg",
-        "description": "Una revisión contemporánea de la naturaleza muerta, donde los objetos cotidianos cobran una nueva vida simbólica. En 'Bodegon Zapatos', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El alma de los pasos dados; unos zapatos que descansan bajo el pulso de líneas de energía, contando historias de caminos recorridos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1876,10 +1883,10 @@ const artworkData = [
         "title": "Red Bus Londres 1920",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_004.png",
-        "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'Coche En Londres 1920', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Latido de asfalto y lluvia; el icónico bus rojo se abre paso en un Londres de entreguerras, envuelto en una red de luces y nostalgia.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1887,10 +1894,10 @@ const artworkData = [
         "title": "Mujer Dentro Del Laberinto",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_005.jpg",
-        "description": "La figura femenina emerge como fuerza central, explorando la identidad y la presencia en un entorno cambiante. En 'Mujer Dentro Del Laberinto', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El misterio tras la mirada; un rostro que surge de un mosaico de color, atrapado en el baile hipnótico de círculos infinitos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1898,10 +1905,10 @@ const artworkData = [
         "title": "Niños Jugando 1920",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_006.png",
-        "description": "La inocencia y el juego se capturan como instantes de luz pura en un mundo complejo. En 'Niños Jugando 1920', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Ecos de risas en el parque; la inocencia del ayer se captura en un giro eterno de color y trayectorias de juegos olvidados.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1909,10 +1916,10 @@ const artworkData = [
         "title": "Paris 1920",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_007.png",
-        "description": "El romanticismo urbano y la bohemia de antaño reviven bajo una luz nueva. En 'Paris 1920', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Ecos de la Belle Époque; las calles de París se dibujan con la fragilidad de un sueño, donde la luz y la sena bailan en un abrazo eterno.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1920,10 +1927,10 @@ const artworkData = [
         "title": "Parque Del Retiro1920",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_008.png",
-        "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'Parque Del Retiro1920', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Sinfonía verde en el corazón de Madrid; el Retiro se convierte en un refugio de líneas vibrantes que capturan la brisa de un siglo pasado.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1931,10 +1938,10 @@ const artworkData = [
         "title": "River Line",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/19fuzzline_abs_009.jpg",
-        "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'River Line', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El flujo de la conciencia; una corriente de color y luz que se desliza entre las sombras, trazando el camino de un río que nunca se detiene.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1942,10 +1949,10 @@ const artworkData = [
         "title": "In The Desert",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/In the desert.png",
-        "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'In The Desert', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Vastedad y espejismo; el desierto se revela en un baile de líneas calientes que desafían la mirada y celebran la soledad infinita.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1953,10 +1960,10 @@ const artworkData = [
         "title": "Moe Zue",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/MOE ZUE.png",
-        "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'Moe Zue', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Enigma visual; una composición donde las formas se funden en un baile de líneas y color que invita a la interpretación libre.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1964,10 +1971,10 @@ const artworkData = [
         "title": "Molly Pink",
         "category": "19FUZZLINE_ABS",
         "src": "assets/19FUZZLINE_ABS/MOLLY PINK.png",
-        "description": "Líneas vibrantes y difusas que crean formas abstractas en movimiento. Esta obra, 'Molly Pink', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Dulce abstracción; donde el rosa se convierte en el latido de una obra llena de luz y movimiento, capturando la alegría de un instante.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Trazado de líneas con bordes suavizados y variación de opacidad aleatoria.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1975,21 +1982,21 @@ const artworkData = [
         "title": "Barco Vapor Mountain River",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_001.png",
-        "description": "La travesía y el viaje como metáforas de la existencia, navegando aguas de incertidumbre cromática. En 'Barco Vapor Mountain River', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El Mississippi se tiñe de leyenda; un gigante de vapor navega bajo el sol naciente, dejando una estela de humo negro y sangre de tinta sobre las aguas.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "20borassie_002",
-        "title": "Búfalo Al Atardecer",
+        "title": "Bisonte",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_002.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Búfalo Al Atardecer', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Fuerza telúrica; el espíritu del bisonte emerge de la niebla, cargando con el peso del sol y el sacrificio en cada gota de rojo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -1997,10 +2004,10 @@ const artworkData = [
         "title": "Cocodrilo En Luna Roja",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_003.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Cocodrilo En Luna Roja', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Depredador en calma; una sinfonía de verdes y rojos donde la paciencia del reptil se desborda en hilos de tinta bajo la luna de fuego.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2008,21 +2015,21 @@ const artworkData = [
         "title": "Competición De Skateboard",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_004.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Competición De Skateboard', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Libertad sobre ruedas; la juventud desafía la gravedad entre brotes de bambú y un cielo que llora energía carmesí.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "20borassie_005",
-        "title": "En El Ganges",
+        "title": "Ganges",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_005.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'En El Ganges', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Devoción y destino; la plegaria se eleva hacia el disco solar mientras el agua sagrada acoge las lágrimas de tinta de los fieles.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2030,10 +2037,10 @@ const artworkData = [
         "title": "En El Pueblo Minimal",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_006.png",
-        "description": "La memoria de lo rural y la arquitectura vernácula se entrelazan, evocando raíces y pertenencia. En 'En El Pueblo Borassie Minimal', la técnica realza este concepto con una ejecución precisa.",
+        "description": "El pulso de la aldea; una celebración grabada en tonos tierra donde el fuego central es el alma de la danza compartida.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2041,10 +2048,10 @@ const artworkData = [
         "title": "Grulla Y Dragón",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_007.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Grulla Y Dragón', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Honor y acero; el guerrero aguarda entre dragones y pétalos de sangre, bajo la mirada eterna de un sol que nunca se pone.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2052,10 +2059,10 @@ const artworkData = [
         "title": "In Brodway",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_008.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'In Brodway', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Espectáculo y sombras; el corazón de Nueva York late con una pulsación roja, donde Broadway se rinde ante la elegancia del trazo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2063,10 +2070,10 @@ const artworkData = [
         "title": "Mejico Town",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_009.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Mejico Town', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Fe y fragmentos; una plaza que se disuelve bajo el peso de un sol carmesí, donde la arquitectura sagrada llora hilos de historia.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2074,10 +2081,10 @@ const artworkData = [
         "title": "Siang Pong Arrozal",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_010.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Siang Pong Arrozal', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Quietud rota por el color; los barcos descansan en un espejo de tinta donde cada salpicadura es un eco de la aventura pasada.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2085,10 +2092,10 @@ const artworkData = [
         "title": "The Cat Dreams",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_011.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'The Cat Dreams', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Sueño felino; un gato que observa el mundo bajo el velo de un sol naciente, donde la realidad se disuelve en trazos de tinta y misterio.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2096,32 +2103,32 @@ const artworkData = [
         "title": "Vietnam Woods",
         "category": "20BORASSIE",
         "src": "assets/20BORASSIE/20borassie_012.png",
-        "description": "Una variante del estilo Bora, quizás introduciendo elementos de color selectivo o mayor suavidad. Esta obra, 'Vietnam Woods', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Bruma y memoria; la selva de Vietnam se revela en una danza de sombras y luz carmesí, evocando la fuerza de la naturaleza indomable.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Técnica mixta de grafito digital con lavados de acuarela muy sutiles.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "21oce_burst_001",
-        "title": "En el mercado",
+        "title": "Mercado Nocturno",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_001.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'En el mercado', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El latido de la noche; un mercado que bulle bajo una luna vibrante, donde cada puesto es una explosión de color y vida entre pinceladas de impasto.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "21oce_burst_002",
-        "title": "Noche en la ciudad",
+        "title": "Calle Neoyorkina",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_002.png",
-        "description": "El misterio nocturno envuelve la escena, revelando lo que la luz del día esconde. En 'Noche en la ciudad', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Ritmo de asfalto y lluvia; la ciudad se disuelve en un torbellino de azules y amarillos, bajo la mirada hipnótica de una luna de trazo grueso.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2129,32 +2136,32 @@ const artworkData = [
         "title": "Olas y rokas",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_003.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Olas y rokas', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La furia del mar; olas que se estrellan contra la roca, un diálogo eterno entre la fuerza y la resistencia, capturado en un estallido de espuma y color.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "21oce_burst_004",
-        "title": "Rompiendo las olas on the rocks",
+        "title": "Atardecer Del Mar",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_004.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Rompiendo las olas on the rocks', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Mareas de ensueño; una ola colosal se quiebra bajo un cielo púrpura, donde la luz de la luna se funde en la textura rebelde del mar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
         "id": "21oce_burst_005",
-        "title": "Nurborg Nevado",
+        "title": "Puerto Nevado",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_005.jpeg",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Nurborg Nevado', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Frío y pincelada; un puerto que descansa bajo el manto del invierno, donde la nieve se convierte en volúmenes de luz sobre la madera vieja.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2162,10 +2169,10 @@ const artworkData = [
         "title": "Puerto De Nurborg En Invierno",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_006.jpeg",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Puerto De Nurborg En Invierno', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Silencio blanco; el puerto se congela en un instante de tiempo, donde los barcos son fantasmas de un pasado que se resiste a desaparecer bajo el velo de la nieve.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2173,10 +2180,10 @@ const artworkData = [
         "title": "Ventisca En Nurgorg",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_007.jpeg",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Ventisca En Nurgorg', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Danza de la tormenta; la ventisca azota la ciudad, transformando el paisaje en un lienzo de blancos y grises, donde la naturaleza reclama su dominio con furia y belleza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2184,10 +2191,10 @@ const artworkData = [
         "title": "La Capitan Trueno",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_008.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'La Capitan Trueno', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Héroe de tinta; la figura del Capitán Trueno emerge de un mar de trazos, un estallido de fuerza y coraje que desafía la tormenta y el tiempo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2198,7 +2205,7 @@ const artworkData = [
         "description": "La soledad árida revela una belleza desnuda, donde la luz es la única protagonista. En 'La Capitana En El Desierto', la técnica realza este concepto con una ejecución precisa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2206,10 +2213,10 @@ const artworkData = [
         "title": "La Capitana Trueno 2",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_010.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'La Capitana Trueno 2', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "El eco de la aventura; la Capitana Trueno regresa, su figura se recorta contra un cielo de tormenta, prometiendo nuevas gestas y desafíos en un mar de color.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2217,10 +2224,10 @@ const artworkData = [
         "title": "Lady Jane",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_011.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Lady Jane', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Elegancia en el caos; Lady Jane se alza, una figura de gracia y misterio en medio de un torbellino de formas y colores, un retrato de la fuerza femenina.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2228,10 +2235,10 @@ const artworkData = [
         "title": "Leopardo Descansando En La Rama De Un Arbol",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_012.png",
-        "description": "Explosiones oceánicas. Fluidez, agua, movimiento caótico y energía azul. Esta obra, 'Leopardo Descansando En La Rama De Un Arbol', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Vigilancia nocturna; el leopardo se funde con la rama, su pelaje convertido en un mosaico de luz bajo el influjo del pincel impetuoso.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2239,10 +2246,10 @@ const artworkData = [
         "title": "Mujer En La Terraza",
         "category": "21OCE-BURST",
         "src": "assets/21OCE-BURST/21oce_burst_013.png",
-        "description": "La figura femenina emerge como fuerza central, explorando la identidad y la presencia en un entorno cambiante. En 'Mujer En La Terraza', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Silencio en la gran ciudad; un momento de paz en la azotea, rodeada por el rugido visual de una metrópolis que nunca duerme.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Simulación de fluidos de partículas realistas congelados en un instante de tiempo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2250,10 +2257,10 @@ const artworkData = [
         "title": "Caminando Calle Arriba",
         "category": "22NEO-LUMINA",
         "src": "assets/22NEO-LUMINA/22neo_lumina_001.png",
-        "description": "La luz como materia. Composiciones donde la fuente de luz es la protagonista absoluta. Esta obra, 'Caminando Calle Arriba', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Ascensión lumínica; una calle que se abre paso hacia la claridad, donde cada paso es una invitación a descubrir lo que aguarda tras el resplandor.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Motor de renderizado espectral enfocado en la dispersión de la luz.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2261,10 +2268,10 @@ const artworkData = [
         "title": "Ciberpunk City",
         "category": "22NEO-LUMINA",
         "src": "assets/22NEO-LUMINA/22neo_lumina_002.png",
-        "description": "La luz como materia. Composiciones donde la fuente de luz es la protagonista absoluta. Esta obra, 'Ciberpunk City', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Neon futurista; la ciudad del mañana late con una energía eléctrica, donde la luz artificial se convierte en la nueva naturaleza de la urbe ciberpúnica.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Motor de renderizado espectral enfocado en la dispersión de la luz.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2272,10 +2279,10 @@ const artworkData = [
         "title": "Night By",
         "category": "22NEO-LUMINA",
         "src": "assets/22NEO-LUMINA/22neo_lumina_003.png",
-        "description": "La luz como materia. Composiciones donde la fuente de luz es la protagonista absoluta. Esta obra, 'Night By', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Vigilia cromática; una noche que se viste de gala con destellos de luz que bailan en la oscuridad, revelando la belleza oculta de lo cotidiano.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Motor de renderizado espectral enfocado en la dispersión de la luz.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2283,10 +2290,10 @@ const artworkData = [
         "title": "City Brakes",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_001.png",
-        "description": "Explosiones tridimensionales de objetos y formas que salen del plano. Esta obra, 'City Brakes', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Fractura urbana; una explosión de color y geometría donde la ciudad se recompone en mil facetas, celebrando la complejidad de la vida moderna.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Sistemas de partículas 3D con fuerzas de explosión y gravedad simuladas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2294,10 +2301,10 @@ const artworkData = [
         "title": "Colapse",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_002.png",
-        "description": "Explosiones tridimensionales de objetos y formas que salen del plano. Esta obra, 'Colapse', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Sombras poliédricas; la noche cae sobre una metrópolis que se pliega sobre sí misma, donde la luz de las ventanas es el único refugio entre los ángulos oscuros.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Sistemas de partículas 3D con fuerzas de explosión y gravedad simuladas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2305,10 +2312,10 @@ const artworkData = [
         "title": "In The Night",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_003.png",
-        "description": "Explosiones tridimensionales de objetos y formas que salen del plano. Esta obra, 'In The Night', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Abstracción nocturna; un laberinto de cristal y sombra donde el azul profundo domina el espacio, invitando a perderse en la infinita red de la ciudad.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Sistemas de partículas 3D con fuerzas de explosión y gravedad simuladas.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2349,37 +2356,40 @@ const artworkData = [
         "title": "Cascada en Choki",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_007.jpg",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Velo de cristal; la caída del agua se fragmenta en mil destellos, una sinfonía de frescura que nace del corazón de la roca.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "23tridim_burst_008",
         "title": "Colapso en el puerto",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/23tridim_burst_008.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Fractura de acero; el drama de la industria capturado en un colapso geométrico, una visión de la fragilidad de nuestras obras frente a la entropía.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "en el espigón",
         "title": "En El Espigón",
         "category": "23TRIDIM-BURST",
         "src": "assets/23TRIDIM-BURST/EN EL ESPIGÓN.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Límite de mundos; donde el hombre desafía al mar con piedra y cemento, un refugio de salitre que contempla el abrazo eterno de las olas.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "boracarbon_mon_001",
         "title": "Pamplona",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_001.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Pamplona', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Elegancia navarra; una estampa clásica que captura el espíritu de Pamplona, donde la piedra y el cielo se encuentran en un abrazo de nostalgia y belleza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2387,10 +2397,10 @@ const artworkData = [
         "title": "Huesca",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_002.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Huesca', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Herencia del Alto Aragón; la silueta de Huesca emerge con la sobriedad de los siglos, un retrato fiel de la historia grabada en cada sillar de su catedral.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2398,10 +2408,10 @@ const artworkData = [
         "title": "Zaragoza",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_003.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Zaragoza', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Reflejos del Ebro; la majestuosidad de la basílica se rinde ante el fluir eterno del río, una composición que respira el aire solemne de la capital maña.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2409,10 +2419,10 @@ const artworkData = [
         "title": "Girona",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_004.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Girona', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Encanto junto al Onyar; las casas de colores se asoman al agua en un baile de luces y sombras que define el corazón medieval de la ciudad.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2420,10 +2430,10 @@ const artworkData = [
         "title": "Lleida",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_005.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Lleida', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Vigía de la llanura; la Seu Vella se alza con orgullo sobre el horizonte, un faro de historia que ilumina la memoria de las tierras de Poniente.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2431,10 +2441,10 @@ const artworkData = [
         "title": "Anfiteatro De Tarragona",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_006.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Anfiteatro De Tarragona', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Ecos del Mare Nostrum; la arena romana descansa frente al azul infinito, un escenario donde el tiempo se detiene para escuchar el susurro de la historia.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2442,10 +2452,10 @@ const artworkData = [
         "title": "Castellón",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_007.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Castellón', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Sombra y misterio; una visión onírica de la arquitectura que se funde con la tormenta, donde el trazo de carbón revela la fuerza de lo invisible.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2453,10 +2463,10 @@ const artworkData = [
         "title": "Valencia",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_008.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Valencia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Contraste mediterráneo; donde el pasado gótico y el futuro de cristal conviven bajo un cielo dramático, un retrato de la Valencia que nunca deja de soñar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2464,10 +2474,10 @@ const artworkData = [
         "title": "Caceres",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_009.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Caceres', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Centinela de piedra; la soledad heroica de la torre en Cáceres, capturada en un duelo de luz y sombra que exalta su carácter inexpugnable.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2475,10 +2485,10 @@ const artworkData = [
         "title": "Sevilla",
         "category": "24BORACARBON MONUMENTOS",
         "src": "assets/24BORACARBON MONUMENTOS/boracarbon_mon_010.png",
-        "description": "La monumentalidad arquitectónica en blanco y negro. Solemne, eterno y pétreo. Esta obra, 'Sevilla', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Pasión bajo la tormenta; el perfil de Sevilla se estremece bajo un cielo eléctrico, donde la Giralda se erige como el eje de una ciudad que vibra con fuerza propia.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Fotogrametría digital procesada en escala de grises de alto contraste.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2486,10 +2496,10 @@ const artworkData = [
         "title": "Ajustador",
         "category": "25CAPLIVE",
         "src": "assets/25CAPLIVE/Ajustador.png",
-        "description": "Captura de vida. Escenas cotidianas con un toque vibrante y contemporáneo. Esta obra, 'Ajustador', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "La fuerza del oficio; el ajustador posa con la determinación de quien domina el hierro y el fuego, un retrato de la dignidad campesina en tonos ocres.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Estilo 'Street Photography' digital con post-procesado de color estilo cine.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2497,10 +2507,10 @@ const artworkData = [
         "title": "Capitana",
         "category": "25CAPLIVE",
         "src": "assets/25CAPLIVE/CAPITANA CAPLIVE.png",
-        "description": "Captura de vida. Escenas cotidianas con un toque vibrante y contemporáneo. Esta obra, 'Capitana Caplive', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Corazón de mar; la capitana desafía el horizonte con su mirada firme, una figura de valor y libertad que se recorta contra el oleaje eterno.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Estilo 'Street Photography' digital con post-procesado de color estilo cine.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2508,10 +2518,10 @@ const artworkData = [
         "title": "Herrero",
         "category": "25CAPLIVE",
         "src": "assets/25CAPLIVE/Herrero.png",
-        "description": "Captura de vida. Escenas cotidianas con un toque vibrante y contemporáneo. Esta obra, 'Herrero', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Al calor de la fragua; el herrero descansa un instante, su rostro iluminado por la luz del metal incandescente, en una sinfonía de sombras y texturas.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Estilo 'Street Photography' digital con post-procesado de color estilo cine.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2519,10 +2529,10 @@ const artworkData = [
         "title": "Tabernera",
         "category": "25CAPLIVE",
         "src": "assets/25CAPLIVE/Tabernera.png",
-        "description": "Captura de vida. Escenas cotidianas con un toque vibrante y contemporáneo. Esta obra, 'Tabernera', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Relato de posada; la tabernera ofrece paz y sustento en un rincón de luz cálida, un retrato que evoca la hospitalidad y el carácter de antaño.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Estilo 'Street Photography' digital con post-procesado de color estilo cine.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2530,10 +2540,10 @@ const artworkData = [
         "title": "Muchacho Estudiante",
         "category": "26CARL_LINE",
         "src": "assets/26CARL_LINE/Muchacho estudiante.png",
-        "description": "Estilo lineal distintivo, probablemente caracterizado por el trazo continuo o minimalista. Esta obra, 'Muchacho Estudiante', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Mirada que busca; el retrato de un joven en la encrucijada del conocimiento, capturado con una pincelada que respira humanidad y esperanza.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Dibujo vectorial de línea continua.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2541,10 +2551,10 @@ const artworkData = [
         "title": "Panadera",
         "category": "26CARL_LINE",
         "src": "assets/26CARL_LINE/Panadera.png",
-        "description": "Estilo lineal distintivo, probablemente caracterizado por el trazo continuo o minimalista. Esta obra, 'Panadera', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Esencia cotidiana; la panadera sostiene el fruto del esfuerzo diario, un tributo a la labor constante y al calor del hogar en cada trazo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Dibujo vectorial de línea continua.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2552,10 +2562,10 @@ const artworkData = [
         "title": "Prima Martina",
         "category": "26CARL_LINE",
         "src": "assets/26CARL_LINE/Prima Martina.png",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'Prima Martina', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Generosidad en el gesto; Martina nos ofrece la abundancia de la tierra, una composición que celebra la vida sencilla y la calidez de la tradición.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Dibujo vectorial de línea continua.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2563,10 +2573,10 @@ const artworkData = [
         "title": "Carnero",
         "category": "27LINEVORT",
         "src": "assets/27LINEVORT/Carnero.png",
-        "description": "Vórtices de líneas que arrastran la mirada hacia el centro o puntos de fuga infinitos. Esta obra, 'Carnero', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Fuerza ancestral; el carnero se erige como un tótem geométrico bajo el sol poniente, un estallido de líneas que capturan el espíritu indómito de la montaña.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación de campos vectoriales en espiral.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2574,188 +2584,235 @@ const artworkData = [
         "title": "El Amo De La Casa",
         "category": "27LINEVORT",
         "src": "assets/27LINEVORT/El amo de la casa.png",
-        "description": "Vórtices de líneas que arrastran la mirada hacia el centro o puntos de fuga infinitos. Esta obra, 'El Amo De La Casa', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Lealtad vigilante; la imponente figura del guardián se funde con el paisaje, una oda lineal a la nobleza y el coraje que protege el hogar.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Generación de campos vectoriales en espiral.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
+    },
+    {
+        "id": "holandesa",
+        "title": "Holandesa",
+        "category": "27LINEVORT",
+        "src": "assets/27LINEVORT/holandesa.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "molino_de_viento",
+        "title": "Molino De Viento",
+        "category": "27LINEVORT",
+        "src": "assets/27LINEVORT/molino_de_viento.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
     },
     {
         "id": "aldea china",
         "title": "Aldea China",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/aldea china.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Serenidad milenaria; la vida respira en los tejados curvos y el silencio de las montañas, un refugio donde el tiempo fluye como el agua del arroyo.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "arando con bueyes",
         "title": "Arando Con Bueyes",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/arando con bueyes.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Fuerza del surco; la comunión entre el hombre y la bestia bajo el sol, el primer acto de la creación que convierte la tierra en sustento.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "arrozal",
         "title": "Arrozal",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/arrozal.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Espejos de vida; el agua refleja la paciencia del cultivo, un damero de plata y verde que sustenta el alma de la tierra.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "arrozales de yuanyang en yunnan",
         "title": "Arrozales De Yuanyang En Yunnan",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/arrozales de Yuanyang en Yunnan.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Escaleras al cielo; la montaña se fragmenta en terrazas de luz, una obra de arte labrada por manos humanas a lo largo de los siglos.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "barco saliendo del puerto de algeciras",
         "title": "Barco Saliendo Del Puerto De Algeciras",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/barco saliendo del puerto de algeciras.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Rumbo al estrecho; la proa corta las aguas de dos mundos, una partida llena de salitre y la esperanza de nuevos horizontes.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "barco_chino en alta mar",
         "title": "Barco Chino En Alta Mar",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/barco_chino en alta mar.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Viento de oriente; el junco desafía la inmensidad del océano, una silueta de madera y lona que guarda los secretos de las antiguas rutas de la seda.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "buda de piedra",
         "title": "Buda De Piedra",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/buda de piedra.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Paz eterna; la serenidad del iluminado grabada en la roca, una mirada compasiva que trasciende el ruido del mundo moderno.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "bufalo",
         "title": "Bufalo",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/bufalo.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Poder de agua; la mirada profunda del gigante de los arrozales, un tótem de fuerza y paciencia sumergido en el espejo de la tierra inundada.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "caballo_flaco",
         "title": "Caballo Flaco",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/caballo_flaco.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Elegancia desnuda; la pureza de la forma se revela en la escasez, un estudio de líneas y carácter donde la fuerza nace de la fragilidad aparente.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "campesino chino con buey",
         "title": "Campesino Chino Con Buey",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/campesino chino con buey.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Vínculo ancestral; la piel y el pelaje se funden en el esfuerzo compartido, un retrato de la dignidad que nace del surco y la esperanza.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "el parque nacional de zhāngjiājiè",
         "title": "El Parque Nacional De Zhāngjiājiè",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/El Parque Nacional de Zhāngjiājiè.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Pilares de leyenda; agujas de piedra que emergen de la niebla, un paisaje vertical donde las nubes descansan sobre la espalda de los gigantes.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "geisha",
         "title": "Geisha",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/geisha.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "El arte del misterio; la delicadeza de la seda y el blanco de la piel esconden un universo de tradición, música y elegancia contenida.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "gran buda de leshan",
         "title": "Gran Buda De Leshan",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/Gran Buda de Leshan.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Coloso de piedra; el guardián de los ríos contempla el paso de los siglos, una presencia monumental que impone silencio al rugjir de las aguas.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "hacienda_labriega",
         "title": "Hacienda Labriega",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/hacienda_labriega.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Raíces de sol; la casa grande rodeada de campos fértiles, un refugio de piedra y adobe donde late el corazón del mundo rural.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "javali",
         "title": "Javali",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/javali.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Espíritu del monte; la fiereza y el instinto salvaje capturados en un gesto de poder, un centinela de los bosques que no conoce el miedo.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "leopardo_de_las_nives",
         "title": "Leopardo De Las Nives",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/leopardo_de_las_nives.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Fantasma de las cumbres; la mirada de hielo que vigila el techo del mundo, una presencia etérea camuflada en la soledad de la nieve infinita.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "leopardo_en_asia",
         "title": "Leopardo En Asia",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/leopardo_en_asia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Acecho de sombra; el sigilo de la selva personificado en una silueta de manchas oscuras, el equilibrio perfecto entre la fuerza y la belleza salvaje.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "los guerreros de xi’an",
         "title": "Los Guerreros De Xi’An",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/Los Guerreros de Xi’an.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Ejército del silencio; soldados de terracota que guardan un imperio invisible, rostros únicos forjados en el barro de la inmortalidad.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "mercado chino",
         "title": "Mercado Chino",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/mercado chino.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Caos armonioso; un festival de aromas, colores y voces donde la vida bulle en cada puesto, tejiendo la red cotidiana de una cultura vibrante.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "muralla china",
         "title": "Muralla China",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/muralla china.png",
+        "description": "El dragón de piedra; una línea infinita que recorre el lomo de las montañas, el abrazo defensivo de una civilización que desafía al tiempo.",
+        "price": "19,99",
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
+    },
+    {
+        "id": "oso_panda",
+        "title": "Oso Panda",
+        "category": "28ESPATAC",
+        "src": "assets/28ESPATAC/oso_panda.png",
         "description": "Nueva obra añadida recientemente.",
         "price": "19,99",
         "size": "Consultar"
@@ -2765,105 +2822,207 @@ const artworkData = [
         "title": "Pagoda China",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/pagoda china.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Ascenso espiritual; niveles de misticismo que se elevan hacia el sol, una estructura de equilibrio y paz en medio de la naturaleza exuberante.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "playa en un puerto",
         "title": "Playa En Un Puerto",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/playa en un puerto.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Reflejos de industria; el contraste entre la calma del arenal y la fuerza del acero portuario, donde el mar lame las heridas del progreso.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "puerto algeciras",
         "title": "Puerto Algeciras",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/puerto algeciras.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Puerta de mares; el ajetreo de las grúas y la inmensidad de los contenedores, un latido de comercio global bajo el cielo del sur.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "residencia china de pueblo",
         "title": "Residencia China De Pueblo",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/residencia china de pueblo.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Hogar de madera y sol; el patio central donde el susurro de los antepasados convive con el ajetreo de la mañana, un refugio de identidad.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "templo budista",
         "title": "Templo Budista",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/templo budista.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Incienso y plegaria; la arquitectura de la devoción se viste de rojo y oro, un espacio sagrado donde el espíritu encuentra su centro.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "zhouzhuang",
         "title": "Zhouzhuang",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/Zhouzhuang.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Venecia de oriente; canales de cristal que abrazan casas blancas, un sueño de piedra y agua donde la calma es la única ley.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "altamar_espatac-mat",
         "title": "Altamar",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/altamar_espatac-mat.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Horizonte herido; la proa se pierde en la bruma de un mar infinito, donde el cielo y el agua se funden en una danza de azules profundos.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "el_parthenon_en_la_niebla_dorada",
         "title": "El Parthenon En La Niebla Dorada",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/el_parthenon_en_la_niebla_dorada.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Gloria dorada; las columnas de la historia emergen de un sueño de luz, un eco de la perfección ateniense envuelto en la nostalgia del tiempo.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "lago_batur_bali",
         "title": "Lago Batur Bali",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/lago_batur_bali.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Espejo sagrado; la quietud del agua volcánica refleja el alma de Bali, un santuario de paz custodiado por la sombra de los dioses.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "pueblo_costero_de_santorini",
         "title": "Pueblo Costero De Santorini",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/pueblo_costero_de_santorini.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Escalinata de luz; el blanco inmaculado y el azul cian se derraman sobre el acantilado, un laberinto de sueños frente al Egeo.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "templo_en_la_colina esp",
         "title": "Templo En La Colina Esp",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/templo_en_la_colina ESP.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Vigilancia espiritual; la silueta del santuario domina el paisaje, un punto de encuentro entre la tierra y el firmamento en la cima del silencio.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
     },
     {
         "id": "templo_ulun_danu_bali",
         "title": "Templo Ulun Danu Bali",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/templo_ulun_danu_bali.png",
+        "description": "Flotando en el mito; la pagoda se eleva sobre las aguas del lago, una joya de madera y fe que parece mecerse al ritmo de las ofrendas.",
+        "price": "19,99",
+        "size": "Consultar",
+        "tech_info": "Ver descripción detallada."
+    },
+    {
+        "id": "colmar_francia",
+        "title": "Colmar Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/colmar_francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "côte de granit rose de francia",
+        "title": "Côte De Granit Rose De Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Côte de Granit Rose de Francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "mont saint-michel francia",
+        "title": "Mont Saint Michel Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Mont Saint-Michel francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "paris cerca de notrdame",
+        "title": "Paris Cerca De Notrdame",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Paris cerca de NotrDame.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "paseo_por_bulevares",
+        "title": "Paseo Por Bulevares",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/paseo_por_bulevares.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "pont en royans de francia",
+        "title": "Pont En Royans De Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Pont en Royans de Francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "arc du triumph",
+        "title": "Arc Du Triumph",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/ARC DU TRIUMPH.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "torre_eifel",
+        "title": "Torre Eifel",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/torre_eifel.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "banco de piedra",
+        "title": "Banco De Piedra",
+        "category": "32SINNOIR",
+        "src": "assets/32SINNOIR/banco de piedra.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "fuente_parque",
+        "title": "Fuente Parque",
+        "category": "32SINNOIR",
+        "src": "assets/32SINNOIR/fuente_parque.png",
         "description": "Nueva obra añadida recientemente.",
         "price": "19,99",
         "size": "Consultar"
@@ -2873,10 +3032,10 @@ const artworkData = [
         "title": "Atenea",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_001.png",
-        "description": "Una obra singular dentro del catalogo Edusse, explorando la relación entre forma y color. Esta obra, 'Atenea', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Sabiduría guerrera; la diosa emerge en un mosaico de luz y sombra, donde el valor se fragmenta en mil facetas de oro y turquesa.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2884,10 +3043,10 @@ const artworkData = [
         "title": "Barco cubesse",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_002.png",
-        "description": "La travesía y el viaje como metáforas de la existencia, navegando aguas de incertidumbre cromática. En 'Barco cubesse', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Odisea cromática; un bajel de leyenda navega por mares de cristal roto, una travesía épica contada a través de la vibración del color.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2895,10 +3054,10 @@ const artworkData = [
         "title": "Barco 1",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_003.png",
-        "description": "La travesía y el viaje como metáforas de la existencia, navegando aguas de incertidumbre cromática. En 'Barco 1', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Viento de facetas; las velas se despliegan en una danza geométrica que desafía la tempestad, capturando la esencia del viaje en cada pincelada.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2906,10 +3065,10 @@ const artworkData = [
         "title": "Batalla de dioses",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_004.png",
-        "description": "Una obra singular dentro del catalogo Edusse, explorando la relación entre forma y color. Esta obra, 'Batalla de dioses', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Duelo cósmico; fuerzas elementales chocan en un estallido de energía cubista, donde el mito se descompone para revelar su fuerza eterna.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2917,10 +3076,10 @@ const artworkData = [
         "title": "Batalla de otros dioses",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_005.png",
-        "description": "Una obra singular dentro del catalogo Edusse, explorando la relación entre forma y color. Esta obra, 'Batalla de otros dioses', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Retrato de mito; la lucha divina se convierte en una sinfonía de formas entrelazadas, una danza sagrada entre la luz y el caos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2928,10 +3087,10 @@ const artworkData = [
         "title": "Bodegon 1",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_006.png",
-        "description": "Una revisión contemporánea de la naturaleza muerta, donde los objetos cotidianos cobran una nueva vida simbólica. En 'Bodegon 1', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Naturaleza vibrante; la cotidianeidad estalla en un festival de color, donde cada fruto es una gema que brilla con luz propia en el lienzo.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2939,10 +3098,10 @@ const artworkData = [
         "title": "El toro",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_007.png",
-        "description": "Fuerza bruta y mitología ibérica se sincretizan en una forma poderosa y telúrica. En 'El toro', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Poder telúrico; la nobleza del animal se funde con el paisaje en una composición de fuerza y serenidad, un tótem de la tierra bajo el sol.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2950,10 +3109,10 @@ const artworkData = [
         "title": "Poseidon",
         "category": "SAGA CUBESSEPLUS",
         "src": "assets/SAGA CUBESSEPLUS/saga_cubesseplus_008.png",
-        "description": "Una obra singular dentro del catalogo Edusse, explorando la relación entre forma y color. Esta obra, 'Poseidon', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Rey de los abismos; el señor del mar se alza sobre el oleaje de cristal, un retrato de mando y misterio forjado en la espuma de los siglos.",
         "size": "Consultar",
         "price": "19,99",
-        "tech_info": "Arte digital de alta resolución.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2961,10 +3120,10 @@ const artworkData = [
         "title": "Acueducto De Segovia",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_001.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Acueducto De Segovia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Eternidad tallada; la piedra romana se convierte en filatelia, un puente de arcos infinitos que une el pasado imperial con la memoria del coleccionista.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2972,10 +3131,10 @@ const artworkData = [
         "title": "Arco Del Triunfo Moncloa",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_002.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Arco Del Triunfo Moncloa', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Victoria de línea; la arquitectura solemne de Madrid capturada en un grabado azul que respira la nobleza y el orden de la historia monumental.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2983,10 +3142,10 @@ const artworkData = [
         "title": "Carlos V Rey",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_003.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Carlos V Rey', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Imperialismo en sepia; la mirada del emperador domina el sello, un retrato forjado en la precisión del buril que evoca el esplendor de un imperio global.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -2994,10 +3153,10 @@ const artworkData = [
         "title": "Catedral Santiago De Compostela",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_004.png",
-        "description": "La verticalidad espiritual se encuentra con la ingravidez, creando un templo para la era etérea. En 'Catedral Santiago De Compostela', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Peregrinación de papel; la majestuosidad barroca se rinde ante la elegancia del grabado, una joya espiritual contenida en el formato de un tesoro postal.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3005,10 +3164,10 @@ const artworkData = [
         "title": "Catedral Santiago",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_005.png",
-        "description": "La verticalidad espiritual se encuentra con la ingravidez, creando un templo para la era etérea. En 'Catedral Santiago', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Hito de fe; una nueva perspectiva del templo gallego, donde la luz del atardecer parece filtrarse a través del delicado tramo de las líneas cinceladas.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3016,10 +3175,10 @@ const artworkData = [
         "title": "Cervantes",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_006.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Cervantes', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Pluma y espada; el príncipe de los ingenios preside su propio rincón de la historia, escoltado por las sombras inmortales de sus más grandes creaciones.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3027,10 +3186,10 @@ const artworkData = [
         "title": "Compostela",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_007.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Compostela', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Faro de peregrinos; la ciudad santa grabada en la quietud del tiempo, un refugio de fe en cada trazo de tinta seca.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3038,10 +3197,10 @@ const artworkData = [
         "title": "Conmemora Europa",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_008.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Conmemora Europa', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Unidad de trazos; la visión de un continente hermano capturada en la elegancia de la filatelia, un mensaje de paz cruzando fronteras.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3049,10 +3208,10 @@ const artworkData = [
         "title": "Constitucion Española",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_009.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Constitucion Española', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Ley cincelada; el fundamento de la concordia nacional plasmado con la sobriedad del grabado, un pilar de justicia en papel antiguo.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3060,10 +3219,10 @@ const artworkData = [
         "title": "Cristobal Colon 1951",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_010.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Cristobal Colon 1951', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Navegante de sueños; el almirante contempla nuevos mundos en la penumbra del dibujo, una oda al valor que cambió el mapa del infinito.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3071,10 +3230,10 @@ const artworkData = [
         "title": "Cristobal Colon",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_011.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Cristobal Colon', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Rumbo a lo desconocido; la mirada fija en el horizonte, Columbus se erige como un símbolo de la curiosidad que define nuestra historia.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3082,10 +3241,10 @@ const artworkData = [
         "title": "El Cid Campeador",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_012.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'El Cid Campeador', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Gloria a caballo; la leyenda de Rodrigo Díaz de Vivar galopa a través de las fibras del sello, un estallido de heroismo medieval.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3093,10 +3252,10 @@ const artworkData = [
         "title": "El Dictador F Franco",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_013.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'El Dictador F Franco', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Retrato de una era; la figura histórica capturada en la rigidez del grabado, un fragmento del pasado que invita a la reflexión y al estudio.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3104,10 +3263,10 @@ const artworkData = [
         "title": "El Quijote Cervantes",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_014.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'El Quijote Cervantes', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Idealismo de buril; el caballero de la triste figura y su creador comparten el espacio sagrado de la literatura convertida en arte postal.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3115,10 +3274,10 @@ const artworkData = [
         "title": "Fernando El Catolico",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_015.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Fernando El Catolico', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Forjador de unión; la firmeza del rey que vio nacer la España moderna, retratado con la dignidad de quien camina por las páginas del destino.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3126,10 +3285,10 @@ const artworkData = [
         "title": "Fernando Vii",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_016.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Fernando Vii', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Soberanía en tinta; el perfil del rey en un duelo de luces y sombras, una estampa que respira la complejidad de una era de cambios profundos.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3137,10 +3296,10 @@ const artworkData = [
         "title": "Franco 1955",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_017.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Franco 1955', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Sello de una época; la sobriedad del retrato oficial en una composición que evoca el rigor y la estética de mediados del siglo XX.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3148,10 +3307,10 @@ const artworkData = [
         "title": "Isabel 64",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_018.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Isabel 64', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Realeza en relieve; la efigie de la reina capturada en la delicadeza del grabado, un testimonio de la continuidad monárquica en papel.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3159,10 +3318,10 @@ const artworkData = [
         "title": "Isabel Cervantes",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_019.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Isabel Cervantes', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Dama de letras; la conjunción de la nobleza y el genio literario en un sello que celebra la herencia cultural más profunda de España.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3170,10 +3329,10 @@ const artworkData = [
         "title": "Isabel La Catolica",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_020.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Isabel La Catolica', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Reina de horizontes; la mirada que financió un mundo nuevo, plasmada con la majestuosidad de quien cambió el curso de la humanidad.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3181,10 +3340,10 @@ const artworkData = [
         "title": "Juan Carlos Rey 1966",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_021.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Juan Carlos Rey 1966', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Transición en línea; el retrato del monarca que guio la modernidad, grabado con la precisión de un futuro que empezaba a escribirse.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3192,10 +3351,10 @@ const artworkData = [
         "title": "Juan Carlos Y Sofia",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_022.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Juan Carlos Y Sofia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Duo ceremonial; la pareja real en una estampa de unidad y servicio, capturada en la elegancia atemporal del diseño filatélico.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3203,10 +3362,10 @@ const artworkData = [
         "title": "Juan De La Cierva",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_023.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Juan De La Cierva', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Alas de ingenio; el inventor y su autogiro desafían la gravedad en un sello que celebra el despegue de la tecnología aeroespacial española.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3214,10 +3373,10 @@ const artworkData = [
         "title": "Kince Fauna Iberica",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_024.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Kince Fauna Iberica', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Mirada furtiva; el lince ibérico asoma entre la maleza del grabado, una joya de la naturaleza protegida en el corazón de un tesoro postal.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3225,10 +3384,10 @@ const artworkData = [
         "title": "Lope De Vega",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_025.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Lope De Vega', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Fénix de los ingenios; la pasión del teatro barroco contenida en el retrato del poeta, cuyas palabras siguen vibrando en cada línea del buril.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3236,10 +3395,10 @@ const artworkData = [
         "title": "Monasterio De El Escorial",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_026.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Monasterio De El Escorial', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Geometría de piedra; la octava maravilla del mundo grabada con la sobria perfección de Juan de Herrera, un templo de orden y sabiduría.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3247,10 +3406,10 @@ const artworkData = [
         "title": "Pizarro",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_027.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Pizarro', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Conquista de acero; el perfil del explorador en tierras lejanas, un retrato de determinación y coraje forjado en la dureza del grabado antiguo.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3258,10 +3417,10 @@ const artworkData = [
         "title": "Ramon Y Cajal 1955",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_028.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Ramon Y Cajal 1955', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Arquitecto del cerebro; la curiosidad del Nobel plasmada en un sello que honra la ciencia y el descubrimiento de los paisajes invisibles del alma.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3269,10 +3428,10 @@ const artworkData = [
         "title": "Sagrada Familia",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_029.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Sagrada Familia', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Oración en piedra; el sueño de Gaudí se eleva hacia el cielo en un grabado que captura la luz y la fantasía de la arquitectura modernista.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3280,10 +3439,10 @@ const artworkData = [
         "title": "San Martin",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_030.png",
-        "description": "La inmensidad del océano se convierte en espejo del subconsciente, con sus mareas y su calma tensa. En 'San Martin', la técnica realza este concepto con una ejecución precisa.",
+        "description": "Libertador de los Andes; la nobleza del líder sudamericano en un gesto de mando y libertad, uniendo continentes a través de la filatelia.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3291,10 +3450,10 @@ const artworkData = [
         "title": "Velazquez Dos",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_031.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Velazquez Dos', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Maestro de la luz; un nuevo tributo al pintor de pintores, donde la pincelada se traduce a la precisión de la línea grabada en un baile eterno.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     },
     {
@@ -3302,10 +3461,10 @@ const artworkData = [
         "title": "Velazquez",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_032.png",
-        "description": "Pequeñas obras de arte contenidas, con estética filatélica o de grabado antiguo. Esta obra, 'Velazquez', es un ejemplo vibrante de la narrativa visual de la colección.",
+        "description": "Genio de la corte; el autor de 'Las Meninas' preside el sello con la dignidad de quien domina la realidad y la sombra con su arte inmortal.",
         "size": "Consultar",
         "price": "Colección",
-        "tech_info": "Simulación de grabado en metal y texturizado de papel antiguo.",
+        "tech_info": "Ver descripción detallada.",
         "sold": false
     }
 ];

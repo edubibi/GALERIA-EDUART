@@ -140,7 +140,7 @@ if (Test-Path $coversDir) {
 }
 
 # 3. GENERAR ARCHIVO JS
-$jsContent = @"
+$header = @"
 /**
  * BASE DE DATOS DE OBRAS
  * Generada automaticamente el $(Get-Date -Format "yyyy-MM-dd HH:mm")
@@ -152,36 +152,24 @@ const categoryCovers = {
 
 $coverEntries = @()
 foreach ($key in $categoryCovers.Keys) {
-    $path = $categoryCovers[$key]
-    $coverEntries += "    `"$key`": `"$path`""
-}
-$jsContent += ($coverEntries -join ",`n")
-$jsContent += "`n};`n`n"
-
-$jsContent += @"
-const artworkData = [
-"@
-
-$entries = @()
-foreach ($art in $artworks) {
-    $entry = @"
-    {
-        id:  "$($art.id)",
-        title:  "$($art.title)",
-        category:  "$($art.category)",
-        src:  "$($art.src)",
-        description:  "$($art.description)",
-        size:  "$($art.size)",
-        price:  "$($art.price)",
-
-        tech_info: "$($art.tech_info)",
-        sold: $($art.sold)
+    if ($categoryCovers[$key]) {
+        $path = $categoryCovers[$key]
+        $coverEntries += "    `"$key`": `"$path`""
     }
-"@
-    $entries += $entry
+}
+$jsHeader = $header + ($coverEntries -join ",`n") + "`n};`n`n"
+
+# Convertir la lista de obras a JSON de forma segura
+# Nota: Forzamos el tipo de 'sold' a booleano real si es string "true"/"false"
+foreach ($art in $artworks) {
+    if ($art.sold -eq "true" -or $art.sold -eq $true) { $art.sold = $true }
+    else { $art.sold = $false }
 }
 
-$jsContent += ($entries -join ",`n")
-$jsContent += "];"
-$jsContent | Set-Content -Path "js/data.js" -Encoding UTF8
-Write-Host "✅ Catálogo actualizado en js/data.js" -ForegroundColor Green
+$artworksJson = $artworks | ConvertTo-Json -Depth 5
+
+$finalJs = $jsHeader + "const artworkData = " + $artworksJson + ";"
+
+$finalJs | Set-Content -Path "js/data.js" -Encoding UTF8
+
+Write-Host "✅ Catálogo restaurado con éxito en js/data.js" -ForegroundColor Green
