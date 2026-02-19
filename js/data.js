@@ -29,10 +29,88 @@ const categoryCovers = {
     "photo_2_2025-12-15_18-32-25": "assets/PORTADILLAS_ESTILOS/photo_2_2025-12-15_18-32-25.jpg",
     "30OLONATUR-COLOR": "assets/30OLONATUR-COLOR/Côte de Granit Rose de Francia.png",
     "31OLENATUR": "assets/31OLENATUR/ARC DU TRIUMPH.png",
-    "32SINNOIR": "assets/32SINNOIR/banco de piedra.png"
+    "32SINNOIR": "assets/32SINNOIR/banco de piedra.png",
+    "33MINIGESTPOETIC": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png"
 };
 
 const artworkData = [
+    {
+        "id": "33minigestpoetic_001",
+        "title": "El Ojo Del Cazador",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
+        "description": "Minimalismo gestual poético. Una mirada profunda y esencial.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
+    {
+        "id": "33minigestpoetic_002",
+        "title": "Amor y Pérdida",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/amor_y_perdida.png",
+        "description": "Minimalismo gestual poético.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
+    {
+        "id": "33minigestpoetic_003",
+        "title": "El Eterno Suspiro Del Tiempo",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_eterno_suspiro_del_tiempo.png",
+        "description": "Minimalismo gestual poético.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
+    {
+        "id": "33minigestpoetic_004",
+        "title": "El Primer Suspiro Del Cielo",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_primer_suspiro_del_cielo.png",
+        "description": "Minimalismo gestual poético.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
+    {
+        "id": "33minigestpoetic_005",
+        "title": "Golpe De Una Gota En El Oceano",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/golpe_de_una_gota_en_el_oceano.png",
+        "description": "Minimalismo gestual poético.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
+    {
+        "id": "33minigestpoetic_006",
+        "title": "La Arquitectura Respira",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/la_arquitectura_respira.png",
+        "description": "Minimalismo gestual poético.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
+    {
+        "id": "33minigestpoetic_007",
+        "title": "Suspiro Cosmico Del Ser",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/suspiro_cosmico_del_ser.png",
+        "description": "Minimalismo gestual poético.",
+        "size": "Consultar",
+        "price": "19,99",
+        "tech_info": "Ver descripción detallada.",
+        "sold": false
+    },
     {
         "id": "00edusse_001",
         "title": "Avestruz Del Universo",

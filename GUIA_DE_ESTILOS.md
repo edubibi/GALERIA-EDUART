@@ -1,0 +1,176 @@
+# Guía Técnica de los 34 Estilos del Catálogo
+**Autor:** Eduardo Ramírez (EDUSSE)
+
+Esta guía define técnicamente cada uno de los **34 estilos** actuales (00-33), explicando qué efecto visual producen ("Qué hacen") y describiendo la técnica digital/artística empleada ("Cómo se hacen").
+
+---
+
+## 00. EDUSSE (Surrealismo Simbólico)
+- **Definición Técnica:** Fusión de silueta y paisaje interior con narrativa onírica.
+- **Qué hace:** Convierte una figura principal (animal o persona) en un contenedor de un mundo fantástico. El "interior" de la figura no es carne, sino un paisaje o cosmos.
+- **Cómo se hace:** Se utiliza una técnica de **doble exposición digital**. Se recorta la silueta del sujeto principal y se enmascara con una segunda imagen de paisaje complejo, unificando ambas con una paleta de color coherente y texturas superpuestas.
+
+## 01. EXP_NEOCIRC (Circularismo Lumínico)
+- **Definición Técnica:** Distorsión esférica de paisajes y arquitectura.
+- **Qué hace:** Curva el horizonte y los edificios alrededor de un punto de fuga central luminoso, creando una sensación de "planeta pequeño" o vórtice.
+- **Cómo se hace:** Aplicación de coordenadas polares o filtros de **ojo de pez extremo** sobre una composición panorámica, forzando la perspectiva hacia un centro radiante.
+
+## 02. CUBESSE stilo (Cubismo Prismático)
+- **Definición Técnica:** Descomposición geométrica en facetas de cristal.
+- **Qué hace:** Rompe la imagen en cientos de polígonos o fragmentos triangulares de colores planos o degradados, eliminando las curvas suaves.
+- **Cómo se hace:** Algoritmo de **tessellation** (teselado) o "low poly", donde la malla de la imagen se simplifica en triángulos grandes que promedian el color de esa zona.
+
+## 03. EXPNEOPLUS (Neo-Impresionismo Épico)
+- **Definición Técnica:** Paisajismo monumental con atmósfera dramática.
+- **Qué hace:** Muestra paisajes grandiosos (montañas, templos) con una iluminación celestial exagerada y nubes turbulentas.
+- **Cómo se hace:** Uso de pinceladas digitales densas y saturadas, combinadas con filtros de **resplandor difuso (glow)** y alto rango dinámico (HDR) para potenciar la luz.
+
+## 04. APLICC (Efecto Vitral / Mosaico de Luz)
+- **Definición Técnica:** Segmentación lumínica con contornos definidos.
+- **Qué hace:** Simula el efecto de una vidriera iluminada desde atrás, donde cada bloque de color está separado por una línea oscura o "plomo".
+- **Cómo se hace:** Filtro de **cristalización** o mosaico irregular, aumentando la saturación de los colores puros y superponiendo una red de líneas negras vectoriales.
+
+## 05. PLUMINK (Ilustración a Pluma y Tinta)
+- **Definición Técnica:** Grabado clásico monocromático o bitono.
+- **Qué hace:** Reduce la imagen a líneas finas y tramas cruzadas (hatching) sobre fondo claro, evocando ilustraciones de libros antiguos.
+- **Cómo se hace:** Umbralizado de la imagen para eliminar grises medios, convirtiendo sombras en tramas de líneas negras finas con una técnica de **imitación de grabado**.
+
+## 06. IDE_CLASSIC (Realismo Pictórico Clásico)
+- **Definición Técnica:** Simulación de pintura al óleo tradicional.
+- **Qué hace:** Crea una imagen suave, equilibrada y naturalista, típica de bodegones o paisajes rurales del siglo XIX.
+- **Cómo se hace:** Suavizado de texturas fotográficas y aplicación de un filtro de **pincelada húmeda y suave**, bajando el contraste digital para imitar el secado del óleo.
+
+## 07. NEOINK stilo (Cómic Contemporáneo / Línea Clara)
+- **Definición Técnica:** Ilustración moderna con tinta negra y color digital plano.
+- **Qué hace:** Define objetos con contornos negros limpios y rellena con colores vibrantes y uniformes, estilo novela gráfica europea.
+- **Cómo se hace:** Vectorización de contornos (ink outline) sumada a una coloración digital por capas (cel shading), sin degradados complejos.
+
+## 08. BORACARBON (Carboncillo Atmosférico)
+- **Definición Técnica:** Dibujo al carbón con énfasis en atmósfera difusa.
+- **Qué hace:** Crea escenas oscuras, melancólicas y granuladas, donde las formas se pierden en la neblina o la lluvia.
+- **Cómo se hace:** Desaturación casi total y aplicación de ruido/grano fuerte. Se difuminan los bordes (blur) como si se hubiera pasado el dedo sobre el carbón.
+
+## 09. FRACNEO (Fractalidad Orgánica)
+- **Definición Técnica:** Geometría recursiva aplicada a la naturaleza.
+- **Qué hace:** Repite patrones complejos en nubes, árboles o agua, creando una textura hipnótica y matemática.
+- **Cómo se hace:** Uso de algoritmos **fractales** (tipo Mandelbrot o similares) para generar texturas que sustituyen a los detalles naturales de la foto.
+
+## 10. OLEOCUBBO (Óleo Constructivista / Impasto)
+- **Definición Técnica:** Pincelada gruesa y geométrica.
+- **Qué hace:** Construye la imagen con "bloques" de pintura muy empastada y cuadrada, dando volumen y relieve táctil.
+- **Cómo se hace:** Simulación de física de pintura espesa (impasto), aplicando pinceladas cortas, rectangulares y direccionales que siguen la forma del objeto.
+
+## 11. URBANSPHERIC (Distorsión Atmosférica Urbana)
+- **Definición Técnica:** Paisaje urbano con lente gran angular y clima extremo.
+- **Qué hace:** Curva los rascacielos o calles y añade efectos climáticos intensos (nieve, lluvia) que "manchan" la lente.
+- **Cómo se hace:** Distorsión de lente (barril/esférica) combinada con capas de partículas (lluvia/nieve) y desenfoque de movimiento en los bordes.
+
+## 12. CRISTAL_CUBICO (Geometría Cristalina)
+- **Definición Técnica:** Transparencia y refracción facetada.
+- **Qué hace:** Hace que los objetos parezcan hechos de vidrio tallado, con múltiples reflejos internos y transparencias.
+- **Cómo se hace:** Superposición de texturas de reflexión prismática y aumento del contraste en los brillos especulares (blancos puros).
+
+## 13. RECTESSE (Abstracción Lineal Rectilínea)
+- **Definición Técnica:** Estructuración mediante líneas rectas agresivas.
+- **Qué hace:** "Plancha" las formas orgánicas convirtiéndolas en planos rectos y ángulos agudos, dando un aspecto arquitectónico rígido.
+- **Cómo se hace:** Simplificación poligonal forzada a usar cuadriláteros y líneas rectas, eliminando cualquier curva Bezier.
+
+## 14. TEREXSE (Texturizado de Terreno Extremo)
+- **Definición Técnica:** Relieve topográfico exagerado.
+- **Qué hace:** Convierte la imagen en un mapa en relieve, donde cada cambio de color se convierte en una altura o textura rugosa.
+- **Cómo se hace:** Generación de un mapa de desplazamiento (displacement map) basado en la luminosidad, aplicado exageradamente sobre la superficie 3D de la imagen.
+
+## 15. CUBESSEPLUS (Sinfonía Cromática Facetada)
+- **Definición Técnica:** Cubismo analítico con color enriquecido.
+- **Qué hace:** Similar al Cubesse, pero con una fragmentación más pequeña y una paleta de colores mucho más rica y compleja en cada fragmento.
+- **Cómo se hace:** Teselado de alta densidad (más polígonos) y asignación de variaciones de tono (hue jitter) a cada faceta individual.
+
+## 16. EXPNEO (Luminiscencia Nocturna / Neón)
+- **Definición Técnica:** Alto contraste nocturno y luces de neón.
+- **Qué hace:** Oscurece el fondo casi a negro y hace brillar intensamente las fuentes de luz (rojos, azules, cianes).
+- **Cómo se hace:** Ajuste de curvas para aplastar los negros y uso de efectos de **resplandor exterior (outer glow)** saturado en las luces altas.
+
+## 17. FUZZTESS (Onirismo Difuso)
+- **Definición Técnica:** Enfoque suave y bordes algodonosos.
+- **Qué hace:** Elimina los detalles duros, haciendo que todo parezca hecho de lana, nubes o sueños borrosos.
+- **Cómo se hace:** Desenfoque gaussiano selectivo y reducción de la claridad/textura, suavizando todas las transiciones de color.
+
+## 18. ABSTRACTO_CONFLUENCIA (Flujo de Color Líquido)
+- **Definición Técnica:** Mezcla de fluidos y marmolado.
+- **Qué hace:** Pierde la forma figurativa para mostrar corrientes de pintura líquida que se mezclan sin mezclarse del todo.
+- **Cómo se hace:** Simulación de **dinámica de fluidos** (como pintura vertida o "acrylic pouring"), distorsionando los píxeles en remolinos.
+
+## 19. FUZZLINE_ABS (Dibujo Gestual Vibrante)
+- **Definición Técnica:** Trazos rápidos de bocetaje ("Sketching").
+- **Qué hace:** Construye la imagen con miles de líneas rápidas, rayones y garabatos, transmitiendo energía y movimiento.
+- **Cómo se hace:** Filtros de detección de bordes y conversión a trazos vectoriales finos, superpuestos en múltiples capas con ligera variación de posición (jitter).
+
+## 20. BORASSIE (Tinta Expresionista / Splash)
+- **Definición Técnica:** Manchas de tinta china explosiva.
+- **Qué hace:** Imagen de alto impacto con siluetas negras fuertes y "salpicaduras" o manchas de tinta roja/negra que rompen el contorno.
+- **Cómo se hace:** Uso de pinceles digitales de tipo "splatter" (salpicadura) y "ink wash" (aguada), combinando siluetas recortadas con texturas de goteo.
+
+## 21. OCE-BURST (Impasto Marino Dinámico)
+- **Definición Técnica:** Óleo espeso con movimiento turbulento.
+- **Qué hace:** Simula pintura aplicada con violencia, con crestas y valles de pintura, ideal para mar y tormentas.
+- **Cómo se hace:** Filtro de relieve pronunciado (emboss) sobre una base de pincelada direccional curva y caótica.
+
+## 22. NEO-LUMINA (Cyberpunk Lineal)
+- **Definición Técnica:** Dibujo de luz sobre fondo oscuro.
+- **Qué hace:** Define los contornos con líneas de luz brillante (láser) sobre un fondo negro u oscuro, muy tecnológico.
+- **Cómo se hace:** Inversión de detección de bordes (hallar bordes -> invertir) coloreada con gradientes de neón brillante.
+
+## 23. TRIDIM-BURST (Volúmetría Explosiva 3D)
+- **Definición Técnica:** Efecto "Pop-out" o salida del marco.
+- **Qué hace:** Elementos centrales que parecen romper la pantalla o salir del cuadro hacia el espectador.
+- **Cómo se hace:** Deformación de perspectiva forzada y sombras proyectadas artificiales detrás del objeto central para separarlo del fondo.
+
+## 24. BORACARBON MONUMENTOS (Arquitectura al Carbón)
+- **Definición Técnica:** Dibujo arquitectónico académico al carbón.
+- **Qué hace:** Resalta la solidez de la piedra y la monumentalidad de edificios, eliminando distracciones de color.
+- **Cómo se hace:** Similar al Boracarbon pero con trazos más rectos y definidos para respetar la perspectiva arquitectónica, aumentando el contraste en las sombras de la piedra.
+
+## 25. CAPLIVE (Retrato Costumbrista Cálido)
+- **Definición Técnica:** Realismo cálido con iluminación teatral ("Claroscuro").
+- **Qué hace:** Retratos de personas con piel luminosa y fondos oscuros, evocando calidez humana y cercanía.
+- **Cómo se hace:** Iluminación digital tipo "Rembrandt" (luz lateral suave) y virado de color hacia tonos naranjas/terrosos cálidos.
+
+## 26. CARL_LINE (Línea Clara Humanista)
+- **Definición Técnica:** Dibujo a lápiz o grafito limpio.
+- **Qué hace:** Retratos sutiles donde la línea del contorno es fina y elegante, con sombreado muy suave.
+- **Cómo se hace:** Simulación de lápiz 2B sobre papel texturizado, manteniendo el blanco del papel muy presente.
+
+## 27. LINEVORT (Vorticismo Lineal)
+- **Definición Técnica:** Construcción mediante espirales de línea.
+- **Qué hace:** La imagen se forma por líneas que giran en remolinos concéntricos, como huellas dactilares gigantes o anillos de árbol.
+- **Cómo se hace:** Filtro de trama de semitonos (halftone) pero usando líneas concéntricas en lugar de puntos.
+
+## 28. ESPATAC (Espátula Impresionista)
+- **Definición Técnica:** Pintura a espátula (Knife Painting).
+- **Qué hace:** Formas construidas por parches planos y cuadrados de color puro, sin difuminar, muy vibrante.
+- **Cómo se hace:** Simulación de herramienta de espátula digital, que aplica color sin mezclar con la capa inferior, creando bordes duros y rectos en cada trazo.
+
+## 29. ESPATAC-MAT (Espátula Matérica / Rugosa)
+- **Definición Técnica:** Espátula con carga de textura (arena/gesso).
+- **Qué hace:** Igual que el anterior pero con aspecto de superficie rugosa, vieja o con mucha materia acumulada.
+- **Cómo se hace:** Añadido de una textura de superposición (overlay) de lienzo grueso o pared desconchada sobre la pintura a espátula.
+
+## 30. OLONATUR-COLOR (Naturalismo al Óleo Vibrante)
+- **Definición Técnica:** Pintura realista con color saturado.
+- **Qué hace:** Paisajes que parecen fotos pero con la calidez y la "mano" de la pintura al óleo, colores muy vivos (cielos azules, prados verdes).
+- **Cómo se hace:** Aumento de vibrancia selectiva y suavizado pictórico ligero, manteniendo el detalle fino.
+
+## 31. OLENATUR (Óleo Naturalista Sobrio)
+- **Definición Técnica:** Pintura realista académica.
+- **Qué hace:** Más contenido y clásico que el anterior, colores más fieles a la realidad y menos saturados.
+- **Cómo se hace:** Equilibrio de color neutro y pincelada clásica imperceptible.
+
+## 32. SINNOIR (Alto Contraste sin Negros / Clave Alta)
+- **Definición Técnica:** Estética "High Key" o sobreexpuesta artísticamente.
+- **Qué hace:** Imágenes muy luminosas donde las sombras no son negras, sino grises o azules claros, dando sensación de luz etérea.
+- **Cómo se hace:** Levantamiento de la curva de negros (output levels) para que el negro puro se convierta en gris claro, y sobreexposición de las luces.
+
+## 33. MINIGESTPOETIC (Minimalismo Gestual Poético)
+- **Definición Técnica:** Abstracción lírica basada en la economía del trazo.
+- **Qué hace:** Reduce la imagen a su esencia emocional más pura, utilizando el mínimo número de elementos visuales (trazos, manchas) para sugerir conceptos complejos como el amor, el tiempo o el ser, evocando la estética del arte Sumi-e o la caligrafía abstracta.
+- **Cómo se hace:** Uso de pinceles digitales de tinta china o acuarela muy diluida sobre grandes espacios de lienzo vacío (espacio negativo), enfocándose en la velocidad y presión del gesto (la "muñeca" del artista) más que en la representación figurativa exacta.
