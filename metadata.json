@@ -3433,5 +3433,239 @@
         "description": "Nueva obra añadida recientemente.",
         "price": "19,99",
         "size": "Consultar"
+    },
+    "acantilado_escocia": {
+        "id": "acantilado_escocia",
+        "title": "Acantilado Escocia",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/acantilado_escocia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "coliseum de roma": {
+        "id": "coliseum de roma",
+        "title": "Coliseum De Roma",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/coliseum de roma.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "en un dia en japon": {
+        "id": "en un dia en japon",
+        "title": "En Un Dia En Japon",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/en un dia en japon.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "estatua_de_la_libertad": {
+        "id": "estatua_de_la_libertad",
+        "title": "Estatua De La Libertad",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/estatua_de_la_libertad.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "new york bridge olo": {
+        "id": "new york bridge olo",
+        "title": "New York Bridge Olo",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/new york bridge OLO.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "pareja en el parque": {
+        "id": "pareja en el parque",
+        "title": "Pareja En El Parque",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/PAREJA EN EL PARQUE.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "parque impresion": {
+        "id": "parque impresion",
+        "title": "Parque Impresion",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/parque impresion.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "paseando por monmatre": {
+        "id": "paseando por monmatre",
+        "title": "Paseando Por Monmatre",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/paseando por monmatre.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "amor_y_perdida": {
+        "id": "amor_y_perdida",
+        "title": "Amor Y Perdida",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/amor_y_perdida.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "el_eterno_suspiro_del_tiempo": {
+        "id": "el_eterno_suspiro_del_tiempo",
+        "title": "El Eterno Suspiro Del Tiempo",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_eterno_suspiro_del_tiempo.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "el_ojo_del_cazador": {
+        "id": "el_ojo_del_cazador",
+        "title": "El Ojo Del Cazador",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "el_primer_suspiro_del_cielo": {
+        "id": "el_primer_suspiro_del_cielo",
+        "title": "El Primer Suspiro Del Cielo",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_primer_suspiro_del_cielo.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "golpe_de_una_gota_en_el_oceano": {
+        "id": "golpe_de_una_gota_en_el_oceano",
+        "title": "Golpe De Una Gota En El Oceano",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/golpe_de_una_gota_en_el_oceano.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "la_arquitectura_respira": {
+        "id": "la_arquitectura_respira",
+        "title": "La Arquitectura Respira",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/la_arquitectura_respira.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "suspiro_cosmico_del_ser": {
+        "id": "suspiro_cosmico_del_ser",
+        "title": "Suspiro Cosmico Del Ser",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/suspiro_cosmico_del_ser.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "expterico manchas": {
+        "id": "expterico manchas",
+        "title": "Expterico Manchas",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/EXPTERICO manchas.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "face": {
+        "id": "face",
+        "title": "Face",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/face.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "manchas": {
+        "id": "manchas",
+        "title": "Manchas",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/manchas.jpg",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "san francisco expterico": {
+        "id": "san francisco expterico",
+        "title": "San Francisco Expterico",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/san francisco EXPTERICO.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "tranvia": {
+        "id": "tranvia",
+        "title": "Tranvia",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/tranvia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "admiración": {
+        "id": "admiración",
+        "title": "Admiración",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/ADMIRACIÓN.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "arco del triunfo paperchin": {
+        "id": "arco del triunfo paperchin",
+        "title": "Arco Del Triunfo Paperchin",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/arco del triunfo PAPERCHIN.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "bufalos": {
+        "id": "bufalos",
+        "title": "Bufalos",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/bufalos.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "elefantes": {
+        "id": "elefantes",
+        "title": "Elefantes",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/ELEFANTES.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "en el oeste": {
+        "id": "en el oeste",
+        "title": "En El Oeste",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/en el oeste.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "monumentos_ del_mundo": {
+        "id": "monumentos_ del_mundo",
+        "title": "Monumentos  Del Mundo",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/monumentos_ del_mundo.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
     }
 }

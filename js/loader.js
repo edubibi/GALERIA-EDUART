@@ -64,8 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
         filtersContainer.innerHTML = '';
         filtersContainer.style.display = 'none';
 
-        // Limpiar contenedor de resultados
-        resultsContainer.innerHTML = '';
+        // Limpiar solo el mensaje de carga, mantener tarjetas estáticas
+        const loadingMsg = resultsContainer.querySelector('p');
+        if (loadingMsg) loadingMsg.remove();
 
         // Renderizar una TARJETA por CATEGORÍA
         if (categories.length === 0) {
@@ -87,8 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const card = document.createElement('div');
                 card.className = 'category-card';
-                // Al clicar, vamos a la GALERÍA filtrada por esta categoría
-                card.onclick = () => window.location.href = `galeria.html?category=${encodeURIComponent(cat)}`;
+                // Al clicar, vamos a la GALERÍA DIGITAL (visor) filtrada por esta categoría
+                card.onclick = () => window.location.href = `cuadroteca/index.html?category=${encodeURIComponent(cat)}`;
 
                 // Clean category for display
                 const displayCat = cat.replace(/^\d+/, '').replace(/_/g, ' ');
@@ -158,17 +159,38 @@ function createArtCard(art) {
 
     el.innerHTML = `
         <div class="card-image" style="background-image: url('${safeUrl}'); background-color: ${art.placeholderColor || '#ccc'};">
-            
         </div>
         <div class="card-info">
+            <div class="promo-badge" style="background:#e67e22; color:white; padding:4px 8px; border-radius:4px; font-size:0.75rem; font-weight:bold; display:inline-block; margin-bottom:0.8rem;">PROMOCIÓN 3+1</div>
             <h3>${art.title || 'Sin Título'}</h3>
             <p title="${art.description || ''}">${art.description || ''}</p>
             <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">📏 ${art.size || 'Tamaño no disp.'}</p>
             <p style="font-weight: bold; color: #000; margin-top: 0.2rem;">${priceDisplay}</p>
-            <div style="margin-top:1rem;">
-                <span class="btn-highlight" style="font-size:0.8rem;">Probar Marco</span>
+            <div style="margin-top:1rem; display:flex; gap:0.5rem;">
+                <button class="cart-btn" style="flex:1; background:#1a1a1a; color:white; border:none; padding:0.5rem; cursor:pointer; font-weight:bold; font-size:0.8rem; border-radius:4px;">🛒 Comprar el Cuadro</button>
+                <span class="btn-highlight" style="font-size:0.8rem; padding:0.5rem; border:1px solid #ccc; border-radius:4px;">Ver Detalles</span>
             </div>
         </div>
     `;
+
+    // Add To Cart logic
+    const buyBtn = el.querySelector('.cart-btn');
+    buyBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // Don't open visor
+        if (typeof addToCart === 'function') {
+            const added = addToCart(art);
+            if (added) {
+                buyBtn.innerText = '✅ ¡Añadido!';
+                buyBtn.style.background = '#28a745';
+                setTimeout(() => {
+                    buyBtn.innerText = '🛒 Comprar el Cuadro';
+                    buyBtn.style.background = '#1a1a1a';
+                }, 2000);
+            } else {
+                alert('Esta obra ya está en tu carrito.');
+            }
+        }
+    });
+
     return el;
 }

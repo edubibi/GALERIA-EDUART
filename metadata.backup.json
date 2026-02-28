@@ -3316,5 +3316,122 @@
         "price": "19,99",
         "size": "Consultar",
         "tech_info": "Ver descripción detallada."
+    },
+    "holandesa": {
+        "id": "holandesa",
+        "title": "Holandesa",
+        "category": "27LINEVORT",
+        "src": "assets/27LINEVORT/holandesa.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "molino_de_viento": {
+        "id": "molino_de_viento",
+        "title": "Molino De Viento",
+        "category": "27LINEVORT",
+        "src": "assets/27LINEVORT/molino_de_viento.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "oso_panda": {
+        "id": "oso_panda",
+        "title": "Oso Panda",
+        "category": "28ESPATAC",
+        "src": "assets/28ESPATAC/oso_panda.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "colmar_francia": {
+        "id": "colmar_francia",
+        "title": "Colmar Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/colmar_francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "côte de granit rose de francia": {
+        "id": "côte de granit rose de francia",
+        "title": "Côte De Granit Rose De Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Côte de Granit Rose de Francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "mont saint-michel francia": {
+        "id": "mont saint-michel francia",
+        "title": "Mont Saint Michel Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Mont Saint-Michel francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "paris cerca de notrdame": {
+        "id": "paris cerca de notrdame",
+        "title": "Paris Cerca De Notrdame",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Paris cerca de NotrDame.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "paseo_por_bulevares": {
+        "id": "paseo_por_bulevares",
+        "title": "Paseo Por Bulevares",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/paseo_por_bulevares.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "pont en royans de francia": {
+        "id": "pont en royans de francia",
+        "title": "Pont En Royans De Francia",
+        "category": "30OLONATUR-COLOR",
+        "src": "assets/30OLONATUR-COLOR/Pont en Royans de Francia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "arc du triumph": {
+        "id": "arc du triumph",
+        "title": "Arc Du Triumph",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/ARC DU TRIUMPH.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "torre_eifel": {
+        "id": "torre_eifel",
+        "title": "Torre Eifel",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/torre_eifel.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "banco de piedra": {
+        "id": "banco de piedra",
+        "title": "Banco De Piedra",
+        "category": "32SINNOIR",
+        "src": "assets/32SINNOIR/banco de piedra.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    "fuente_parque": {
+        "id": "fuente_parque",
+        "title": "Fuente Parque",
+        "category": "32SINNOIR",
+        "src": "assets/32SINNOIR/fuente_parque.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
     }
 }

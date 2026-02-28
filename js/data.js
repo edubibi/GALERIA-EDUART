@@ -30,85 +30,20 @@ const categoryCovers = {
     "30OLONATUR-COLOR": "assets/30OLONATUR-COLOR/Côte de Granit Rose de Francia.png",
     "31OLENATUR": "assets/31OLENATUR/ARC DU TRIUMPH.png",
     "32SINNOIR": "assets/32SINNOIR/banco de piedra.png",
-    "33MINIGESTPOETIC": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png"
+    "33MINIGESTPOETIC": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
+    "00FURSONA GENESIS": "static/images/fursona-genesis-portada.png"
 };
 
 const artworkData = [
     {
-        "id": "33minigestpoetic_001",
-        "title": "El Ojo Del Cazador",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
-        "description": "Minimalismo gestual poético. Una mirada profunda y esencial.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
-        "sold": false
-    },
-    {
-        "id": "33minigestpoetic_002",
-        "title": "Amor y Pérdida",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/amor_y_perdida.png",
-        "description": "Minimalismo gestual poético.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
-        "sold": false
-    },
-    {
-        "id": "33minigestpoetic_003",
-        "title": "El Eterno Suspiro Del Tiempo",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/el_eterno_suspiro_del_tiempo.png",
-        "description": "Minimalismo gestual poético.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
-        "sold": false
-    },
-    {
-        "id": "33minigestpoetic_004",
-        "title": "El Primer Suspiro Del Cielo",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/el_primer_suspiro_del_cielo.png",
-        "description": "Minimalismo gestual poético.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
-        "sold": false
-    },
-    {
-        "id": "33minigestpoetic_005",
-        "title": "Golpe De Una Gota En El Oceano",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/golpe_de_una_gota_en_el_oceano.png",
-        "description": "Minimalismo gestual poético.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
-        "sold": false
-    },
-    {
-        "id": "33minigestpoetic_006",
-        "title": "La Arquitectura Respira",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/la_arquitectura_respira.png",
-        "description": "Minimalismo gestual poético.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
-        "sold": false
-    },
-    {
-        "id": "33minigestpoetic_007",
-        "title": "Suspiro Cosmico Del Ser",
-        "category": "33MINIGESTPOETIC",
-        "src": "assets/33MINIGESTPOETIC/suspiro_cosmico_del_ser.png",
-        "description": "Minimalismo gestual poético.",
-        "size": "Consultar",
-        "price": "19,99",
-        "tech_info": "Ver descripción detallada.",
+        "id": "fursona_001",
+        "title": "Fursona Genesis #001",
+        "category": "00FURSONA GENESIS",
+        "src": "static/images/fursona-genesis-portada.png",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis. 10,197 obras exclusivas en la blockchain de Polygon.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain",
         "sold": false
     },
     {
@@ -3070,10 +3005,82 @@ const artworkData = [
         "size": "Consultar"
     },
     {
+        "id": "acantilado_escocia",
+        "title": "Acantilado Escocia",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/acantilado_escocia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
         "id": "arc du triumph",
         "title": "Arc Du Triumph",
         "category": "31OLENATUR",
         "src": "assets/31OLENATUR/ARC DU TRIUMPH.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "coliseum de roma",
+        "title": "Coliseum De Roma",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/coliseum de roma.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "en un dia en japon",
+        "title": "En Un Dia En Japon",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/en un dia en japon.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "estatua_de_la_libertad",
+        "title": "Estatua De La Libertad",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/estatua_de_la_libertad.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "new york bridge olo",
+        "title": "New York Bridge Olo",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/new york bridge OLO.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "pareja en el parque",
+        "title": "Pareja En El Parque",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/PAREJA EN EL PARQUE.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "parque impresion",
+        "title": "Parque Impresion",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/parque impresion.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "paseando por monmatre",
+        "title": "Paseando Por Monmatre",
+        "category": "31OLENATUR",
+        "src": "assets/31OLENATUR/paseando por monmatre.png",
         "description": "Nueva obra añadida recientemente.",
         "price": "19,99",
         "size": "Consultar"
@@ -3101,6 +3108,168 @@ const artworkData = [
         "title": "Fuente Parque",
         "category": "32SINNOIR",
         "src": "assets/32SINNOIR/fuente_parque.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "amor_y_perdida",
+        "title": "Amor Y Perdida",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/amor_y_perdida.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "el_eterno_suspiro_del_tiempo",
+        "title": "El Eterno Suspiro Del Tiempo",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_eterno_suspiro_del_tiempo.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "el_ojo_del_cazador",
+        "title": "El Ojo Del Cazador",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "el_primer_suspiro_del_cielo",
+        "title": "El Primer Suspiro Del Cielo",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/el_primer_suspiro_del_cielo.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "golpe_de_una_gota_en_el_oceano",
+        "title": "Golpe De Una Gota En El Oceano",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/golpe_de_una_gota_en_el_oceano.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "la_arquitectura_respira",
+        "title": "La Arquitectura Respira",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/la_arquitectura_respira.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "suspiro_cosmico_del_ser",
+        "title": "Suspiro Cosmico Del Ser",
+        "category": "33MINIGESTPOETIC",
+        "src": "assets/33MINIGESTPOETIC/suspiro_cosmico_del_ser.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "expterico manchas",
+        "title": "Expterico Manchas",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/EXPTERICO manchas.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "face",
+        "title": "Face",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/face.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "manchas",
+        "title": "Manchas",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/manchas.jpg",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "san francisco expterico",
+        "title": "San Francisco Expterico",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/san francisco EXPTERICO.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "tranvia",
+        "title": "Tranvia",
+        "category": "34EXPTERICO",
+        "src": "assets/34EXPTERICO/tranvia.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "admiración",
+        "title": "Admiración",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/ADMIRACIÓN.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "arco del triunfo paperchin",
+        "title": "Arco Del Triunfo Paperchin",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/arco del triunfo PAPERCHIN.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "bufalos",
+        "title": "Bufalos",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/bufalos.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "elefantes",
+        "title": "Elefantes",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/ELEFANTES.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "en el oeste",
+        "title": "En El Oeste",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/en el oeste.png",
+        "description": "Nueva obra añadida recientemente.",
+        "price": "19,99",
+        "size": "Consultar"
+    },
+    {
+        "id": "monumentos_ del_mundo",
+        "title": "Monumentos  Del Mundo",
+        "category": "35PAPERCHIN",
+        "src": "assets/35PAPERCHIN/monumentos_ del_mundo.png",
         "description": "Nueva obra añadida recientemente.",
         "price": "19,99",
         "size": "Consultar"
@@ -3194,13 +3363,24 @@ const artworkData = [
         "sold": false
     },
     {
+        "id": "sellos_coleccion_completa",
+        "title": "Colección Completa (32 Sellos)",
+        "category": "SELLOS_MAGICOS",
+        "src": "assets/logo_banner.png",
+        "description": "Adquiere la colección completa de 32 sellos mágicos de Dudeduart de una sola vez por un precio especial.",
+        "size": "Original Drop",
+        "price": "27,00",
+        "tech_info": "Colección completa de 32 unidades en Alta Resolución.",
+        "sold": false
+    },
+    {
         "id": "sello_magico_001",
         "title": "Acueducto De Segovia",
         "category": "SELLOS_MAGICOS",
         "src": "assets/SELLOS_MAGICOS/sello_magico_001.png",
         "description": "Eternidad tallada; la piedra romana se convierte en filatelia, un puente de arcos infinitos que une el pasado imperial con la memoria del coleccionista.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3211,7 +3391,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_002.png",
         "description": "Victoria de línea; la arquitectura solemne de Madrid capturada en un grabado azul que respira la nobleza y el orden de la historia monumental.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3222,7 +3402,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_003.png",
         "description": "Imperialismo en sepia; la mirada del emperador domina el sello, un retrato forjado en la precisión del buril que evoca el esplendor de un imperio global.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3233,7 +3413,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_004.png",
         "description": "Peregrinación de papel; la majestuosidad barroca se rinde ante la elegancia del grabado, una joya espiritual contenida en el formato de un tesoro postal.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3244,7 +3424,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_005.png",
         "description": "Hito de fe; una nueva perspectiva del templo gallego, donde la luz del atardecer parece filtrarse a través del delicado tramo de las líneas cinceladas.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3255,7 +3435,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_006.png",
         "description": "Pluma y espada; el príncipe de los ingenios preside su propio rincón de la historia, escoltado por las sombras inmortales de sus más grandes creaciones.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3266,7 +3446,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_007.png",
         "description": "Faro de peregrinos; la ciudad santa grabada en la quietud del tiempo, un refugio de fe en cada trazo de tinta seca.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3277,7 +3457,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_008.png",
         "description": "Unidad de trazos; la visión de un continente hermano capturada en la elegancia de la filatelia, un mensaje de paz cruzando fronteras.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3288,7 +3468,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_009.png",
         "description": "Ley cincelada; el fundamento de la concordia nacional plasmado con la sobriedad del grabado, un pilar de justicia en papel antiguo.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3299,7 +3479,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_010.png",
         "description": "Navegante de sueños; el almirante contempla nuevos mundos en la penumbra del dibujo, una oda al valor que cambió el mapa del infinito.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3310,7 +3490,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_011.png",
         "description": "Rumbo a lo desconocido; la mirada fija en el horizonte, Columbus se erige como un símbolo de la curiosidad que define nuestra historia.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3321,7 +3501,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_012.png",
         "description": "Gloria a caballo; la leyenda de Rodrigo Díaz de Vivar galopa a través de las fibras del sello, un estallido de heroismo medieval.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3332,7 +3512,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_013.png",
         "description": "Retrato de una era; la figura histórica capturada en la rigidez del grabado, un fragmento del pasado que invita a la reflexión y al estudio.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3343,7 +3523,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_014.png",
         "description": "Idealismo de buril; el caballero de la triste figura y su creador comparten el espacio sagrado de la literatura convertida en arte postal.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3354,7 +3534,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_015.png",
         "description": "Forjador de unión; la firmeza del rey que vio nacer la España moderna, retratado con la dignidad de quien camina por las páginas del destino.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3365,7 +3545,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_016.png",
         "description": "Soberanía en tinta; el perfil del rey en un duelo de luces y sombras, una estampa que respira la complejidad de una era de cambios profundos.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3376,7 +3556,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_017.png",
         "description": "Sello de una época; la sobriedad del retrato oficial en una composición que evoca el rigor y la estética de mediados del siglo XX.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3387,7 +3567,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_018.png",
         "description": "Realeza en relieve; la efigie de la reina capturada en la delicadeza del grabado, un testimonio de la continuidad monárquica en papel.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3398,7 +3578,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_019.png",
         "description": "Dama de letras; la conjunción de la nobleza y el genio literario en un sello que celebra la herencia cultural más profunda de España.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3409,7 +3589,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_020.png",
         "description": "Reina de horizontes; la mirada que financió un mundo nuevo, plasmada con la majestuosidad de quien cambió el curso de la humanidad.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3420,7 +3600,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_021.png",
         "description": "Transición en línea; el retrato del monarca que guio la modernidad, grabado con la precisión de un futuro que empezaba a escribirse.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3431,7 +3611,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_022.png",
         "description": "Duo ceremonial; la pareja real en una estampa de unidad y servicio, capturada en la elegancia atemporal del diseño filatélico.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3442,7 +3622,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_023.png",
         "description": "Alas de ingenio; el inventor y su autogiro desafían la gravedad en un sello que celebra el despegue de la tecnología aeroespacial española.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3453,7 +3633,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_024.png",
         "description": "Mirada furtiva; el lince ibérico asoma entre la maleza del grabado, una joya de la naturaleza protegida en el corazón de un tesoro postal.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3464,7 +3644,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_025.png",
         "description": "Fénix de los ingenios; la pasión del teatro barroco contenida en el retrato del poeta, cuyas palabras siguen vibrando en cada línea del buril.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3475,7 +3655,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_026.png",
         "description": "Geometría de piedra; la octava maravilla del mundo grabada con la sobria perfección de Juan de Herrera, un templo de orden y sabiduría.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3486,7 +3666,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_027.png",
         "description": "Conquista de acero; el perfil del explorador en tierras lejanas, un retrato de determinación y coraje forjado en la dureza del grabado antiguo.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3497,7 +3677,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_028.png",
         "description": "Arquitecto del cerebro; la curiosidad del Nobel plasmada en un sello que honra la ciencia y el descubrimiento de los paisajes invisibles del alma.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3508,7 +3688,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_029.png",
         "description": "Oración en piedra; el sueño de Gaudí se eleva hacia el cielo en un grabado que captura la luz y la fantasía de la arquitectura modernista.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3519,7 +3699,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_030.png",
         "description": "Libertador de los Andes; la nobleza del líder sudamericano en un gesto de mando y libertad, uniendo continentes a través de la filatelia.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3530,7 +3710,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_031.png",
         "description": "Maestro de la luz; un nuevo tributo al pintor de pintores, donde la pincelada se traduce a la precisión de la línea grabada en un baile eterno.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     },
@@ -3541,7 +3721,7 @@ const artworkData = [
         "src": "assets/SELLOS_MAGICOS/sello_magico_032.png",
         "description": "Genio de la corte; el autor de 'Las Meninas' preside el sello con la dignidad de quien domina la realidad y la sombra con su arte inmortal.",
         "size": "Consultar",
-        "price": "Colección",
+        "price": "1,00",
         "tech_info": "Ver descripción detallada.",
         "sold": false
     }

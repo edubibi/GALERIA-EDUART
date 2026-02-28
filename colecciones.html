@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -21,25 +21,23 @@
             <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
             <li><a href="memorandum.html">Universo EDUSSE</a></li>
             <li><a href="colecciones.html" class="active">Colecciones</a></li>
-            <li><a href="galeria.html">Galer&iacute;a</a></li>
+
             <li><a href="compra.html">Cómo Comprar</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="carrito.html">Carrito <span class="cart-badge"></span></a></li>
-            <li><a href="colecciones.html" class="btn-highlight">Probador Virtual</a></li>
         </ul>
     </nav>
 
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header" style="position: relative;">
         <div class="container">
             <h1>Mis Colecciones</h1>
             <p>Explora las series tem&aacute;ticas y encuentra la pieza perfecta.</p>
-            <div style="margin-top: 1.5rem;">
-                <a href="cuadroteca/index.html" class="btn btn-primary"
-                    style="background-color: #D4AF37; color: #000; font-weight: bold; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    🏛️ Ver en Modo Biblioteca 3D
-                </a>
-            </div>
+
+            <!-- Botón Arriba Derecha (Dentro caja negra) -->
+            <a href="cuadroteca/index.html" class="btn-digital-top-right">
+                🏛️ GALERÍA DE ARTE GLOBAL
+            </a>
         </div>
     </header>
 
@@ -54,15 +52,23 @@
 
             <!-- Results Grid -->
             <div id="collections-results" class="collections-grid">
-                <p style="text-align: center; width: 100%; color: #888;">Selecciona una categor&iacute;a arriba para ver
-                    las
-                    obras.</p>
+                <!-- Static Card: Fursona Genesis -->
+                <div class="collection-card">
+                    <img src="static/images/fursona-genesis-portada.png" alt="Fursona Genesis">
+                    <h3>FURSONA GENESIS</h3>
+                    <a href="fursona-genesis.html">Ver colección</a>
+                </div>
+
+                <p style="text-align: center; width: 100%; color: #888;">Cargando colecciones dinámicas...</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Tu Arte. Todos los derechos reservados.</p>
+    <footer class="site-footer"
+        style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
+        <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">&copy; e.ramirez 2026. Todos los derechos reservados.</p>
+        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y
+            Condiciones</a>
     </footer>
 
     <!-- Scripts -->
