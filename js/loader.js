@@ -88,15 +88,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const card = document.createElement('div');
                 card.className = 'category-card';
-                // Al clicar, vamos a la GALERÍA DIGITAL (visor) filtrada por esta categoría
-                card.onclick = () => window.location.href = `cuadroteca/index.html?category=${encodeURIComponent(cat)}`;
 
                 // Clean category for display
                 const displayCat = cat.replace(/^\d+/, '').replace(/_/g, ' ');
 
+                // Custom Badge and Link for Fursona
+                let badgeText = displayCat;
+                let badgeStyle = "background: rgba(0,0,0,0.5);";
+                let clickAction = () => window.location.href = `cuadroteca/index.html?category=${encodeURIComponent(cat)}`;
+
+                if (cat === "00FURSONA GENESIS") {
+                    badgeText = "TOP NFT";
+                    badgeStyle = "background: rgba(160, 32, 240, 0.7);";
+                    clickAction = () => window.location.href = "fursona-genesis.html";
+                }
+
+                card.onclick = clickAction;
+
                 card.innerHTML = `
                     <div class="placeholder-cover" style="background-image: url('${coverImage}'); background-size: cover; background-position: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">
-                        <span style="background: rgba(0,0,0,0.5); padding: 0.2rem 0.5rem; border-radius: 4px;">${displayCat}</span>
+                        <span style="${badgeStyle} padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.7rem;">${badgeText}</span>
                     </div>
                     <h3>${displayCat}</h3>
                 `;
