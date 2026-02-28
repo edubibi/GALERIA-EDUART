@@ -140,15 +140,18 @@ function createArtCard(art) {
     const el = document.createElement('div');
     el.className = 'collection-card';
 
-    // Al hacer click, vamos al VISOR con esa imagen
-    const viewerPath = '../' + art.src;
-    const viewerLink = `visor/index.html?img=${encodeURIComponent(viewerPath)}&title=${encodeURIComponent(art.title)}&category=${encodeURIComponent(art.category)}&id=${art.id}`;
+    // Al hacer click, vamos al VISOR con esa imagen (solo si no es NFT)
+    if (!isNFT) {
+        const viewerPath = '../' + art.src;
+        const viewerLink = `visor/index.html?img=${encodeURIComponent(viewerPath)}&title=${encodeURIComponent(art.title)}&category=${encodeURIComponent(art.category)}&id=${art.id}`;
 
-    // Make the whole card clickable safely
-    el.addEventListener('click', () => {
-        window.location.href = viewerLink;
-    });
-    el.style.cursor = 'pointer';
+        el.addEventListener('click', () => {
+            window.location.href = viewerLink;
+        });
+        el.style.cursor = 'pointer';
+    } else {
+        el.style.cursor = 'default';
+    }
 
     // Safe Price Check to avoid crash on null/undefined
     let priceDisplay = '';
