@@ -31,7 +31,7 @@ const categoryCovers = {
     "31OLENATUR": "assets/31OLENATUR/ARC DU TRIUMPH.png",
     "32SINNOIR": "assets/32SINNOIR/banco de piedra.png",
     "33MINIGESTPOETIC": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
-    "00FURSONA GENESIS": "static/images/fursona-genesis-portada.png"
+    "00FURSONA GENESIS": "assets/00FURSONA GENESIS/fursona-genesis-portada.png"
 };
 
 const artworkData = [
@@ -39,7 +39,7 @@ const artworkData = [
         "id": "fursona_001",
         "title": "Fursona Genesis #001",
         "category": "00FURSONA GENESIS",
-        "src": "static/images/fursona-genesis-portada.png",
+        "src": "assets/00FURSONA GENESIS/fursona-genesis-portada.png",
         "description": "Avatar antropomórfico único de la colección Fursona Genesis. 10,197 obras exclusivas en la blockchain de Polygon.",
         "size": "Digital NFT",
         "price": "MINT",

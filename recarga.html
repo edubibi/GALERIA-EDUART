@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recargar Mi Caja | Tu Arte</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .recharge-option {
+            border: 2px solid #eee;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .recharge-option:hover,
+        .recharge-option.selected {
+            border-color: #D4AF37;
+            background: #fffdf5;
+        }
+
+        .amount-text {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="assets/logo_banner.png" alt="Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <div class="container" style="max-width: 600px; margin: 0 auto;">
+            <h1 style="font-family:'Playfair Display', serif; text-align: center; margin-bottom: 1rem;">Recargar Mi Caja
+            </h1>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem;">
+                Compra saldo virtual para utilizarlo en tus futuras adquisiciones de forma rápida y segura.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 3rem;">
+                <div class="recharge-option" onclick="selectAmount(20)">
+                    <span class="amount-text">20€</span>
+                    <span>Crédito Básico</span>
+                </div>
+                <div class="recharge-option selected" onclick="selectAmount(50)">
+                    <span class="amount-text">50€</span>
+                    <span>Crédito Estándar</span>
+                </div>
+                <div class="recharge-option" onclick="selectAmount(100)">
+                    <span class="amount-text">100€</span>
+                    <span>Crédito Premium</span>
+                </div>
+                <div class="recharge-option" onclick="selectAmount(200)">
+                    <span class="amount-text">200€</span>
+                    <span>Crédito VIP</span>
+                </div>
+            </div>
+
+            <div id="payment-area"
+                style="background: #fdfdfd; padding: 2rem; border-radius: 15px; border: 1px solid #eee;">
+                <h3 style="margin-bottom: 1.5rem; text-align: center;">Pagar <span id="display-amount">50</span>€</h3>
+
+                <div id="paypal-button-container"></div>
+
+                <p style="font-size: 0.8rem; color: #999; text-align: center; margin-top: 1rem;">
+                    El pago se procesa de forma segura a través de PayPal o Tarjeta de Crédito.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/user_wallet.js"></script>
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AbeirylXoBEWi-nVT_IP32yFMWL7c2dxGdE63h7fmDQPf8cR_x8gFAlSbh2L0ZtrqBUvwnnEmQ60ELiJ&currency=EUR"></script>
+    <script>
+        let selectedAmount = 50;
+
+        function selectAmount(amt) {
+            selectedAmount = amt;
+            document.getElementById('display-amount').innerText = amt;
+
+            // UI Update
+            document.querySelectorAll('.recharge-option').forEach(opt => {
+                opt.classList.remove('selected');
+                if (opt.innerText.includes(amt + '€')) opt.classList.add('selected');
+            });
+
+            // Re-render PayPal button with new amount
+            renderPayPal();
+        }
+
+        function renderPayPal() {
+            const container = document.getElementById('paypal-button-container');
+            container.innerHTML = '';
+
+            paypal.Buttons({
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: { value: selectedAmount.toFixed(2) },
+                            description: "Recarga de saldo virtual - Tu Arte"
+                        }]
+                    });
+                },
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(details => {
+                        addWalletCredit(selectedAmount);
+                        alert('¡Recarga completada con éxito! Tu nuevo saldo es de ' + getWalletBalance() + '€');
+                        window.location.href = 'carrito.html';
+                    });
+                }
+            }).render('#paypal-button-container');
+        }
+
+        window.onload = renderPayPal;
+    </script>
+</body>
+
+</html>

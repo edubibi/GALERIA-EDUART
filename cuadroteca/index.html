@@ -36,10 +36,6 @@
             </div>
 
             <div class="header-right">
-                <div class="search-box">
-                    <span class="icon">🔍</span>
-                    <input type="text" id="search-input" placeholder="Buscar obra..." autocomplete="off">
-                </div>
                 <button id="musicBtn" class="music-btn">🎵 Música</button>
             </div>
         </header>
@@ -53,7 +49,7 @@
 
     <!-- Hero Overlay for details -->
     <div id="hero-overlay">
-        <button id="close-hero">✕</button>
+        <button id="close-hero" onclick="closeHero()">✕</button>
         <div class="hero-content">
             <div class="hero-image-container">
                 <img id="hero-img" src="" alt="">
@@ -65,10 +61,21 @@
                     <span id="hero-price" class="price">Precio</span>
                 </div>
                 <p id="hero-desc">Descripción detallada de la obra...</p>
+                <div style="display: flex; gap: 10px; margin-top:20px;">
+                    <!-- Botón de compra -->
+                    <button id="btn-comprar-cuadroteca" class="btn-comprar"
+                        style="flex: 1; padding:10px 15px; font-weight:bold; cursor:pointer;">🛒 Comprar el
+                        Cuadro</button>
+                    <!-- Botón de Probador Virtual -->
+                    <button id="btn-probador-cuadroteca" class="btn-outline"
+                        style="flex: 1; padding:10px 15px; font-weight:bold; cursor:pointer; background: transparent; border: 1px solid #fff; color: #fff;">🖼️
+                        Probador Virtual</button>
+                </div>
             </div>
         </div>
     </div>
 
+    <script src="../js/cart.js?v=111"></script>
     <script src="script.js?v=neon"></script>
 </body>
 

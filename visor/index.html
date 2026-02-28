@@ -306,12 +306,39 @@
                             style="font-weight: 700; color: #000; font-size: 1.2rem; letter-spacing: 0.5px; margin-bottom: 0.5rem;">
                             Precio</p>
                     </div>
-                    <p id="artSize" style="font-family: 'Lato', sans-serif; color: #555; font-size: 1rem;">
+                    <p id="artSize" style="font-family: 'Lato', sans-serif; color: #555; font-size: 1rem; margin-bottom: 1rem;">
                         Tamaño</p>
 
+                    <div style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1.5rem;">
+                        <h3 style="font-size: 0.9rem; color: #555; text-transform: uppercase; margin-bottom: 0.5rem;">Editar Marco</h3>
+                        <div class="frame-selector-row" id="modalFrameSelector" style="margin-bottom: 0;">
+                            <!-- JS populated -->
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <h3 style="font-size: 0.9rem; color: #333; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.8rem;">
+                            ¿Dónde lo pondrías?
+                        </h3>
+                        <div class="size-selector" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <button class="btn-size active" id="btnEnvNeutral" onclick="changeEnvironment('bedroom')"
+                                style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Tu
+                                Habitación?</button>
+                            <button class="btn-size" id="btnEnvRoom" onclick="changeEnvironment('room')"
+                                style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Tu
+                                Salón?</button>
+                            <button class="btn-size" id="btnEnvTable" onclick="changeEnvironment('table')"
+                                style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Sobremesa?</button>
+                        </div>
+                        <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem; font-style: italic;">
+                            *Visualización aproximada con boceto decorativo.
+                        </p>
+                    </div>
+
+
                     <button id="addToCartBtn" class="btn-primary"
-                        style="width:100%; margin-top:1.5rem; background:#1a1a1a; color:white; border:none; padding:1rem; cursor:pointer; font-weight:bold;">
-                        Añadir al Carrito
+                        style="width:100%; background:#1a1a1a; color:white; border:none; padding:1.2rem; cursor:pointer; font-weight:bold; font-size:1.1rem; border-radius:4px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+                        🛒 COMPRAR EL CUADRO
                     </button>
                     <div id="cartMsg"
                         style="text-align:center; color:green; margin-top:0.5rem; display:none; font-weight:bold;">
@@ -319,60 +346,6 @@
                             Carrito</a>
                     </div>
                 </div>
-
-                <!-- Environment Selector (Moved to Top) -->
-                <div style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 2rem;">
-                    <h3
-                        style="font-size: 1.1rem; color: #333; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">
-                        ¿Dónde lo pondrías?
-                    </h3>
-                    <div class="size-selector" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                        <button class="btn-size active" id="btnEnvNeutral" onclick="changeEnvironment('bedroom')"
-                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Tu
-                            Habitación?</button>
-                        <button class="btn-size" id="btnEnvRoom" onclick="changeEnvironment('room')"
-                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Tu
-                            Salón?</button>
-                        <!-- <button class="btn-size" id="btnEnvClassic" onclick="changeEnvironment('neutral')"
-                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">Solo
-                            Cuadro</button> -->
-                        <button class="btn-size" id="btnEnvTable" onclick="changeEnvironment('table')"
-                            style="width: auto; padding: 0.5rem 0.8rem; font-size: 0.85rem; font-weight: bold;">¿Sobremesa?</button>
-                    </div>
-                    <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem; font-style: italic;">
-                        *Visualización aproximada con boceto decorativo.
-                    </p>
-                </div>
-
-                <h3 style="font-size: 1rem; color: #999; text-transform: uppercase; letter-spacing: 1px;">Editar Marco
-                </h3>
-                <div class="frame-selector-row" id="modalFrameSelector">
-                    <!-- JS populated -->
-                </div>
-
-                <div style="margin-top: 2rem; border-top: 1px solid #eee; padding-top: 2rem;">
-                    <h3>Tamaño</h3>
-                    <div class="size-selector">
-                        <button class="btn-size" onclick="changePreviewSize('small')">S</button>
-                        <button class="btn-size" onclick="changePreviewSize('medium')">M</button>
-                        <button class="btn-size active" onclick="changePreviewSize('large')">L</button>
-                    </div>
-                </div>
-
-                <div style="margin-top: 1.5rem; border-top: 1px solid #eee; padding-top: 1.5rem;">
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <input type="checkbox" id="showScaleRef" style="cursor: pointer;">
-                        <label for="showScaleRef" style="cursor: pointer; font-size: 0.9rem; color: #555;">Ver
-                            Referencia Humana (Escala)</label>
-                    </div>
-                </div>
-
-
-
-                <button id="confirmSelectionBtn" class="btn-primary" style="margin-top: 2rem;">
-                    Lo quiero en este formato
-                </button>
-            </div>
             <script>console.log("HTML loaded, waiting for scripts...");</script>
         </div>
     </div>
@@ -380,6 +353,10 @@
     <script src="../js/data.js?v=63"></script>
     <script src="../js/cart.js?v=63"></script>
     <script src="app.js?v=63"></script>
+    <footer class="site-footer" style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
+        <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">&copy; e.ramirez 2026. Todos los derechos reservados.</p>
+        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y Condiciones</a>
+    </footer>
 </body>
 
 </html>

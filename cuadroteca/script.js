@@ -9,7 +9,38 @@ function init() {
         return;
     }
 
-    renderGrid(artworkData);
+    let dataToLoad = artworkData;
+
+    // Check if there is a category filter in the URL
+    const params = new URLSearchParams(window.location.search);
+    const catFilter = params.get('category');
+
+    if (catFilter && catFilter !== 'null' && catFilter !== '') {
+        console.log("Filtrando galería digital por categoría:", catFilter);
+
+        // Let's decode more safely just in case
+        let targetCat = decodeURIComponent(catFilter);
+        console.log("Categoría decodificada:", targetCat);
+
+        // Exact match filter
+        dataToLoad = artworkData.filter(art => art.category === targetCat);
+
+        console.log("Obras encontradas para esta categoría:", dataToLoad.length);
+
+        if (dataToLoad.length === 0) {
+            alert(`No se encontraron obras para la categoría: "${targetCat}". Mostrando todas.`);
+            dataToLoad = artworkData; // Fallback to all if category mismatch
+        } else {
+            // Update title to show collection name only if we found items
+            const titleEl = document.querySelector('.neon-title');
+            if (titleEl) {
+                const cleanTitle = targetCat.replace(/^\d+/, '').replace(/_/g, ' ');
+                titleEl.innerHTML = `COLECCIÓN <span class="highlight">${cleanTitle.toUpperCase()}</span>`;
+            }
+        }
+    }
+
+    renderGrid(dataToLoad);
     setupSearch();
     setupMusic();
     setupHero();
@@ -124,11 +155,10 @@ function setupSearch() {
 // --- HERO MODAL ---
 function setupHero() {
     const overlay = document.getElementById('hero-overlay');
-    const closeBtn = document.getElementById('close-hero');
 
-    closeBtn.addEventListener('click', closeHero);
+    // Also allow closing by clicking the overlay background
     overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) closeHero();
+        if (e.target === overlay) window.closeHero();
     });
 }
 
@@ -150,11 +180,62 @@ function openHero(item) {
     document.body.style.overflow = 'hidden'; // Lock scroll
 }
 
-function closeHero() {
+window.closeHero = function () {
     const overlay = document.getElementById('hero-overlay');
-    overlay.classList.remove('active');
+    if (overlay) overlay.classList.remove('active');
     document.body.style.overflow = ''; // Unlock scroll
-}
+    document.body.style.overflowY = 'auto'; // Ensure it can scroll again if needed
+};
+
+// --- ADD TO CART ---
+document.getElementById('btn-comprar-cuadroteca').addEventListener('click', () => {
+    // We already have the item details in the hero panel
+    const heroTitle = document.getElementById('hero-title').innerText;
+    const heroPrice = document.getElementById('hero-price').innerText;
+
+    // We need the ID and exact path to thumbnail. We can extract it from the image src
+    const imgSrc = document.getElementById('hero-img').getAttribute('src');
+
+    // Match the src to artworkData to get the exact ID (since Cuadroteca currently doesn't store the ID cleanly in the DOM)
+    const itemData = artworkData.find(art => `../${art.src}` === imgSrc || art.src.endsWith(imgSrc.split('/').pop()));
+
+    if (itemData) {
+        const itemObj = {
+            id: itemData.id,
+            title: heroTitle,
+            price: heroPrice,
+            thumb: itemData.src // Store path relative to root
+        };
+
+        if (typeof addToCart === 'function') {
+            const added = addToCart(itemObj);
+            if (added) {
+                // Instantly redirect to checkout to improve user flow
+                window.location.href = '../carrito.html';
+            } else {
+                alert('Esta obra ya está en tu carrito.');
+            }
+        } else {
+            alert('Error: el sistema de carrito no está disponible.');
+        }
+    }
+});
+
+document.getElementById('btn-probador-cuadroteca').addEventListener('click', () => {
+    // We need the ID and exact path to thumbnail for the visor
+    const imgSrc = document.getElementById('hero-img').getAttribute('src');
+
+    // Match the src to artworkData to get the exact details needed for the visor link
+    const itemData = artworkData.find(art => `../${art.src}` === imgSrc || art.src.endsWith(imgSrc.split('/').pop()));
+
+    if (itemData) {
+        // Build the URL to bypass the landing, sending exactly the src expected (e.g. assets/03...)
+        const viewerLink = `../visor/index.html?img=${encodeURIComponent(itemData.src)}&title=${encodeURIComponent(itemData.title)}&category=${encodeURIComponent(itemData.category)}&id=${itemData.id}`;
+        window.location.href = viewerLink;
+    } else {
+        alert("Ocurrió un error al intentar abrir esta obra en el probador.");
+    }
+});
 
 // --- MUSIC ---
 function setupMusic() {

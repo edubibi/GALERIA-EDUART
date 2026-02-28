@@ -12,18 +12,53 @@ function getCart() {
     return json ? JSON.parse(json) : [];
 }
 
+/**
+ * Calculates discounts and promotions.
+ * Promo: Buy 3, get 1 free (cheapest one is free).
+ */
+function calculateTotals() {
+    const cart = getCart();
+    let subtotal = 0;
+    let discount = 0;
+
+    // Parse prices
+    const itemsWithPrice = cart.map(item => {
+        let priceStr = item.price || '0';
+        let clean = priceStr.replace('€', '').replace('.', '').replace(',', '.');
+        let price = parseFloat(clean) || 0;
+        return { ...item, numericPrice: price };
+    });
+
+    itemsWithPrice.sort((a, b) => b.numericPrice - a.numericPrice);
+
+    // Apply 3+1 Promo
+    const freeItemsCount = Math.floor(itemsWithPrice.length / 4);
+    for (let i = 0; i < itemsWithPrice.length; i++) {
+        subtotal += itemsWithPrice[i].numericPrice;
+        // The last N cheapest items are free
+        if (i >= itemsWithPrice.length - freeItemsCount) {
+            discount += itemsWithPrice[i].numericPrice;
+        }
+    }
+
+    return {
+        subtotal: subtotal,
+        discount: discount,
+        total: subtotal - discount
+    };
+}
+
 function addToCart(item) {
     const cart = getCart();
-    // Prevent duplicates? Or allow multiple? For art, usually 1 unless prints.
-    // Let's allow duplicates but maybe warn user? For now simple list.
     const exists = cart.find(i => i.id === item.id);
     if (!exists) {
         cart.push(item);
         localStorage.setItem(CART_KEY, JSON.stringify(cart));
         updateCartCount();
-        return true; // Added
+        window.dispatchEvent(new Event('cartUpdated'));
+        return true;
     }
-    return false; // Already there
+    return false;
 }
 
 function removeFromCart(id) {
@@ -31,7 +66,6 @@ function removeFromCart(id) {
     cart = cart.filter(item => item.id !== id);
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     updateCartCount();
-    // Dispatch event for UI updates
     window.dispatchEvent(new Event('cartUpdated'));
 }
 
@@ -44,7 +78,6 @@ function clearCart() {
 function updateCartCount() {
     const cart = getCart();
     const count = cart.length;
-    // User requested badge style (just number)
     const badges = document.querySelectorAll('.cart-badge');
     badges.forEach(el => {
         if (count > 0) {

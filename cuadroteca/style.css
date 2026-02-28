@@ -382,6 +382,8 @@ body {
     cursor: pointer;
     z-index: 1010;
     transition: transform 0.2s;
+    pointer-events: auto;
+    /* IMPORTANTE: Asegurar que reciba clics aunque el overlay tenga pointer-events: none base */
 }
 
 #close-hero:hover {

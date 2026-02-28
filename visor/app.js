@@ -16,35 +16,49 @@ const state = {
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
-    // Splash Screen Logic
-    const splash = document.getElementById('splashScreen');
-    if (splash) {
-        splash.addEventListener('click', () => {
-            const params = new URLSearchParams(window.location.search);
-            if (!params.get('img')) {
-                window.location.href = '../colecciones.html';
-                return;
-            }
-            splash.style.opacity = '0';
-            setTimeout(() => {
-                splash.style.visibility = 'hidden';
-            }, 800);
-        });
-    }
+    // Landing Page & Splash Screen Logic
+    const params = new URLSearchParams(window.location.search);
+    const hasCategory = params.get('category');
+    const hasImg = params.get('img');
 
-    // Landing Page Logic
-    const enterBtn = document.getElementById('enterBtn');
-    if (enterBtn) {
-        enterBtn.addEventListener('click', () => {
-            const landing = document.getElementById('landingPage');
-            const app = document.getElementById('appContainer');
-            landing.style.opacity = '0';
-            landing.style.visibility = 'hidden';
+    const splash = document.getElementById('splashScreen');
+    const landing = document.getElementById('landingPage');
+    const app = document.getElementById('appContainer');
+
+    // Si venimos de colecciones (con categoría) o con una imagen directa,
+    // saltamos la pantalla de inicio directamente.
+    if (hasCategory || hasImg) {
+        if (splash) splash.style.display = 'none';
+        if (landing) landing.style.display = 'none';
+        if (app) {
             app.style.display = 'flex';
-            setTimeout(() => {
-                app.style.opacity = '1';
-            }, 50);
-        });
+            app.style.opacity = '1';
+        }
+    } else {
+        // Lógica original (por si entran 'a pelo' a la url)
+        if (splash) {
+            splash.addEventListener('click', () => {
+                splash.style.opacity = '0';
+                setTimeout(() => {
+                    splash.style.visibility = 'hidden';
+                }, 800);
+            });
+        }
+        const enterBtn = document.getElementById('enterBtn');
+        if (enterBtn) {
+            enterBtn.addEventListener('click', () => {
+                if (landing) {
+                    landing.style.opacity = '0';
+                    landing.style.visibility = 'hidden';
+                }
+                if (app) {
+                    app.style.display = 'flex';
+                    setTimeout(() => {
+                        app.style.opacity = '1';
+                    }, 50);
+                }
+            });
+        }
     }
 
     loadPreferences();
@@ -87,12 +101,10 @@ function initApp() {
     const backBtn = document.getElementById('backBtn');
     if (backBtn) {
         backBtn.addEventListener('click', () => {
-            const params = new URLSearchParams(window.location.search);
-            const currentCat = params.get('category');
-            if (currentCat) {
-                window.location.href = '../galeria.html?category=' + encodeURIComponent(currentCat);
+            if (window.history.length > 2) {
+                window.history.back();
             } else {
-                window.location.href = '../galeria.html';
+                window.location.href = '../colecciones.html';
             }
         });
     }
@@ -306,25 +318,16 @@ function loadDynamicImages() {
 
         if (categoryFilter && categoryFilter !== 'null' && categoryFilter !== '') {
             dataToLoad = state.photos.filter(art => art.category === categoryFilter);
+
+            // CRITICAL FIX: We must update the source of truth for the renderer
+            state.photos = dataToLoad;
+
             const headerTitle = document.querySelector('.top-bar h2');
             if (headerTitle) {
                 const cleanTitle = categoryFilter.replace(/^\d+/, '').replace(/_/g, ' ');
                 headerTitle.innerText = `Colección: ${cleanTitle}`;
             }
         }
-
-        dataToLoad.forEach(art => {
-            // Check if path already starts with assets to avoid double alias
-            let adjustedPath = art.src;
-            if (!adjustedPath.startsWith('../')) {
-                adjustedPath = '../' + art.src;
-            }
-            // Avoid adding duplicates if already present (addPhoto unshifts)
-            // But here we are rendering gallery, addPhoto modifies state... this is legacy function usage
-            // The original logic was: populate state from 'virtual' load? 
-            // Actually, state.photos IS the data.
-            // We just need to ensure they have 'frame' property.
-        });
 
         // Ensure all have default frame if missing
         state.photos.forEach(p => {
@@ -339,13 +342,12 @@ function loadDynamicImages() {
     const directIdParam = urlParams.get('id');
 
     if (directImg) {
-        /*
-        alert(`DEBUG INFO:
-        - ID buscado: ${directIdParam}
-        - Img buscada: ${directImg}
-        - Obras en memoria: ${state.photos.length}
-        `);
-        */
+        console.log(`[VISOR INIT START]`);
+        console.log(`- ID parametro: ${directIdParam}`);
+        console.log(`- Categoria parametro: ${categoryFilter}`);
+        console.log(`- Titulo parametro: ${directTitle}`);
+        console.log(`- Img buscada (directImg): ${directImg}`);
+        console.log(`- Total obras en state.photos: ${state.photos.length}`);
 
         const directId = 'direct_' + Date.now();
         let targetId = null;
@@ -369,9 +371,18 @@ function loadDynamicImages() {
 
         if (existing) {
             targetId = existing.id;
+            console.log(`[VISOR ID MATCHED] existing.id =`, existing.id, existing.src);
         } else {
+            console.warn(`[VISOR ID NO MATCH] Creando entrada temporal para:`, directImg);
+            
+            // Normalize the directImg path to ensure it starts with '../' for the Visor HTML location
+            let visorPath = directImg;
+            if (!visorPath.startsWith('../') && !visorPath.startsWith('http')) {
+                visorPath = '../' + visorPath;
+            }
+
             // Create temporary entry for this view session
-            addPhoto('../' + directImg, directTitle || 'Obra Seleccionada', directId, {
+            addPhoto(visorPath, directTitle || 'Obra Seleccionada', directId, {
                 description: 'Obra personalizada',
                 price: 'Consultar',
                 size: 'Consultar'
@@ -429,6 +440,9 @@ function renderGallery() {
             return `
         <div class="photo-card frame-${photo.frame || 'classic'}" onclick="openModal('${photo.id}')">
             <img src="${safeUrl}" alt="${photo.name}" loading="lazy">
+            <div class="card-overlay" style="position:absolute; bottom:0; left:0; right:0; background:rgba(255,255,255,0.9); padding:5px; display:flex; justify-content:center;">
+                <button onclick="event.stopPropagation(); cartFromVisor('${photo.id}')" style="background:#000; color:#fff; border:none; padding:4px 8px; font-size:0.7rem; cursor:pointer; border-radius:3px;">🛒 Comprar el Cuadro</button>
+            </div>
         </div>
             `;
         } catch (e) {
@@ -437,6 +451,24 @@ function renderGallery() {
         }
     }).join('');
 }
+
+// Global helper for visor grid
+window.cartFromVisor = function (id) {
+    let rawUrl = photo.url || photo.src || '';
+    // If it starts with ../ it's relative to visor/, we need it relative to root for the cart
+    let thumbPath = rawUrl.startsWith('../') ? rawUrl.replace('../', '') : rawUrl;
+
+    const item = {
+        id: photo.id,
+        title: photo.name || photo.title,
+        price: photo.metadata?.price || 'Consultar',
+        thumb: thumbPath
+    };
+    if (typeof addToCart === 'function') {
+        addToCart(item);
+        alert('Obra añadida al carrito.');
+    }
+};
 
 function updatePhotoCount() {
     const count = state.photos ? state.photos.length : 0;
@@ -524,8 +556,8 @@ function openModal(id) {
 
             if (typeof addToCart === 'function') {
                 addToCart(item);
-                cartMsg.style.display = 'block';
-                setTimeout(() => { cartMsg.style.display = 'none'; }, 3000);
+                // Immediately redirect to cart upon purchase to improve flow
+                window.location.href = '../carrito.html';
             } else {
                 console.error('Cart logic not loaded');
                 alert('Error interno: El carrito no está cargado.');
@@ -537,8 +569,11 @@ function openModal(id) {
 }
 
 function closeModal() {
-    document.getElementById('imageModal').classList.remove('active');
-    currentModalPhotoId = null;
+    if (window.history.length > 2) {
+        window.history.back();
+    } else {
+        window.location.href = '../colecciones.html';
+    }
 }
 
 window.changeSinglePhotoFrame = function (styleId) {
@@ -573,13 +608,6 @@ window.changePreviewSize = function (size) {
     });
 };
 
-document.getElementById('confirmSelectionBtn').addEventListener('click', () => {
-    const photo = state.photos.find(p => p.id === currentModalPhotoId);
-    const frameName = state.frameStyles.find(f => f.id === photo.frame).name;
-    const sizeMap = { 'small': 'Pequeño', 'medium': 'Medio', 'large': 'Grande' };
-
-    alert(`¡Selección Confirmada!\n\nHas elegido:\nEstilo: ${frameName}\nFormato: ${sizeMap[currentSize]}`);
-});
 
 window.changeEnvironment = function (mode) {
     const container = document.getElementById('modalFrameContainer');

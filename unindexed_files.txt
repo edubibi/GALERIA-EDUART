@@ -1,0 +1,70 @@
+Found 69 new files:
+- contact_header.png
+- EDUSSE_MEMO_COVER.jpg
+- EDUSSE_MEMO_COVER_HZ.jpg
+- EDU_DEFINITIVA_2025.jpg
+- EDU_NUEVA_2025.jpg
+- frame_texture.png
+- logo_banner.png
+- LOGO_MAS_LUZ_VERDE.png
+- portafotos.png
+- PORTAFOTOS_CRISTAL.png
+- sample_architecture.png
+- sample_landscape.png
+- sample_portrait.png
+- 00EDUSSE\CERVATILLO.png
+- 00EDUSSE\JAVALI EDUSSE.png
+- 15CUBESSEPLUS\MAS LOVE TIN.png
+- 16EXPNEO\AMIGO FIEL.png
+- 18ABSTRACTO_CONFLUENCIA\SNOW HILLS.png
+- 19FUZZLINE_ABS\In the desert.png
+- 19FUZZLINE_ABS\MOE ZUE.png
+- 19FUZZLINE_ABS\MOLLY PINK.png
+- 23TRIDIM-BURST\EN EL ESPIGÓN.png
+- 25CAPLIVE\Ajustador.png
+- 25CAPLIVE\CAPITANA CAPLIVE.png
+- 25CAPLIVE\Herrero.png
+- 25CAPLIVE\Tabernera.png
+- 26CARL_LINE\Muchacho estudiante.png
+- 26CARL_LINE\Panadera.png
+- 26CARL_LINE\Prima Martina.png
+- 27LINEVORT\Carnero.png
+- 27LINEVORT\El amo de la casa.png
+- 28ESPATAC\arrozales de Yuanyang en Yunnan.png
+- 28ESPATAC\El Parque Nacional de Zhāngjiājiè.png
+- 28ESPATAC\Gran Buda de Leshan.png
+- 28ESPATAC\Los Guerreros de Xi’an.png
+- 28ESPATAC\Zhouzhuang.png
+- 29ESPATAC-MAT\templo_en_la_colina ESP.png
+- 30OLONATUR-COLOR\Côte de Granit Rose de Francia.png
+- 30OLONATUR-COLOR\Mont Saint-Michel francia.png
+- 30OLONATUR-COLOR\Paris cerca de NotrDame.png
+- 30OLONATUR-COLOR\Pont en Royans de Francia.png
+- 31OLENATUR\acantilado_escocia.png
+- 31OLENATUR\ARC DU TRIUMPH.png
+- 31OLENATUR\coliseum de roma.png
+- 31OLENATUR\en un dia en japon.png
+- 31OLENATUR\estatua_de_la_libertad.png
+- 31OLENATUR\new york bridge OLO.png
+- 31OLENATUR\PAREJA EN EL PARQUE.png
+- 31OLENATUR\parque impresion.png
+- 31OLENATUR\paseando por monmatre.png
+- 33MINIGESTPOETIC\amor_y_perdida.png
+- 33MINIGESTPOETIC\el_eterno_suspiro_del_tiempo.png
+- 33MINIGESTPOETIC\el_ojo_del_cazador.png
+- 33MINIGESTPOETIC\el_primer_suspiro_del_cielo.png
+- 33MINIGESTPOETIC\golpe_de_una_gota_en_el_oceano.png
+- 33MINIGESTPOETIC\la_arquitectura_respira.png
+- 33MINIGESTPOETIC\suspiro_cosmico_del_ser.png
+- 34EXPTERICO\EXPTERICO manchas.png
+- 34EXPTERICO\face.png
+- 34EXPTERICO\manchas.jpg
+- 34EXPTERICO\san francisco EXPTERICO.png
+- 34EXPTERICO\tranvia.png
+- 35PAPERCHIN\ADMIRACIÓN.png
+- 35PAPERCHIN\arco del triunfo PAPERCHIN.png
+- 35PAPERCHIN\bufalos.png
+- 35PAPERCHIN\ELEFANTES.png
+- 35PAPERCHIN\en el oeste.png
+- 35PAPERCHIN\monumentos_ del_mundo.png
+- SELLOS_MAGICOS\cover_book.png

@@ -1,0 +1,38 @@
+- **Estilo 00EDUSSE**: Avestruz Del Universo
+- **Estilo 01EXP_NEOCIRC**: Hollywood
+- **Estilo 02CUBESSE stilo**: Flotando como un colibri
+- **Estilo 03EXPNEOPLUS**: Pesca bajo el sol andaluz
+- **Estilo 04APLICC**: El ciervo rey
+- **Estilo 05PLUMINK**: Un bodegon tinta
+- **Estilo 06IDE_CLASSIC**: Paisaje andaluz clasico
+- **Estilo 07NEOINK stilo**: Aros de cascadas
+- **Estilo 08BORACARBON**: Abuelo Paseando Bajo La Lluvia
+- **Estilo 09FRACNEO**: Abstracto fractal
+- **Estilo 10OLEOCUBBO**: Belleza En Tres
+- **Estilo 11URBANSPHERIC**: Esperando Un Taxi En Ny
+- **Estilo 12CRISTAL_CUBICO**: Bodegon Masa Y Pan
+- **Estilo 13RECTESSE**: Cristal Dune
+- **Estilo 14TEREXSE**: Blue Dune
+- **Estilo 15CUBESSEPLUS**: Mas Love Tin
+- **Estilo 16EXPNEO**: Farola En La Plaza
+- **Estilo 17FUZZTESS**: Mar Bravo
+- **Estilo 18ABSTRACTO_CONFLUENCIA**: El Laberinto
+- **Estilo 19FUZZLINE_ABS**: Abuelo
+- **Estilo 20BORASSIE**: Barco Vapor Mountain River
+- **Estilo 21OCE-BURST**: Mercado Nocturno
+- **Estilo 22NEO-LUMINA**: Caminando Calle Arriba
+- **Estilo 23TRIDIM-BURST**: City Brakes
+- **Estilo 24BORACARBON MONUMENTOS**: Pamplona
+- **Estilo 25CAPLIVE**: Ajustador
+- **Estilo 26CARL_LINE**: Muchacho Estudiante
+- **Estilo 27LINEVORT**: Carnero
+- **Estilo 28ESPATAC**: Aldea China
+- **Estilo 29ESPATAC-MAT**: Remolcador en Altamar
+- **Estilo 30OLONATUR-COLOR**: Anochecer en Colmar
+- **Estilo 31OLENATUR**: Arc Du Triumph
+- **Estilo 32SINNOIR**: Banco De Piedra
+- **Estilo 33MINIGESTPOETIC**: Amor Y Pérdida
+- **Estilo 34EXPTERICO**: Energía Primordial
+- **Estilo 35PAPERCHIN**: Admiración
+- **Estilo SAGA CUBESSEPLUS**: Atenea
+- **Estilo SELLOS_MAGICOS**: Acueducto De Segovia

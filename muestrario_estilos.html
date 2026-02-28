@@ -1,0 +1,469 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Muestrario de Estilos - Galería</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #1a1a1a; 
+            color: #e0e0e0; 
+            padding: 40px; 
+            margin: 0;
+        }
+        h1 { 
+            text-align: center; 
+            color: #fff; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 30px; 
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card { 
+            background: #2a2a2a; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #555;
+        }
+        .img-container {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #000;
+        }
+        img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        .card:hover img {
+            opacity: 1;
+        }
+        .info { 
+            padding: 15px; 
+        }
+        .style-tag {
+            font-size: 0.75rem;
+            color: #aaa;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        .title { 
+            font-size: 1.1rem; 
+            font-weight: 600; 
+            margin: 0;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h1>Muestrario de Estilos (38 categorías)</h1>
+    <div class="grid">
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/00EDUSSE/00edusse_001.png" alt="Avestruz Del Universo">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 00EDUSSE</p>
+                <p class="title">Avestruz Del Universo</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/01EXP_NEOCIRC/01exp_neocirc_001.jpg" alt="Hollywood">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 01EXP_NEOCIRC</p>
+                <p class="title">Hollywood</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/02CUBESSE stilo/02cubesse_stilo_001.jpeg" alt="Flotando como un colibri">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 02CUBESSE stilo</p>
+                <p class="title">Flotando como un colibri</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/03EXPNEOPLUS/03expneoplus_001.png" alt="Pesca bajo el sol andaluz">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 03EXPNEOPLUS</p>
+                <p class="title">Pesca bajo el sol andaluz</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/04APLICC/04aplicc_001.png" alt="El ciervo rey">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 04APLICC</p>
+                <p class="title">El ciervo rey</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/05PLUMINK/05plumink_001.png" alt="Un bodegon tinta">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 05PLUMINK</p>
+                <p class="title">Un bodegon tinta</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/06IDE_CLASSIC/06ide_classic_001.png" alt="Paisaje andaluz clasico">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 06IDE_CLASSIC</p>
+                <p class="title">Paisaje andaluz clasico</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/07NEOINK stilo/07neoink_stilo_001.jpg" alt="Aros de cascadas">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 07NEOINK stilo</p>
+                <p class="title">Aros de cascadas</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/08BORACARBON/08boracarbon_001.png" alt="Abuelo Paseando Bajo La Lluvia">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 08BORACARBON</p>
+                <p class="title">Abuelo Paseando Bajo La Lluvia</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/09FRACNEO/09fracneo_001.png" alt="Abstracto fractal">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 09FRACNEO</p>
+                <p class="title">Abstracto fractal</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/10OLEOCUBBO/10oleocubbo_001.png" alt="Belleza En Tres">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 10OLEOCUBBO</p>
+                <p class="title">Belleza En Tres</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/11URBANSPHERIC/11urbanspheric_001.png" alt="Esperando Un Taxi En Ny">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 11URBANSPHERIC</p>
+                <p class="title">Esperando Un Taxi En Ny</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/12CRISTAL_CUBICO/12cristal_cubico_001.png" alt="Bodegon Masa Y Pan">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 12CRISTAL_CUBICO</p>
+                <p class="title">Bodegon Masa Y Pan</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/13RECTESSE/13rectesse_001.png" alt="Cristal Dune">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 13RECTESSE</p>
+                <p class="title">Cristal Dune</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/14TEREXSE/14terexse_001.jpg" alt="Blue Dune">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 14TEREXSE</p>
+                <p class="title">Blue Dune</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/15CUBESSEPLUS/MAS LOVE TIN.png" alt="Mas Love Tin">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 15CUBESSEPLUS</p>
+                <p class="title">Mas Love Tin</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/16EXPNEO/16expneo_001.png" alt="Farola En La Plaza">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 16EXPNEO</p>
+                <p class="title">Farola En La Plaza</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/17FUZZTESS/17fuzztess_001.jpg" alt="Mar Bravo">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 17FUZZTESS</p>
+                <p class="title">Mar Bravo</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/18ABSTRACTO_CONFLUENCIA/18abstracto_confluencia_001.jpg" alt="El Laberinto">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 18ABSTRACTO_CONFLUENCIA</p>
+                <p class="title">El Laberinto</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/19FUZZLINE_ABS/19fuzzline_abs_001.jpg" alt="Abuelo">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 19FUZZLINE_ABS</p>
+                <p class="title">Abuelo</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/20BORASSIE/20borassie_001.png" alt="Barco Vapor Mountain River">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 20BORASSIE</p>
+                <p class="title">Barco Vapor Mountain River</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/21OCE-BURST/21oce_burst_001.png" alt="Mercado Nocturno">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 21OCE-BURST</p>
+                <p class="title">Mercado Nocturno</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/22NEO-LUMINA/22neo_lumina_001.png" alt="Caminando Calle Arriba">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 22NEO-LUMINA</p>
+                <p class="title">Caminando Calle Arriba</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/23TRIDIM-BURST/23tridim_burst_001.png" alt="City Brakes">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 23TRIDIM-BURST</p>
+                <p class="title">City Brakes</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/24BORACARBON MONUMENTOS/boracarbon_mon_001.png" alt="Pamplona">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 24BORACARBON MONUMENTOS</p>
+                <p class="title">Pamplona</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/25CAPLIVE/Ajustador.png" alt="Ajustador">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 25CAPLIVE</p>
+                <p class="title">Ajustador</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/26CARL_LINE/Muchacho estudiante.png" alt="Muchacho Estudiante">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 26CARL_LINE</p>
+                <p class="title">Muchacho Estudiante</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/27LINEVORT/Carnero.png" alt="Carnero">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 27LINEVORT</p>
+                <p class="title">Carnero</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/28ESPATAC/aldea china.png" alt="Aldea China">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 28ESPATAC</p>
+                <p class="title">Aldea China</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/29ESPATAC-MAT/altamar_espatac-mat.png" alt="Remolcador en Altamar">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 29ESPATAC-MAT</p>
+                <p class="title">Remolcador en Altamar</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/30OLONATUR-COLOR/colmar_francia.png" alt="Anochecer en Colmar">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 30OLONATUR-COLOR</p>
+                <p class="title">Anochecer en Colmar</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/31OLENATUR/ARC DU TRIUMPH.png" alt="Arc Du Triumph">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 31OLENATUR</p>
+                <p class="title">Arc Du Triumph</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/32SINNOIR/banco de piedra.png" alt="Banco De Piedra">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 32SINNOIR</p>
+                <p class="title">Banco De Piedra</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/33MINIGESTPOETIC/amor_y_perdida.png" alt="Amor Y Pérdida">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 33MINIGESTPOETIC</p>
+                <p class="title">Amor Y Pérdida</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/34EXPTERICO/EXPTERICO manchas.png" alt="Energía Primordial">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 34EXPTERICO</p>
+                <p class="title">Energía Primordial</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/35PAPERCHIN/ADMIRACIÓN.png" alt="Admiración">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: 35PAPERCHIN</p>
+                <p class="title">Admiración</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/SAGA CUBESSEPLUS/saga_cubesseplus_001.png" alt="Atenea">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: SAGA CUBESSEPLUS</p>
+                <p class="title">Atenea</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="assets/SELLOS_MAGICOS/sello_magico_001.png" alt="Acueducto De Segovia">
+            </div>
+            <div class="info">
+                <p class="style-tag">Estilo: SELLOS_MAGICOS</p>
+                <p class="title">Acueducto De Segovia</p>
+            </div>
+        </div>
+
+    </div>
+    <footer class="site-footer" style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
+        <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">&copy; e.ramirez 2026. Todos los derechos reservados.</p>
+        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y Condiciones</a>
+    </footer>
+</body>
+</html>
+

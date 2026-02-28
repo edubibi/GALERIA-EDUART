@@ -17,9 +17,10 @@
         <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
-            <li><a href="memorandum.html">Universo EDUSSE</a></li><li><a href="colecciones.html">Colecciones</a></li>
-            <li><a href="galeria.html">Galer&iacute;a</a></li>
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="memorandum.html">Universo EDUSSE</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+
             <li><a href="compra.html">Cómo Comprar</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="carrito.html" class="active">Carrito <span class="cart-badge"></span></a></li>
@@ -37,12 +38,27 @@
         <div class="container" style="max-width:900px; margin:0 auto;">
 
             <div id="empty-cart-msg" style="text-align:center; padding:3rem; display:none;">
-                <p style="font-size:1.2rem; color:#666;">Tu carrito está vacío.</p>
-                <a href="galeria.html" class="btn primary-btn"
-                    style="margin-top:1rem; display:inline-block; border:1px solid #333;">Ver Galería</a>
+                <p style="font-size:1.2rem; color:#666;">Tu carrito está vacÍo.</p>
+                <a href="cuadroteca/index.html" class="btn primary-btn"
+                    style="margin-top:1rem; display:inline-block; border:1px solid #333;">Ver GalerÍa Digital</a>
             </div>
 
             <div id="cart-content" style="display:none;">
+
+                <!-- Wallet Info -->
+                <div
+                    style="background:#f0f7ff; padding:1rem; border-radius:8px; margin-bottom:1.5rem; display:flex; justify-content:space-between; align-items:center; border:1px solid #cce3ff;">
+                    <div>
+                        <span style="font-weight:bold; color:#0056b3;">Tu Caja (Saldo Virtual):</span>
+                        <span class="wallet-balance"
+                            style="font-size:1.2rem; margin-left:0.5rem; font-weight:bold;">0.00€</span>
+                    </div>
+                    <a href="recarga.html"
+                        style="font-size:0.8rem; background:#0056b3; color:white; border:none; padding:6px 12px; border-radius:4px; cursor:pointer; text-decoration:none; font-weight:bold;">
+                        💳 RECARGAR SALDO
+                    </a>
+                </div>
+
                 <table class="cart-table" style="width:100%; border-collapse: collapse; margin-bottom:2rem;">
                     <thead>
                         <tr style="border-bottom:2px solid #eee;">
@@ -56,32 +72,47 @@
                     </tbody>
                 </table>
 
+                <div id="promo-banner"
+                    style="display:none; background:#fff9db; padding:0.5rem; text-align:center; margin-bottom:1rem; border:1px dashed #fcc419; color:#856404; font-weight:bold;">
+                    ✨ ¡Promoción 3+1 Aplicada! Una obra te sale GRATIS.
+                </div>
+
                 <div
-                    style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3rem; border-top:1px solid #ddd; padding-top:1rem;">
+                    style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:3rem; border-top:1px solid #ddd; padding-top:1rem;">
                     <button onclick="clearCart()"
                         style="color:#666; background:none; border:1px solid #ccc; padding:0.5rem 1rem; cursor:pointer; border-radius:4px;">
                         🗑️ Vaciar Cesta
                     </button>
-                    <div style="text-align:right; font-size:1.2rem;">
-                        <strong>Total Estimado: <span id="cart-total">0€</span></strong>
-                        <p style="font-size:0.8rem; color:#888;">*El precio final puede incluir gastos de gestión.</p>
+                    <div style="text-align:right;">
+                        <div style="color:#888; text-decoration:line-through; font-size:1rem;" id="subtotal-row">
+                            Subtotal: 0€</div>
+                        <div style="color:#e67e22; font-weight:bold; display:none;" id="discount-row">Ahorro Promo: -0€
+                        </div>
+                        <div style="font-size:1.5rem; margin-top:0.5rem;">
+                            <strong>Total: <span id="cart-total">0€</span></strong>
+                        </div>
                     </div>
                 </div>
 
-                <div style="background:#f9f9f9; padding:2rem; border-radius:8px; text-align:center;">
-                    <h3 style="margin-bottom:1rem; font-family:'Playfair Display', serif;">Finalizar Solicitud</h3>
-                    <p style="margin-bottom:2rem; color:#555;">Elige cómo quieres enviarnos tu pedido para formalizar la
-                        compra.</p>
+                <div
+                    style="background:#fff; padding:2rem; border:2px solid #1a1a1a; border-radius:8px; text-align:center;">
+                    <h3 style="margin-bottom:1.5rem; font-family:'Playfair Display', serif;">Confirmar y Pagar</h3>
 
-                    <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
-                        <button onclick="checkoutWhatsApp()" class="btn primary-btn"
-                            style="background:#25D366; border:none; color:white;">
-                            Pedir por WhatsApp
+                    <div id="paypal-button-container" style="max-width:400px; margin:0 auto 1.5rem;"></div>
+
+                    <div style="border-top:1px solid #ddd; margin:1.5rem 0; padding-top:1.5rem;">
+                        <button onclick="payWithWallet()" id="wallet-pay-btn" class="btn"
+                            style="width:100%; max-width:400px; background:#1a1a1a; color:white; border:none; padding:1rem; border-radius:4px; cursor:pointer; font-weight:bold; margin-bottom:0.5rem;">
+                            Pagar con Mi Caja (Saldo Virtual)
                         </button>
-                        <button onclick="checkoutEmail()" class="btn primary-btn"
-                            style="background:#333; border:none; color:white;">
-                            Pedir por Email
-                        </button>
+                        <p style="font-size:0.8rem; color:#888;">Utiliza tu saldo de reserva para una compra
+                            instantánea.</p>
+                    </div>
+
+                    <div
+                        style="margin-top:1rem; display:flex; justify-content:center; gap:1.5rem; color:#888; font-size:0.9rem;">
+                        <span>🔒 Pago Seguro SSL</span>
+                        <span>💳 Acepta Visa/MC/Amex</span>
                     </div>
                 </div>
             </div>
@@ -89,14 +120,35 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Tu Arte. Todos los derechos reservados.</p>
+        <footer class="site-footer" style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
+        <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">&copy; e.ramirez 2026. Todos los derechos reservados.</p>
+        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y Condiciones</a>
     </footer>
 
+    <script src="js/user_wallet.js"></script>
     <script src="js/cart.js"></script>
-    <script>
+    <!-- PayPal SDK (Sandbox for testing) -->
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AbeirylXoBEWi-nVT_IP32yFMWL7c2dxGdE63h7fmDQPf8cR_x8gFAlSbh2L0ZtrqBUvwnnEmQ60ELiJ&currency=EUR"></script>
+
+        <script>
         // PAGE LOGIC
         window.addEventListener('cartUpdated', renderPage);
+        window.addEventListener('walletUpdated', updateWalletUI);
+
+        function updateWalletUI() {
+            const balance = getWalletBalance();
+            const payBtn = document.getElementById('wallet-pay-btn');
+            const totals = calculateTotals();
+
+            if (balance < totals.total) {
+                payBtn.style.opacity = '0.5';
+                payBtn.title = 'Saldo insuficiente';
+            } else {
+                payBtn.style.opacity = '1';
+                payBtn.title = '';
+            }
+        }
 
         function renderPage() {
             const cart = getCart();
@@ -104,6 +156,9 @@
             const content = document.getElementById('cart-content');
             const tbody = document.getElementById('cart-items-body');
             const totalEl = document.getElementById('cart-total');
+            const subtotalEl = document.getElementById('subtotal-row');
+            const discountEl = document.getElementById('discount-row');
+            const promoBanner = document.getElementById('promo-banner');
 
             if (cart.length === 0) {
                 emptyMsg.style.display = 'block';
@@ -115,35 +170,19 @@
             content.style.display = 'block';
             tbody.innerHTML = '';
 
-            let total = 0;
+            const totals = calculateTotals();
 
             cart.forEach(item => {
-                // Parse Price
-                let priceNum = 0;
-                let priceStr = item.price || '';
-                // Simple parser: remove € and dots
-                let clean = priceStr.toLowerCase().replace('€', '').replace('.', '').replace(',', '.');
-                let parsed = parseFloat(clean);
-                if (!isNaN(parsed)) {
-                    total += parsed;
-                }
-
-                // Fix path for root - ensure no '../' and valid start
-                let thumbPath = item.thumb || 'assets/logo.png';
-                if (thumbPath.startsWith('../')) thumbPath = thumbPath.replace('../', '');
-                if (thumbPath.startsWith('/')) thumbPath = thumbPath.substring(1);
-
-                // Fallback for very broken paths
-                if (!thumbPath.includes('assets/') && !thumbPath.startsWith('http') && !thumbPath.startsWith('data:')) {
-                    // Maybe it's just filename? try prepending assets/ (risky but better than broken)
-                    // thumbPath = 'assets/' + thumbPath; 
-                }
-
                 const tr = document.createElement('tr');
                 tr.style.borderBottom = '1px solid #eee';
+
+                // Path resolution: if coming from visor it might need cleaning
+                let imgSrc = item.thumb || item.src || '';
+                if (imgSrc.startsWith('../')) imgSrc = imgSrc.replace('../', '');
+
                 tr.innerHTML = `
                     <td style="padding:1rem; display:flex; align-items:center; gap:1rem;">
-                        <img src="${thumbPath}" style="width:60px; height:60px; object-fit:cover; border-radius:4px;" onerror="this.src='../logo_banner.png'">
+                        <img src="${imgSrc}" style="width:60px; height:60px; object-fit:cover; border-radius:4px;" onerror="this.src='assets/logo_banner.png'">
                         <div>
                             <div style="font-weight:bold;">${item.title}</div>
                             <div style="font-size:0.8rem; color:#888;">Ref: ${item.id}</div> 
@@ -157,45 +196,63 @@
                 tbody.appendChild(tr);
             });
 
-            totalEl.innerText = total + '€';
+            totalEl.innerText = totals.total.toFixed(2) + '€';
+            subtotalEl.innerText = 'Subtotal: ' + totals.subtotal.toFixed(2) + '€';
+
+            if (totals.discount > 0) {
+                discountEl.innerText = 'Ahorro Promo: -' + totals.discount.toFixed(2) + '€';
+                discountEl.style.display = 'block';
+                promoBanner.style.display = 'block';
+            } else {
+                discountEl.style.display = 'none';
+                promoBanner.style.display = 'none';
+            }
+
+            updateWalletUI();
+            initPayPalButton();
         }
 
-        function checkoutWhatsApp() {
-            const cart = getCart();
-            if (cart.length === 0) return;
+        function initPayPalButton() {
+            const container = document.getElementById('paypal-button-container');
+            if (!container) return;
 
-            let msg = "Hola! Quiero comprar las siguientes obras:\n\n";
-            cart.forEach(item => {
-                msg += `- ${item.title} (${item.price})\n`;
-            });
-            let total = document.getElementById('cart-total').innerText;
-            msg += `\nTotal Estimado: ${total}\n\n¿Me indicas cómo proceder?`;
+            container.innerHTML = '';
+            
+            const totals = calculateTotals();
+            if (totals.total <= 0) return;
 
-            // Replace YOUR_NUMBER with actual number if known, or leave blank to let user pick contact
-            // Using a generic format that opens app
-            const url = `https://wa.me/?text=${encodeURIComponent(msg)}`;
-            window.open(url, '_blank');
+            paypal.Buttons({
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: totals.total.toFixed(2)
+                            }
+                        }]
+                    });
+                },
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(details => {
+                        window.location.href = 'checkout_success.html?method=paypal';
+                    });
+                }
+            }).render('#paypal-button-container');
         }
 
-        function checkoutEmail() {
-            const cart = getCart();
-            if (cart.length === 0) return;
-
-            let msg = "Hola! Estoy interesado en adquirir las siguientes obras de tu catálogo:\n\n";
-            cart.forEach(item => {
-                msg += `- ${item.title} (Ref: ${item.id}) - Precio: ${item.price}\n`;
-            });
-            let total = document.getElementById('cart-total').innerText;
-            msg += `\nTotal Estimado: ${total}\n\nQuedo a la espera de instrucciones de pago.\nGracias.`;
-
-            const subject = "Pedido de Arte - " + new Date().toLocaleDateString();
-            const url = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
-            window.location.href = url;
+        function payWithWallet() {
+            const totals = calculateTotals();
+            if (deductWalletCredit(totals.total)) {
+                window.location.href = 'checkout_success.html?method=wallet';
+            } else {
+                alert('Saldo insuficiente en tu Caja Virtual. Por favor, recarga o usa otro método.');
+            }
         }
 
-        // Initial Render
-        renderPage();
+        // Initial 
+        window.addEventListener('DOMContentLoaded', () => {
+            renderPage();
+            window.dispatchEvent(new Event('walletUpdated'));
+        });
     </script>
 </body>
-
 </html>

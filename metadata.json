@@ -3209,73 +3209,73 @@
     },
     "zhouzhuang": {
         "id": "zhouzhuang",
-        "title": "Zhouzhuang",
+        "title": "Pueblo Del Agua Zhouzhuang",
         "category": "28ESPATAC",
         "src": "assets/28ESPATAC/Zhouzhuang.png",
-        "description": "Venecia de oriente; canales de cristal que abrazan casas blancas, un sueño de piedra y agua donde la calma es la única ley.",
+        "description": "Un canal tranquilo en Zhouzhuang con sauces llorones que acarician la superficie. Un pabellón tradicional se refleja en el agua, evocando una paz milenaria.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Estilo ESPATAC (China): Técnica de espátula y óleo texturizado para capturar la majestuosidad de Asia. El uso del color y el relieve busca transmitir la vibración espiritual y la escala monumental."
     },
     "altamar_espatac-mat": {
         "id": "altamar_espatac-mat",
-        "title": "Altamar",
+        "title": "Remolcador en Altamar",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/altamar_espatac-mat.png",
-        "description": "Horizonte herido; la proa se pierde en la bruma de un mar infinito, donde el cielo y el agua se funden en una danza de azules profundos.",
+        "description": "Un robusto remolcador desafía el embate de las olas en un mar picado. La obra destaca por una técnica de espátula extremadamente matérica, donde bloques de color azul, gris y blanco construyen una sensación de fuerza y dinamismo oceánico.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Óleo con espátula sobre lienzo. Serie ESPATAC-MAT: Enfoque en la textura física y la simplificación de formas mediante planos cromáticos rectangulares."
     },
     "el_parthenon_en_la_niebla_dorada": {
         "id": "el_parthenon_en_la_niebla_dorada",
-        "title": "El Parthenon En La Niebla Dorada",
+        "title": "El Partenón: Niebla de Oro",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/el_parthenon_en_la_niebla_dorada.png",
-        "description": "Gloria dorada; las columnas de la historia emergen de un sueño de luz, un eco de la perfección ateniense envuelto en la nostalgia del tiempo.",
+        "description": "La icónica Acrópolis de Atenas emerge de una atmósfera onírica bañada en tonos sepia y dorados. La textura pesada imita la rugosidad del mármol antiguo y el paso de los milenios, creando un puente entre la historia y el sueño.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Giclée retocado con textura manual. Serie ESPATAC-MAT: Técnica que enfatiza la tridimensionalidad de las ruinas clásicas."
     },
     "lago_batur_bali": {
         "id": "lago_batur_bali",
-        "title": "Lago Batur Bali",
+        "title": "Templo en el Lago Batur",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/lago_batur_bali.png",
-        "description": "Espejo sagrado; la quietud del agua volcánica refleja el alma de Bali, un santuario de paz custodiado por la sombra de los dioses.",
+        "description": "Una vista panorámica de la arquitectura balinesa tradicional frente al volcán Batur. La obra utiliza pinceladas rectangulares a modo de mosaico para representar la exuberante vegetación y los reflejos en el agua.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Técnica mixta 'Mosaico Matérico'. Serie ESPATAC-MAT: Representación geométrica de paisajes naturales y sagrados."
     },
     "pueblo_costero_de_santorini": {
         "id": "pueblo_costero_de_santorini",
-        "title": "Pueblo Costero De Santorini",
+        "title": "Santorini: Laberinto Blanco",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/pueblo_costero_de_santorini.png",
-        "description": "Escalinata de luz; el blanco inmaculado y el azul cian se derraman sobre el acantilado, un laberinto de sueños frente al Egeo.",
+        "description": "Las cúpulas azules y la arquitectura escalonada de Santorini se presentan en una composición de alto relieve. La técnica resalta la blancura cegadora de las casas sobre los acantilados de roca volcánica.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Pintura acrílica de alta viscosidad. Serie ESPATAC-MAT: Enfoque en el volumen arquitectónico y el contraste cromático de las islas griegas."
     },
     "templo_en_la_colina esp": {
         "id": "templo_en_la_colina esp",
-        "title": "Templo En La Colina Esp",
+        "title": "El Refugio de los Dioses",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/templo_en_la_colina ESP.png",
-        "description": "Vigilancia espiritual; la silueta del santuario domina el paisaje, un punto de encuentro entre la tierra y el firmamento en la cima del silencio.",
+        "description": "Un antiguo templo se erige solitario sobre una formación rocosa. La paleta de tonos tierra y la textura escarpada evocan la soledad y la resistencia de los monumentos olvidados por el tiempo.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Óleo sobre lienzo con carga matérica. Serie ESPATAC-MAT: Exploración de la simbiosis entre naturaleza y arquitectura antigua."
     },
     "templo_ulun_danu_bali": {
         "id": "templo_ulun_danu_bali",
-        "title": "Templo Ulun Danu Bali",
+        "title": "Ulun Danu: Atardecer Sagrado",
         "category": "29ESPATAC-MAT",
         "src": "assets/29ESPATAC-MAT/templo_ulun_danu_bali.png",
-        "description": "Flotando en el mito; la pagoda se eleva sobre las aguas del lago, una joya de madera y fe que parece mecerse al ritmo de las ofrendas.",
+        "description": "Las pagodas flotantes del templo Ulun Danu Beratan se reflejan en las aguas quietas durante el crepúsculo. La luz dorada se filtra a través de capas de textura que aportan profundidad y espiritualidad a la escena.",
         "price": "19,99",
         "size": "Consultar",
-        "tech_info": "Ver descripción detallada."
+        "tech_info": "Pintura con espátula y veladuras. Serie ESPATAC-MAT: Captura de la serenidad asiática mediante relieve táctil."
     },
     "campo_solar": {
         "id": "campo_solar",
@@ -3346,57 +3346,63 @@
     },
     "colmar_francia": {
         "id": "colmar_francia",
-        "title": "Colmar Francia",
+        "title": "Anochecer en Colmar",
         "category": "30OLONATUR-COLOR",
         "src": "assets/30OLONATUR-COLOR/colmar_francia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Los canales de la 'Pequeña Venecia' se iluminan al caer el sol. Las casas de entramado de madera se reflejan en el agua, creando una escena de cuento de hadas llena de luz cálida y sombras vibrantes.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Óleo con matices luminiscentes. Serie OLONATUR-COLOR: Representación de la calidez nocturna en pueblos medievales."
     },
     "côte de granit rose de francia": {
         "id": "côte de granit rose de francia",
-        "title": "Côte De Granit Rose De Francia",
+        "title": "Costa de Granito Rosa",
         "category": "30OLONATUR-COLOR",
         "src": "assets/30OLONATUR-COLOR/Côte de Granit Rose de Francia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Un atardecer vibrante en la costa de Bretaña, donde las formaciones de granito rosa contrastan con un mar turquesa. Salpicaduras de pintura amarilla y roja aportan una energía expresionista y espontánea.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Óleo impresionista con técnica de salpicado. Serie OLONATUR-COLOR: Paisajes naturales capturados con una paleta cromática intensa y libre."
     },
     "mont saint-michel francia": {
         "id": "mont saint-michel francia",
-        "title": "Mont Saint Michel Francia",
+        "title": "La Abadía del Monte",
         "category": "30OLONATUR-COLOR",
         "src": "assets/30OLONATUR-COLOR/Mont Saint-Michel francia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "El Mont Saint-Michel se alza como una fortaleza entre reflejos acuosos. La obra juega con la luz de Normandía, utilizando rojos y amarillos audaces para romper la sobriedad del cielo nublado.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Óleo sobre lienzo. Serie OLONATUR-COLOR: Reinterpretación colorista de monumentos históricos franceses."
     },
     "paris cerca de notrdame": {
         "id": "paris cerca de notrdame",
-        "title": "Paris Cerca De Notrdame",
+        "title": "Otoño en Notre Dame",
         "category": "30OLONATUR-COLOR",
         "src": "assets/30OLONATUR-COLOR/Paris cerca de NotrDame.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una vista de la catedral de París enmarcada por árboles en pleno estallido otoñal. La textura densa de las hojas y sus reflejos en el Sena crean un torbellino de color y nostalgia urbana.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Pintura expresionista con espátula. Serie OLONATUR-COLOR: Captura de la atmósfera estacional en entornos urbanos icónicos."
     },
     "paseo_por_bulevares": {
         "id": "paseo_por_bulevares",
-        "title": "Paseo Por Bulevares",
+        "title": "El Caminante Solitario",
         "category": "30OLONATUR-COLOR",
         "src": "assets/30OLONATUR-COLOR/paseo_por_bulevares.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una figura con chaqueta bicolor cruza un bulevar otoñal. La composición destaca por la explosión de rojos y dorados en los árboles y el dinamismo de la ciudad reflejada en el suelo mojado.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Pintura expresionista. Serie OLONATUR-COLOR: Narrativa urbana centrada en el color y el movimiento estacional."
     },
     "pont en royans de francia": {
         "id": "pont en royans de francia",
-        "title": "Pont En Royans De Francia",
+        "title": "Las Casas Colgantes de Royans",
         "category": "30OLONATUR-COLOR",
         "src": "assets/30OLONATUR-COLOR/Pont en Royans de Francia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Las pintorescas fachadas que parecen flotar sobre el río en Isère. La técnica libre y los colores saturados resaltan la vertiginosa verticalidad y el encanto rústico de este enclave.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Técnica mixta sobre papel. Serie OLONATUR-COLOR: Estudio del color y la forma en la arquitectura vernácula francesa."
     },
     "arc du triumph": {
         "id": "arc du triumph",
@@ -3409,12 +3415,13 @@
     },
     "torre_eifel": {
         "id": "torre_eifel",
-        "title": "Torre Eifel",
+        "title": "Atardecer En La Torre Eiffel",
         "category": "31OLENATUR",
         "src": "assets/31OLENATUR/torre_eifel.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "La Torre Eiffel preside el Sena al atardecer. La luz cálida del sol poniente ilumina la estructura de hierro y se refleja en las aguas del río, en una vista clásica y evocadora de la Ciudad de la Luz.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo OLEO NATUR: Técnica de pincelada digital con acabado de óleo tradicional (impasto). Los colores vibrantes y la textura marcada buscan capturar la esencia de la luz y el movimiento en paisajes icónicos."
     },
     "banco de piedra": {
         "id": "banco de piedra",
@@ -3436,12 +3443,13 @@
     },
     "acantilado_escocia": {
         "id": "acantilado_escocia",
-        "title": "Acantilado Escocia",
+        "title": "Faro en el Acantilado Escocés",
         "category": "31OLENATUR",
         "src": "assets/31OLENATUR/acantilado_escocia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Un faro solitario en lo alto de un imponente acantilado escocés, desafiando la inmensidad del océano. La luz del atardecer tiñe las nubes de naranja y fuego, mientras los rayos del faro perforan la bruma que envuelve la costa.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo OLEO NATUR: Técnica de pincelada digital con acabado de óleo tradicional (impasto). Los colores vibrantes y la textura marcada buscan capturar la esencia de la luz y el movimiento en paisajes icónicos."
     },
     "coliseum de roma": {
         "id": "coliseum de roma",
@@ -3463,12 +3471,13 @@
     },
     "estatua_de_la_libertad": {
         "id": "estatua_de_la_libertad",
-        "title": "Estatua De La Libertad",
+        "title": "Estatua De La Libertad NY",
         "category": "31OLENATUR",
         "src": "assets/31OLENATUR/estatua_de_la_libertad.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "La Estatua de la Libertad se alza como un faro de esperanza sobre el puerto de Nueva York. El cielo y el agua se funden en un festival de azules y blancos, donde la pincelada expresionista da vida a la icónica silueta.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo OLEO NATUR: Técnica de pincelada digital con acabado de óleo tradicional (impasto). Los colores vibrantes y la textura marcada buscan capturar la esencia de la luz y el movimiento en paisajes icónicos."
     },
     "new york bridge olo": {
         "id": "new york bridge olo",
@@ -3508,120 +3517,133 @@
     },
     "amor_y_perdida": {
         "id": "amor_y_perdida",
-        "title": "Amor Y Perdida",
+        "title": "Amor Y Pérdida",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/amor_y_perdida.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una poderosa alegoría visual que representa la unión y la fractura. Dos manos entrelazadas formadas por raíces se alzan sobre un corazón agrietado, simbolizando la dualidad entre el afecto y el dolor.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "el_eterno_suspiro_del_tiempo": {
         "id": "el_eterno_suspiro_del_tiempo",
         "title": "El Eterno Suspiro Del Tiempo",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/el_eterno_suspiro_del_tiempo.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Un árbol de luz que emerge de un tocón ancestral, conectado por un haz de energía pura en el centro de un vórtice oscuro. Reflexiona sobre la continuidad de la memoria más allá de la existencia física.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "el_ojo_del_cazador": {
         "id": "el_ojo_del_cazador",
         "title": "El Ojo Del Cazador",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una mirada penetrante que emerge de las sombras, capturando la esencia de la vigilancia y el instinto. Invita a cuestionar quién es el observador y quién el observado en el ciclo de la vida.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "el_primer_suspiro_del_cielo": {
         "id": "el_primer_suspiro_del_cielo",
         "title": "El Primer Suspiro Del Cielo",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/el_primer_suspiro_del_cielo.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Un punto de luz central que irradia energía en un firmamento de partículas cósmicas. Representa el nacimiento de una idea o el origen de un nuevo mundo en una explosión de fuerza elemental.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "golpe_de_una_gota_en_el_oceano": {
         "id": "golpe_de_una_gota_en_el_oceano",
-        "title": "Golpe De Una Gota En El Oceano",
+        "title": "Gota En El Océano",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/golpe_de_una_gota_en_el_oceano.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "La caligrafía del alma se funde con el movimiento del agua. Trazos gestuales que evocan palabras perdidas en el flujo del tiempo, recordándonos que cada pequeña acción genera ondas en la inmensidad.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "la_arquitectura_respira": {
         "id": "la_arquitectura_respira",
         "title": "La Arquitectura Respira",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/la_arquitectura_respira.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una torre estilizada que se eleva hacia un cielo turbulento, actuando como un faro de conciencia. Sugiere la resistencia de la voluntad humana frente al caos orgánico del infinito.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "suspiro_cosmico_del_ser": {
         "id": "suspiro_cosmico_del_ser",
-        "title": "Suspiro Cosmico Del Ser",
+        "title": "Suspiro Cósmico Del Ser",
         "category": "33MINIGESTPOETIC",
         "src": "assets/33MINIGESTPOETIC/suspiro_cosmico_del_ser.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Un cerebro formado por constelaciones de estrellas y redes neuronales celestes que flotan sobre nubes. Explora la conexión íntima entre el pensamiento humano y el tejido del universo.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo MINIGESTPOETIC: Arte conceptual de corte gestual y poético. Utiliza una paleta restringida y un lenguaje simbólico para explorar temas existenciales. El contraste entre el vacío y la forma busca generar una respuesta emocional."
     },
     "expterico manchas": {
         "id": "expterico manchas",
-        "title": "Expterico Manchas",
+        "title": "Energía Primordial",
         "category": "34EXPTERICO",
         "src": "assets/34EXPTERICO/EXPTERICO manchas.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una explosión abstracta de pigmento donde el rosa, el naranja y el azul luchan por el espacio. Líneas negras dinámicas serpentean sobre la superficie, sugiriendo un flujo de energía vital incontrolable.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Abstracción gestual profunda. Serie EXPTERICO: Exploración de las emociones puras a través de la mancha y el gesto automático."
     },
     "face": {
         "id": "face",
-        "title": "Face",
+        "title": "Psique Fragmentada",
         "category": "34EXPTERICO",
         "src": "assets/34EXPTERICO/face.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Retrato masculino de rasgos marcados, reconstruido mediante planos de color crema, tostado y violeta. La mirada introspectiva y el uso audaz del relieve revelan la complejidad del pensamiento humano.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Retrato contemporáneo matérico. Serie EXPTERICO: Humanismo abstracto enfocado en la arquitectura del rostro."
     },
     "manchas": {
         "id": "manchas",
-        "title": "Manchas",
+        "title": "Genesis Cromática",
         "category": "34EXPTERICO",
         "src": "assets/34EXPTERICO/manchas.jpg",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Densa acumulación de materia pictórica en tonos oscuros y cálidos. La obra invita a la exploración táctil del óleo, representando la creación de un universo a partir del caos del color.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Impasto extremo. Serie EXPTERICO: El color como entidad física y emocional autónoma."
     },
     "san francisco expterico": {
         "id": "san francisco expterico",
-        "title": "San Francisco Expterico",
+        "title": "Golden Gate: Vórtice Cósmico",
         "category": "34EXPTERICO",
         "src": "assets/34EXPTERICO/san francisco EXPTERICO.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "El puente de San Francisco envuelto en un cielo psicodélico de espirales vibrantes. La ciudad se funde con el cosmos en un torbellino de color que desafía la realidad física del paisaje.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Paisaje visionario. Serie EXPTERICO: Integración del paisaje urbano en visiones dinámicas y celestiales."
     },
     "tranvia": {
         "id": "tranvia",
-        "title": "Tranvia",
+        "title": "El Pulso de la Ciudad",
         "category": "34EXPTERICO",
         "src": "assets/34EXPTERICO/tranvia.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Un tranvía icónico atraviesa una atmósfera eléctrica de colores cálidos. El vehículo se convierte en un símbolo de estabilidad en medio de un torbellino de luz y pinceladas audaces.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Expresionismo urbano dinámico. Serie EXPTERICO: Fusión de elementos cotidianos con atmósferas oníricas."
     },
     "admiración": {
         "id": "admiración",
         "title": "Admiración",
         "category": "35PAPERCHIN",
         "src": "assets/35PAPERCHIN/ADMIRACIÓN.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una entrañable escena rural donde un hombre contempla a su fiel caballo en un prado verde frente a imponentes montañas nevadas. La técnica de relieve resalta la textura de la hierba y el pelaje del animal.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo PAPERCHIN: Técnica de simulación de relieve y capas de papel aplicada digitalmente. Se enfoca en la profundidad visual y la simplificación de formas para crear escenas con gran impacto táctil."
     },
     "arco del triunfo paperchin": {
         "id": "arco del triunfo paperchin",
@@ -3637,18 +3659,20 @@
         "title": "Bufalos",
         "category": "35PAPERCHIN",
         "src": "assets/35PAPERCHIN/bufalos.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Una manada de búfalos pastando en la pradera americana bajo un cielo inmenso de nubes algodonosas. La pincelada gruesa captura la fuerza bruta de los animales y la vastedad del paisaje del viejo oeste.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo PAPERCHIN: Técnica de simulación de relieve y capas de papel aplicada digitalmente. Se enfoca en la profundidad visual y la simplificación de formas para crear escenas con gran impacto táctil."
     },
     "elefantes": {
         "id": "elefantes",
         "title": "Elefantes",
         "category": "35PAPERCHIN",
         "src": "assets/35PAPERCHIN/ELEFANTES.png",
-        "description": "Nueva obra añadida recientemente.",
+        "description": "Imponente retrato de una madre elefante y su cría en la selva. La técnica de capas resalta la rugosidad de la piel y los colmillos, mientras el fondo de vegetación tropical añade profundidad y misterio.",
         "price": "19,99",
-        "size": "Consultar"
+        "size": "Consultar",
+        "tech_info": "Estilo PAPERCHIN: Técnica de simulación de relieve y capas de papel aplicada digitalmente. Se enfoca en la profundidad visual y la simplificación de formas para crear escenas con gran impacto táctil."
     },
     "en el oeste": {
         "id": "en el oeste",

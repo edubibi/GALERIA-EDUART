@@ -1,5 +1,10 @@
 import os
 import json
+import sys
+
+# Force UTF-8 for stdout
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 METADATA_FILE = "metadata.json"
 ASSETS_DIR = "assets"
@@ -24,10 +29,7 @@ def list_new_photos():
                 if "_POSTER" in f: continue
                 
                 base = os.path.splitext(f)[0]
-                # Check case-insensitive match for ID? The system usually uses exact base as ID.
-                # Let's check if base is in keys.
                 if base not in indexed_ids:
-                    # Also check relative path for context
                     rel_path = os.path.relpath(os.path.join(root, f), ASSETS_DIR)
                     new_files.append(rel_path)
 
