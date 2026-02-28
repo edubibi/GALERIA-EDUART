@@ -47,6 +47,126 @@ const artworkData = [
         "sold": false
     },
     {
+        "id": "fursona_sample_01",
+        "title": "Fursona Genesis #002",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_01.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_02",
+        "title": "Fursona Genesis #003",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_02.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_03",
+        "title": "Fursona Genesis #004",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_03.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_04",
+        "title": "Fursona Genesis #005",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_04.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_05",
+        "title": "Fursona Genesis #006",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_05.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_06",
+        "title": "Fursona Genesis #007",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_06.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_07",
+        "title": "Fursona Genesis #008",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_07.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_08",
+        "title": "Fursona Genesis #009",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_08.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_09",
+        "title": "Fursona Genesis #010",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_09.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_10",
+        "title": "Fursona Genesis #011",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_10.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_11",
+        "title": "Fursona Genesis #012",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_11.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
+        "id": "fursona_sample_12",
+        "title": "Fursona Genesis #013",
+        "category": "00FURSONA GENESIS",
+        "src": "assets/00FURSONA GENESIS/fursona_sample_12.jpg",
+        "description": "Avatar antropomórfico único de la colección Fursona Genesis.",
+        "size": "Digital NFT",
+        "price": "MINT",
+        "tech_info": "Polygon Blockchain"
+    },
+    {
         "id": "00edusse_001",
         "title": "Avestruz Del Universo",
         "category": "00EDUSSE",
