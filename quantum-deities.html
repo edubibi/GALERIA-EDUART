@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLECCIÓN QUANTUM DEITIES | Tu Arte</title>
+    <link rel="stylesheet" href="main.css?v=102">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .nft-hero {
+            background: #000;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .nft-cta-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn-mint {
+            background: #00f2ff;
+            color: #000;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn-mint:hover {
+            background: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.6);
+        }
+
+        .nft-stats {
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* --- GALLERY LAYOUT --- */
+        .gallery-container-custom {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 30px;
+            width: 95%;
+            max-width: 1200px;
+            margin: 60px auto 0;
+            text-align: left;
+        }
+
+        .main-portada-box {
+            position: sticky;
+            top: 100px;
+        }
+
+        .main-portada-box img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 900px) {
+            .gallery-container-custom {
+                grid-template-columns: 1fr;
+            }
+
+            .main-portada-box {
+                position: relative;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div style="display: flex; flex-direction: column; align-items: start;">
+            <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
+            <a href="index.html#nfts"
+                style="color: #ff4b4b; font-weight: bold; font-size: 0.65rem; border: 1px solid #ff4b4b; padding: 2px 8px; border-radius: 4px; text-decoration: none; margin-top: 5px; letter-spacing: 1px; text-transform: uppercase; font-family: Lato, sans-serif;">&larr;
+                SALIR</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
+            <li><a href="memorandum.html">Universo EDUSSE</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="fursona-genesis.html" style="color: #a020f0; font-weight: bold;">Fursona Genesis</a></li>
+            <li><a href="compra.html">Cómo Comprar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito <span class="cart-badge"></span></a></li>
+        </ul>
+    </nav>
+
+    <header class="nft-hero" style="position: relative;">
+        <div class="container">
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 20px;">COLECCIÓN
+                QUANTUM DEITIES</h1>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.6; color: #ccc;">
+                164 UNIQUE NFTs · FORGED AT THE NEXUS OF AI · CYBER MYTHOLOGY
+            </p>
+
+            <!-- Promo Banners Container -->
+            <div
+                style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 30px auto; max-width: 900px;">
+
+                <!-- No cross-promotions here as requested -->
+
+            </div>
+
+            <div class="nft-stats">CÓDIGO DE COLECCIÓN: QUANTUM DEITIES</div>
+
+            <div class="nft-cta-container">
+                <a href="https://quantum-deities-1premium.nfts2.me/" target="_blank" class="btn-mint">MINTEAR EN
+                    POLYGON</a>
+            </div>
+
+            <div class="gallery-container-custom" style="grid-template-columns: 1fr; max-width: 800px;">
+                <div class="main-portada-box">
+                    <h3 style="font-size: 1.2rem; color: #00f2ff; margin-bottom: 15px; text-align: center;">PORTADA DE
+                        LA COLECCIÓN</h3>
+                    <img src="assets/quantum-deities-banner.png" alt="Quantum Deities">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="site-footer"
+        style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
+        <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">&copy; e.ramirez 2026. Todos los derechos reservados.</p>
+        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y
+            Condiciones</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js?v=101"></script>
+    <script src="js/cart.js?v=101"></script>
+</body>
+
+</html>

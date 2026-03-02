@@ -12,18 +12,18 @@
 </head>
 
 <body>
-
     <nav class="navbar">
         <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
             <li><a href="memorandum.html">Universo EDUSSE</a></li>
             <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="fursona-genesis.html" style="color: #a020f0; font-weight: bold;">Fursona Genesis</a></li>
+            <li><a href="quantum-deities.html" style="color: #00f2ff; font-weight: bold;">Quantum Deities</a></li>
 
             <li><a href="compra.html">Cómo Comprar</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="carrito.html" class="active">Carrito <span class="cart-badge"></span></a></li>
         </ul>
     </nav>
 
@@ -120,9 +120,11 @@
         </div>
     </section>
 
-        <footer class="site-footer" style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
+    <footer class="site-footer"
+        style="text-align: center; padding: 2rem; background-color: transparent; color: inherit; border-top: 1px solid #eaeaea; margin-top: 4rem;">
         <p style="margin-bottom: 0.5rem; font-size: 0.9rem;">&copy; e.ramirez 2026. Todos los derechos reservados.</p>
-        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y Condiciones</a>
+        <a href="condiciones.html" style="color: inherit; text-decoration: underline; font-size: 0.85rem;">Términos y
+            Condiciones</a>
     </footer>
 
     <script src="js/user_wallet.js"></script>
@@ -131,7 +133,7 @@
     <script
         src="https://www.paypal.com/sdk/js?client-id=AbeirylXoBEWi-nVT_IP32yFMWL7c2dxGdE63h7fmDQPf8cR_x8gFAlSbh2L0ZtrqBUvwnnEmQ60ELiJ&currency=EUR"></script>
 
-        <script>
+    <script>
         // PAGE LOGIC
         window.addEventListener('cartUpdated', renderPage);
         window.addEventListener('walletUpdated', updateWalletUI);
@@ -217,7 +219,7 @@
             if (!container) return;
 
             container.innerHTML = '';
-            
+
             const totals = calculateTotals();
             if (totals.total <= 0) return;
 
@@ -255,4 +257,5 @@
         });
     </script>
 </body>
+
 </html>

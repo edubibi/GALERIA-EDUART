@@ -31,10 +31,22 @@ const categoryCovers = {
     "31OLENATUR": "assets/31OLENATUR/ARC DU TRIUMPH.png",
     "32SINNOIR": "assets/32SINNOIR/banco de piedra.png",
     "33MINIGESTPOETIC": "assets/33MINIGESTPOETIC/el_ojo_del_cazador.png",
-    "00FURSONA GENESIS": "assets/00FURSONA GENESIS/fursona-genesis-portada.png"
+    "00FURSONA GENESIS": "assets/00FURSONA GENESIS/fursona-genesis-portada.png",
+    "QUANTUM DEITIES": "assets/quantum-deities-banner.png"
 };
 
 const artworkData = [
+    {
+        "id": "quantum_001",
+        "title": "Quantum Deity #001",
+        "category": "QUANTUM DEITIES",
+        "src": "assets/quantum-deities-banner.png",
+        "description": "Divinidad digital de la colección QUANTUM. 164 avatares únicos en la blockchain de Polygon.",
+        "size": "Digital NFT",
+        "price": "0.6 POL",
+        "tech_info": "Polygon Blockchain",
+        "link": "https://quantum-deities-1premium.nfts2.me/"
+    },
     {
         "id": "fursona_001",
         "title": "Fursona Genesis #001",
