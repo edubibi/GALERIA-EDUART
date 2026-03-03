@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Midjourney - Quantum Deities</title>
+    <style>
+        :root {
+            --bg-color: #0d0d12;
+            --panel-bg: #1a1a24;
+            --text-main: #e0e0e0;
+            --accent: #bc13fe;
+            --accent-hover: #d254ff;
+            --success: #00ff88;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--panel-bg);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(188, 19, 254, 0.2);
+            border-color: var(--accent);
+        }
+
+        .prompt-text {
+            font-size: 0.95rem;
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .btn-copy {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-copy:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-copy.copied {
+            background-color: var(--success);
+            color: #000;
+        }
+
+        .status-bar {
+            background: #111;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #333;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .actions-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            background: transparent;
+            color: #b0b0b0;
+            border: 1px solid #555;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-action:hover {
+            border-color: var(--accent);
+            color: white;
+            background: rgba(188, 19, 254, 0.1);
+        }
+
+        .progress-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .btn-reset {
+            background: transparent;
+            color: #ff4444;
+            border: 1px solid #ff4444;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-reset:hover {
+            background: #ff4444;
+            color: white;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+        }
+
+        .custom-checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--success);
+        }
+
+        .checkbox-label {
+            cursor: pointer;
+            font-weight: bold;
+            color: #888;
+            transition: color 0.2s;
+        }
+
+        .card.done {
+            opacity: 0.6;
+            border-color: var(--success);
+        }
+
+        .card.done .checkbox-label {
+            color: var(--success);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔮 Quantum Deities - Prompts Cyber-Eléctricos (100)</h1>
+
+    <div class="status-bar">
+        <div class="progress-text">Completados: <span id="counter">0</span> / 100</div>
+        <div class="actions-group">
+            <button class="btn-action" title="Descarga tu progreso a tu PC para no perderlo"
+                onclick="exportProgress()">💾 Guardar Progreso</button>
+            <button class="btn-action" title="Carga tu progreso previamente guardado"
+                onclick="document.getElementById('import-file').click()">📂 Cargar Progreso</button>
+            <input type="file" id="import-file" style="display:none" accept=".json" onchange="importProgress(event)">
+            <button class="btn-reset" onclick="resetProgress()">Reiniciar Progreso</button>
+        </div>
+    </div>
+
+    <div class="grid" id="prompts-container">
+    </div>
+    <script>
+        const promptsData = [
+            {
+                "id": "MJ_1",
+                "prompt": "Luminous astral guardian, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating amidst shattered glowing polygons, deep space background, nebulous gas, deep space indigo and radiant silver highlights :: visionary cosmic art, smooth stylized shading, digital concept art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_2",
+                "prompt": "Ethereal quantum avatar, abstract low-poly structure, floating geometric halos, luminous vector lines, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, liquid mercury silver and vibrant neon orange borders :: surreal composition, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_3",
+                "prompt": "Abstract futuristic deity figure, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, deep space indigo and radiant silver highlights :: abstract glowing artwork, vibrant digital illustration --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_4",
+                "prompt": "Abstract cosmic entity, prismatic glass facets, glowing neon outlines, sleek minimalist design, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, metallic gold and electric purple accents :: high contrast stylized illustration, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_5",
+                "prompt": "Ethereal quantum avatar, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating above a subtle glowing event horizon, sparkling geometric dust, pitch black and toxic neon green glowing lines :: abstract glowing artwork, vibrant digital illustration --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_6",
+                "prompt": "Ethereal quantum avatar, abstract low-poly structure, floating geometric halos, luminous vector lines, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, liquid mercury silver and vibrant neon orange borders :: abstract glowing artwork, vibrant digital illustration --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_7",
+                "prompt": "Luminous astral guardian, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, digital data streams swirling around, pitch black void, glowing light motes, intense cyan and bright magenta hues :: abstract glowing artwork, vibrant digital illustration --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_8",
+                "prompt": "Abstract futuristic deity figure, fractal origami architecture, glowing runic lines, semi-transparent neon shell, floating amidst shattered glowing polygons, deep space background, nebulous gas, pitch black and toxic neon green glowing lines :: high contrast stylized illustration, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_9",
+                "prompt": "Abstract futuristic deity figure, prismatic glass facets, glowing neon outlines, sleek minimalist design, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, intense cyan and bright magenta hues :: sleek minimalist sci-fi rendering, 2D vector style art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_10",
+                "prompt": "Ethereal quantum avatar, abstract low-poly structure, floating geometric halos, luminous vector lines, floating amidst shattered glowing polygons, deep space background, nebulous gas, pearlescent white and glowing laser red accents :: surreal composition, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_11",
+                "prompt": "Sleek geometric celestial being, abstract low-poly structure, floating geometric halos, luminous vector lines, floating above a subtle glowing event horizon, sparkling geometric dust, pearlescent white and glowing laser red accents :: high contrast stylized illustration, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_12",
+                "prompt": "Abstract cosmic entity, fractal origami architecture, glowing runic lines, semi-transparent neon shell, digital data streams swirling around, pitch black void, glowing light motes, metallic gold and electric purple accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_13",
+                "prompt": "Abstract cosmic entity, abstract low-poly structure, floating geometric halos, luminous vector lines, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, deep space indigo and radiant silver highlights :: abstract glowing artwork, vibrant digital illustration --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_14",
+                "prompt": "Abstract futuristic deity figure, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating amidst shattered glowing polygons, deep space background, nebulous gas, liquid mercury silver and vibrant neon orange borders :: abstract glowing artwork, vibrant digital illustration --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_15",
+                "prompt": "Luminous astral guardian, fractal origami architecture, glowing runic lines, semi-transparent neon shell, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, pitch black and toxic neon green glowing lines :: high contrast stylized illustration, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_16",
+                "prompt": "Abstract futuristic deity figure, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, floating above a subtle glowing event horizon, sparkling geometric dust, pearlescent white and glowing laser red accents :: sleek minimalist sci-fi rendering, 2D vector style art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_17",
+                "prompt": "Abstract cosmic entity, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating amidst shattered glowing polygons, deep space background, nebulous gas, metallic gold and electric purple accents :: abstract glowing artwork, vibrant digital illustration --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_18",
+                "prompt": "Abstract cosmic entity, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating above a subtle glowing event horizon, sparkling geometric dust, pearlescent white and glowing laser red accents :: abstract glowing artwork, vibrant digital illustration --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_19",
+                "prompt": "Transcendental digital spirit, abstract low-poly structure, floating geometric halos, luminous vector lines, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, intense cyan and bright magenta hues :: abstract glowing artwork, vibrant digital illustration --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_20",
+                "prompt": "Higher dimensional being, prismatic glass facets, glowing neon outlines, sleek minimalist design, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, deep space indigo and radiant silver highlights :: surreal composition, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_21",
+                "prompt": "Abstract futuristic deity figure, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating amidst shattered glowing polygons, deep space background, nebulous gas, metallic gold and electric purple accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_22",
+                "prompt": "Ethereal quantum avatar, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, pearlescent white and glowing laser red accents :: abstract glowing artwork, vibrant digital illustration --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_23",
+                "prompt": "Transcendental digital spirit, fractal origami architecture, glowing runic lines, semi-transparent neon shell, cosmic energy swirls, floating in dark void with stars, quantum particles effect, metallic gold and electric purple accents :: abstract glowing artwork, vibrant digital illustration --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_24",
+                "prompt": "Abstract cosmic entity, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, floating above a subtle glowing event horizon, sparkling geometric dust, intense cyan and bright magenta hues :: visionary cosmic art, smooth stylized shading, digital concept art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_25",
+                "prompt": "Abstract futuristic deity figure, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, deep space indigo and radiant silver highlights :: high contrast stylized illustration, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_26",
+                "prompt": "Ethereal quantum avatar, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating above a subtle glowing event horizon, sparkling geometric dust, pitch black and toxic neon green glowing lines :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_27",
+                "prompt": "Luminous astral guardian, prismatic glass facets, glowing neon outlines, sleek minimalist design, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, pearlescent white and glowing laser red accents :: surreal composition, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_28",
+                "prompt": "Abstract cosmic entity, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, pearlescent white and glowing laser red accents :: abstract glowing artwork, vibrant digital illustration --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_29",
+                "prompt": "Luminous astral guardian, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, digital data streams swirling around, pitch black void, glowing light motes, pitch black and toxic neon green glowing lines :: abstract glowing artwork, vibrant digital illustration --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_30",
+                "prompt": "Abstract futuristic deity figure, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, digital data streams swirling around, pitch black void, glowing light motes, liquid mercury silver and vibrant neon orange borders :: sleek minimalist sci-fi rendering, 2D vector style art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_31",
+                "prompt": "Abstract futuristic deity figure, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating amidst shattered glowing polygons, deep space background, nebulous gas, deep space indigo and radiant silver highlights :: visionary cosmic art, smooth stylized shading, digital concept art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_32",
+                "prompt": "Abstract cosmic entity, fractal origami architecture, glowing runic lines, semi-transparent neon shell, digital data streams swirling around, pitch black void, glowing light motes, pitch black and toxic neon green glowing lines :: sleek minimalist sci-fi rendering, 2D vector style art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_33",
+                "prompt": "Ethereal quantum avatar, prismatic glass facets, glowing neon outlines, sleek minimalist design, digital data streams swirling around, pitch black void, glowing light motes, pearlescent white and glowing laser red accents :: surreal composition, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_34",
+                "prompt": "Abstract futuristic deity figure, fractal origami architecture, glowing runic lines, semi-transparent neon shell, digital data streams swirling around, pitch black void, glowing light motes, pitch black and toxic neon green glowing lines :: abstract glowing artwork, vibrant digital illustration --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_35",
+                "prompt": "Ethereal quantum avatar, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating above a subtle glowing event horizon, sparkling geometric dust, intense cyan and bright magenta hues :: surreal composition, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_36",
+                "prompt": "Sleek geometric celestial being, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, cosmic energy swirls, floating in dark void with stars, quantum particles effect, pitch black and toxic neon green glowing lines :: surreal composition, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_37",
+                "prompt": "Abstract cosmic entity, prismatic glass facets, glowing neon outlines, sleek minimalist design, cosmic energy swirls, floating in dark void with stars, quantum particles effect, intense cyan and bright magenta hues :: surreal composition, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_38",
+                "prompt": "Ethereal quantum avatar, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, digital data streams swirling around, pitch black void, glowing light motes, pearlescent white and glowing laser red accents :: surreal composition, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_39",
+                "prompt": "Luminous astral guardian, prismatic glass facets, glowing neon outlines, sleek minimalist design, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, metallic gold and electric purple accents :: sleek minimalist sci-fi rendering, 2D vector style art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_40",
+                "prompt": "Abstract futuristic deity figure, fractal origami architecture, glowing runic lines, semi-transparent neon shell, digital data streams swirling around, pitch black void, glowing light motes, intense cyan and bright magenta hues :: sleek minimalist sci-fi rendering, 2D vector style art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_41",
+                "prompt": "Higher dimensional being, fractal origami architecture, glowing runic lines, semi-transparent neon shell, digital data streams swirling around, pitch black void, glowing light motes, liquid mercury silver and vibrant neon orange borders :: high contrast stylized illustration, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_42",
+                "prompt": "Luminous astral guardian, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, pitch black and toxic neon green glowing lines :: surreal composition, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_43",
+                "prompt": "Luminous astral guardian, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, floating amidst shattered glowing polygons, deep space background, nebulous gas, pitch black and toxic neon green glowing lines :: high contrast stylized illustration, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_44",
+                "prompt": "Abstract cosmic entity, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, floating above a subtle glowing event horizon, sparkling geometric dust, liquid mercury silver and vibrant neon orange borders :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_45",
+                "prompt": "Sleek geometric celestial being, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating above a subtle glowing event horizon, sparkling geometric dust, liquid mercury silver and vibrant neon orange borders :: abstract glowing artwork, vibrant digital illustration --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_46",
+                "prompt": "Sleek geometric celestial being, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, liquid mercury silver and vibrant neon orange borders :: high contrast stylized illustration, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_47",
+                "prompt": "Sleek geometric celestial being, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, liquid mercury silver and vibrant neon orange borders :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_48",
+                "prompt": "Higher dimensional being, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, metallic gold and electric purple accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_49",
+                "prompt": "Abstract cosmic entity, abstract low-poly structure, floating geometric halos, luminous vector lines, cosmic energy swirls, floating in dark void with stars, quantum particles effect, pearlescent white and glowing laser red accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_50",
+                "prompt": "Luminous astral guardian, prismatic glass facets, glowing neon outlines, sleek minimalist design, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, metallic gold and electric purple accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_51",
+                "prompt": "Sleek geometric celestial being, abstract low-poly structure, floating geometric halos, luminous vector lines, cosmic energy swirls, floating in dark void with stars, quantum particles effect, deep space indigo and radiant silver highlights :: high contrast stylized illustration, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_52",
+                "prompt": "Sleek geometric celestial being, fractal origami architecture, glowing runic lines, semi-transparent neon shell, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, liquid mercury silver and vibrant neon orange borders :: abstract glowing artwork, vibrant digital illustration --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_53",
+                "prompt": "Sleek geometric celestial being, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, floating above a subtle glowing event horizon, sparkling geometric dust, intense cyan and bright magenta hues :: surreal composition, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_54",
+                "prompt": "Ethereal quantum avatar, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating above a subtle glowing event horizon, sparkling geometric dust, deep space indigo and radiant silver highlights :: high contrast stylized illustration, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_55",
+                "prompt": "Ethereal quantum avatar, abstract low-poly structure, floating geometric halos, luminous vector lines, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, deep space indigo and radiant silver highlights :: abstract glowing artwork, vibrant digital illustration --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_56",
+                "prompt": "Transcendental digital spirit, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, digital data streams swirling around, pitch black void, glowing light motes, intense cyan and bright magenta hues :: sleek minimalist sci-fi rendering, 2D vector style art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_57",
+                "prompt": "Sleek geometric celestial being, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, floating above a subtle glowing event horizon, sparkling geometric dust, intense cyan and bright magenta hues :: visionary cosmic art, smooth stylized shading, digital concept art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_58",
+                "prompt": "Ethereal quantum avatar, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, intense cyan and bright magenta hues :: visionary cosmic art, smooth stylized shading, digital concept art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_59",
+                "prompt": "Sleek geometric celestial being, abstract low-poly structure, floating geometric halos, luminous vector lines, floating above a subtle glowing event horizon, sparkling geometric dust, pitch black and toxic neon green glowing lines :: sleek minimalist sci-fi rendering, 2D vector style art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_60",
+                "prompt": "Abstract futuristic deity figure, fractal origami architecture, glowing runic lines, semi-transparent neon shell, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, deep space indigo and radiant silver highlights :: high contrast stylized illustration, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_61",
+                "prompt": "Higher dimensional being, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, floating amidst shattered glowing polygons, deep space background, nebulous gas, pitch black and toxic neon green glowing lines :: surreal composition, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_62",
+                "prompt": "Ethereal quantum avatar, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, digital data streams swirling around, pitch black void, glowing light motes, pearlescent white and glowing laser red accents :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_63",
+                "prompt": "Luminous astral guardian, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, cosmic energy swirls, floating in dark void with stars, quantum particles effect, intense cyan and bright magenta hues :: surreal composition, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_64",
+                "prompt": "Transcendental digital spirit, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, intense cyan and bright magenta hues :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_65",
+                "prompt": "Luminous astral guardian, fractal origami architecture, glowing runic lines, semi-transparent neon shell, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, liquid mercury silver and vibrant neon orange borders :: visionary cosmic art, smooth stylized shading, digital concept art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_66",
+                "prompt": "Transcendental digital spirit, fractal origami architecture, glowing runic lines, semi-transparent neon shell, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, intense cyan and bright magenta hues :: visionary cosmic art, smooth stylized shading, digital concept art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_67",
+                "prompt": "Higher dimensional being, fractal origami architecture, glowing runic lines, semi-transparent neon shell, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, deep space indigo and radiant silver highlights :: high contrast stylized illustration, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_68",
+                "prompt": "Transcendental digital spirit, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, floating amidst shattered glowing polygons, deep space background, nebulous gas, liquid mercury silver and vibrant neon orange borders :: visionary cosmic art, smooth stylized shading, digital concept art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_69",
+                "prompt": "Luminous astral guardian, abstract low-poly structure, floating geometric halos, luminous vector lines, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, liquid mercury silver and vibrant neon orange borders :: high contrast stylized illustration, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_70",
+                "prompt": "Higher dimensional being, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating amidst shattered glowing polygons, deep space background, nebulous gas, deep space indigo and radiant silver highlights :: high contrast stylized illustration, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_71",
+                "prompt": "Sleek geometric celestial being, prismatic glass facets, glowing neon outlines, sleek minimalist design, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, intense cyan and bright magenta hues :: sleek minimalist sci-fi rendering, 2D vector style art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_72",
+                "prompt": "Abstract cosmic entity, abstract low-poly structure, floating geometric halos, luminous vector lines, floating above a subtle glowing event horizon, sparkling geometric dust, liquid mercury silver and vibrant neon orange borders :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_73",
+                "prompt": "Abstract futuristic deity figure, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, digital data streams swirling around, pitch black void, glowing light motes, deep space indigo and radiant silver highlights :: visionary cosmic art, smooth stylized shading, digital concept art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_74",
+                "prompt": "Higher dimensional being, abstract low-poly structure, floating geometric halos, luminous vector lines, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, pearlescent white and glowing laser red accents :: high contrast stylized illustration, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_75",
+                "prompt": "Sleek geometric celestial being, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, digital data streams swirling around, pitch black void, glowing light motes, liquid mercury silver and vibrant neon orange borders :: sleek minimalist sci-fi rendering, 2D vector style art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_76",
+                "prompt": "Transcendental digital spirit, abstract low-poly structure, floating geometric halos, luminous vector lines, floating above a subtle glowing event horizon, sparkling geometric dust, metallic gold and electric purple accents :: surreal composition, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_77",
+                "prompt": "Abstract futuristic deity figure, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, floating amidst shattered glowing polygons, deep space background, nebulous gas, pearlescent white and glowing laser red accents :: sleek minimalist sci-fi rendering, 2D vector style art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_78",
+                "prompt": "Sleek geometric celestial being, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, floating amidst shattered glowing polygons, deep space background, nebulous gas, liquid mercury silver and vibrant neon orange borders :: high contrast stylized illustration, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_79",
+                "prompt": "Sleek geometric celestial being, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, pitch black and toxic neon green glowing lines :: high contrast stylized illustration, digital art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_80",
+                "prompt": "Transcendental digital spirit, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating amidst shattered glowing polygons, deep space background, nebulous gas, pearlescent white and glowing laser red accents :: sleek minimalist sci-fi rendering, 2D vector style art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_81",
+                "prompt": "Abstract cosmic entity, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, floating above a subtle glowing event horizon, sparkling geometric dust, metallic gold and electric purple accents :: high contrast stylized illustration, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_82",
+                "prompt": "Abstract futuristic deity figure, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, cosmic energy swirls, floating in dark void with stars, quantum particles effect, liquid mercury silver and vibrant neon orange borders :: abstract glowing artwork, vibrant digital illustration --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_83",
+                "prompt": "Ethereal quantum avatar, prismatic glass facets, glowing neon outlines, sleek minimalist design, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, liquid mercury silver and vibrant neon orange borders :: surreal composition, digital art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_84",
+                "prompt": "Ethereal quantum avatar, abstract low-poly structure, floating geometric halos, luminous vector lines, floating above a subtle glowing event horizon, sparkling geometric dust, liquid mercury silver and vibrant neon orange borders :: surreal composition, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_85",
+                "prompt": "Abstract futuristic deity figure, abstract low-poly structure, floating geometric halos, luminous vector lines, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, pitch black and toxic neon green glowing lines :: surreal composition, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_86",
+                "prompt": "Luminous astral guardian, fractal origami architecture, glowing runic lines, semi-transparent neon shell, cosmic energy swirls, floating in dark void with stars, quantum particles effect, pearlescent white and glowing laser red accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_87",
+                "prompt": "Luminous astral guardian, abstract low-poly structure, floating geometric halos, luminous vector lines, floating above a subtle glowing event horizon, sparkling geometric dust, intense cyan and bright magenta hues :: high contrast stylized illustration, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_88",
+                "prompt": "Luminous astral guardian, fluid geometric shapes, pulsing light trails, hyper-polished metallic surfaces, cosmic energy swirls, floating in dark void with stars, quantum particles effect, metallic gold and electric purple accents :: sleek minimalist sci-fi rendering, 2D vector style art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_89",
+                "prompt": "Abstract cosmic entity, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, cosmic energy swirls, floating in dark void with stars, quantum particles effect, pitch black and toxic neon green glowing lines :: visionary cosmic art, smooth stylized shading, digital concept art --ar 1:1 --v 6.0 --style raw --s 100 --c 5"
+            },
+            {
+                "id": "MJ_90",
+                "prompt": "Higher dimensional being, prismatic glass facets, glowing neon outlines, sleek minimalist design, floating above a subtle glowing event horizon, sparkling geometric dust, intense cyan and bright magenta hues :: surreal composition, digital art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_91",
+                "prompt": "Higher dimensional being, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, floating above a subtle glowing event horizon, sparkling geometric dust, pearlescent white and glowing laser red accents :: high contrast stylized illustration, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            },
+            {
+                "id": "MJ_92",
+                "prompt": "Luminous astral guardian, prismatic glass facets, glowing neon outlines, sleek minimalist design, digital data streams swirling around, pitch black void, glowing light motes, metallic gold and electric purple accents :: visionary cosmic art, smooth stylized shading, digital concept art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_93",
+                "prompt": "Luminous astral guardian, prismatic glass facets, glowing neon outlines, sleek minimalist design, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, intense cyan and bright magenta hues :: visionary cosmic art, smooth stylized shading, digital concept art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_94",
+                "prompt": "Abstract futuristic deity figure, smooth obsidian planes, glowing neon circuitry, abstract minimalist features, digital data streams swirling around, pitch black void, glowing light motes, intense cyan and bright magenta hues :: high contrast stylized illustration, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_95",
+                "prompt": "Abstract cosmic entity, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, cosmic energy swirls, floating in dark void with stars, quantum particles effect, pearlescent white and glowing laser red accents :: surreal composition, digital art --ar 4:5 --v 6.0 --style raw --s 600"
+            },
+            {
+                "id": "MJ_96",
+                "prompt": "Abstract futuristic deity figure, prismatic glass facets, glowing neon outlines, sleek minimalist design, cosmic energy swirls, floating in dark void with stars, quantum particles effect, pitch black and toxic neon green glowing lines :: abstract glowing artwork, vibrant digital illustration --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_97",
+                "prompt": "Transcendental digital spirit, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, surrounded by glowing orbital rings, suspended in an infinite astral plane, stardust clouds, liquid mercury silver and vibrant neon orange borders :: visionary cosmic art, smooth stylized shading, digital concept art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_98",
+                "prompt": "Luminous astral guardian, fractal origami architecture, glowing runic lines, semi-transparent neon shell, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, intense cyan and bright magenta hues :: sleek minimalist sci-fi rendering, 2D vector style art --ar 2:3 --v 6.0 --style raw --s 250 --c 10"
+            },
+            {
+                "id": "MJ_99",
+                "prompt": "Abstract futuristic deity figure, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, digital data streams swirling around, pitch black void, glowing light motes, liquid mercury silver and vibrant neon orange borders :: abstract glowing artwork, vibrant digital illustration --ar 16:9 --v 6.0 --s 400 --c 20"
+            },
+            {
+                "id": "MJ_100",
+                "prompt": "Sleek geometric celestial being, geometric crystalline form, holographic aura, sleek sci-fi aesthetic, suspended in a zero-gravity vacuum, bright neon energy flares, abstract dark background, liquid mercury silver and vibrant neon orange borders :: surreal composition, digital art --ar 9:16 --v 6.0 --c 50 --s 300"
+            }
+        ];
+        const container = document.getElementById('prompts-container');
+
+        promptsData.forEach((item, index) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.id = `card-${index}`;
+
+            const textParts = item.prompt.split('::');
+            const mainDesc = textParts[0];
+            const tags = textParts.length > 1 ? '::' + textParts[1] : '';
+
+            // Limpiamos comillas simples/dobles para el atributo
+            const safePrompt = item.prompt.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+            card.innerHTML = `
+                <div class="prompt-text">
+                    <strong>[#${index + 1}]</strong> ${mainDesc} <br><br> <span style="color:#888">${tags}</span>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="check-${index}" class="custom-checkbox" onchange="toggleDone(${index})">
+                    <label for="check-${index}" class="checkbox-label">MARCAR COMO USADO</label>
+                </div>
+                <button class="btn-copy" data-prompt="${safePrompt}" onclick="copyPrompt(this)">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    COPIAR PROMPT
+                </button>
+            `;
+            container.appendChild(card);
+        });
+
+        // --- SISTEMA DE GUARDADO (LOCALSTORAGE) ---
+        let completedCount = 0;
+        const counterEl = document.getElementById('counter');
+
+        function loadProgress() {
+            completedCount = 0;
+            promptsData.forEach((_, index) => {
+                const isDone = localStorage.getItem(`prompt_done_${index}`) === 'true';
+                const checkbox = document.getElementById(`check-${index}`);
+                const card = document.getElementById(`card-${index}`);
+
+                if (checkbox) checkbox.checked = isDone;
+
+                if (isDone) {
+                    card.classList.add('done');
+                    completedCount++;
+                } else {
+                    card.classList.remove('done');
+                }
+            });
+            updateCounter();
+        }
+
+        function toggleDone(index) {
+            const checkbox = document.getElementById(`check-${index}`);
+            const card = document.getElementById(`card-${index}`);
+            const isDone = checkbox.checked;
+
+            // Guardar en memoria
+            localStorage.setItem(`prompt_done_${index}`, isDone);
+
+            if (isDone) {
+                card.classList.add('done');
+                completedCount++;
+            } else {
+                card.classList.remove('done');
+                completedCount--;
+            }
+            updateCounter();
+        }
+
+        function updateCounter() {
+            counterEl.innerText = completedCount;
+        }
+
+        function resetProgress() {
+            if (confirm("¿Estás seguro de que quieres desmarcar TODOS los prompts? Esto no se puede deshacer.")) {
+                promptsData.forEach((_, index) => {
+                    localStorage.removeItem(`prompt_done_${index}`);
+                });
+                loadProgress();
+            }
+        }
+
+        function exportProgress() {
+            const data = {};
+            promptsData.forEach((_, index) => {
+                data[`prompt_done_${index}`] = localStorage.getItem(`prompt_done_${index}`) === 'true';
+            });
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "progreso_prompts_quantum.json");
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+
+        function importProgress(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    Object.keys(data).forEach(key => {
+                        localStorage.setItem(key, data[key]);
+                    });
+                    loadProgress();
+                    alert("¡Progreso cargado con éxito! Tienes " + completedCount + " completados.");
+                } catch (err) {
+                    alert("Error al leer el archivo de progreso.");
+                }
+            };
+            reader.readAsText(file);
+            event.target.value = ''; // Reset the input
+        }
+
+        // Cargar progreso al iniciar la página
+        window.addEventListener('DOMContentLoaded', loadProgress);
+
+        async function copyPrompt(button) {
+            const text = button.getAttribute('data-prompt');
+            let success = false;
+
+            try {
+                // Intento moderno (API standard, funciona bien en HTTPS o LocaHost Server)
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    await navigator.clipboard.writeText(text);
+                    success = true;
+                } else {
+                    throw new Error("Clipboard API no disponible");
+                }
+            } catch (err) {
+                // Fallback para móviles que abren archivos locales sin HTTPS:
+                try {
+                    const tempInput = document.createElement("textarea");
+                    tempInput.value = text;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    tempInput.setSelectionRange(0, 99999); // Para móviles
+                    document.execCommand("copy");
+                    document.body.removeChild(tempInput);
+                    success = true;
+                } catch (fallbackErr) {
+                    console.error('Fallo copiado secundario:', fallbackErr);
+                }
+            }
+
+            if (success) {
+                const originalText = button.innerHTML;
+                button.classList.add('copied');
+                button.innerHTML = `
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                    ¡COPIADO!
+                `;
+
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                    button.innerHTML = originalText;
+                }, 2000);
+            } else {
+                alert("Para la seguridad de tu móvil, debes seleccionar el texto de arriba prolongando el dedo y copiarlo manualmente.");
+            }
+        }
+    </script>
+</body>
+
+</html>
