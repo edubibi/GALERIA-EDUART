@@ -9,6 +9,54 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <style>
+        /* MOBILE DENSE GRID (Strictly < 900px) */
+        @media (max-width: 900px) {
+            .navbar {
+                padding: 0.5rem 2% !important;
+                flex-direction: column !important;
+                gap: 5px !important;
+            }
+            .logo img {
+                max-height: 40px !important;
+            }
+            .nav-links {
+                gap: 0.4rem !important;
+                justify-content: center !important;
+            }
+            .nav-links a {
+                font-size: 0.75rem !important;
+            }
+            .page-header {
+                padding: 20px 10px !important;
+            }
+            .page-header h1 {
+                font-size: 1.5rem !important;
+            }
+            .btn-digital-top-right {
+                position: static !important;
+                display: block !important;
+                margin: 10px auto !important;
+                font-size: 0.75rem !important;
+                padding: 8px 15px !important;
+            }
+            .collections-grid {
+                grid-template-columns: repeat(2, 1fr) !important; /* Force 2 columns */
+                gap: 10px !important;
+                padding: 5px !important;
+            }
+            .category-card {
+                padding: 5px !important;
+            }
+            .placeholder-cover {
+                height: 100px !important; /* Smaller covers */
+            }
+            .category-card h3 {
+                font-size: 0.8rem !important;
+                margin: 5px 0 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>

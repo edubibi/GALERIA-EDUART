@@ -10,6 +10,75 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <style>
+        /* RADICAL MOBILE COMPACTING (Strictly < 900px) */
+        @media (max-width: 900px) {
+            .navbar {
+                padding: 0.5rem 2% !important;
+                flex-direction: column !important;
+                gap: 5px !important;
+            }
+            .logo img {
+                max-height: 40px !important; /* Smaller logo */
+            }
+            .nav-links {
+                gap: 0.4rem !important;
+                justify-content: center !important;
+                padding: 0 !important;
+            }
+            .nav-links a {
+                font-size: 0.75rem !important; /* Smaller text */
+                padding: 4px 6px !important;
+            }
+            .hero {
+                height: auto !important;
+                min-height: 40vh !important;
+                padding: 40px 20px !important;
+            }
+            .zigzag-title {
+                font-size: 1.4rem !important; /* Smaller hero text */
+                margin-bottom: 20px !important;
+            }
+            .zigzag-title .line-2 {
+                margin-left: 0 !important;
+                display: block !important;
+            }
+            .minimalist-buttons {
+                margin-left: 0 !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 15px !important;
+            }
+            .hero-subtitle {
+                font-size: 0.8rem !important;
+                text-align: center !important;
+            }
+            .outline-btn {
+                padding: 0.8rem 2rem !important;
+                font-size: 0.8rem !important;
+            }
+            /* Dense Gallery for NFT sections */
+            #nfts div[style*="max-width: 400px"] {
+                max-width: 46% !important;
+                padding: 10px !important;
+                margin: 0 !important;
+            }
+            #nfts img {
+                height: 140px !important; /* Tiny thumbnails */
+            }
+            #nfts h3 {
+                font-size: 0.75rem !important;
+            }
+            #nfts p {
+                font-size: 0.65rem !important;
+                display: none; /* Hide desc on mobile to save space */
+            }
+            #nfts a {
+                padding: 5px 10px !important;
+                font-size: 0.7rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>

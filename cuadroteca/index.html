@@ -12,6 +12,42 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=neon">
+    <style>
+        /* MOBILE DENSE GRID (Strictly < 900px) */
+        @media (max-width: 900px) {
+            .neon-header {
+                padding: 0.5rem !important;
+                flex-direction: column !important;
+                gap: 5px !important;
+            }
+            .header-center {
+                position: static !important;
+                transform: none !important;
+            }
+            .neon-title {
+                font-size: 1.1rem !important;
+            }
+            .nav-btn {
+                font-size: 0.75rem !important;
+                margin-right: 0.5rem !important;
+                padding: 4px 8px !important;
+            }
+            .art-grid {
+                grid-template-columns: repeat(2, 1fr) !important; /* Force 2 columns */
+                gap: 8px !important;
+                padding: 5px !important;
+            }
+            .art-item img {
+                height: 120px !important; /* Smaller thumbnails */
+            }
+            .art-info h3 {
+                font-size: 0.75rem !important;
+            }
+            .art-info p {
+                display: none !important; /* Hide desc in grid */
+            }
+        }
+    </style>
 
     <!-- Importamos los datos de la web principal -->
     <script src="../js/data.js?v=111"></script>
