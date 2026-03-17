@@ -10,7 +10,9 @@
         @page { size: A4; margin: 0; }
         .page { width: 210mm; height: 297mm; padding: 20mm; box-sizing: border-box; position: relative; page-break-after: always; display: flex; flex-direction: column; justify-content: center; }
         .cover-page { text-align: center; justify-content: center; background: #111; color: #fff; }
-        .cover-page h1 { font-family: var(--font-serif); font-size: 3rem; color: var(--accent); margin-bottom: 1rem; }
+        .cover-page h1 { font-family: var(--font-serif); font-size: 2rem; color: var(--accent); margin-bottom: 1rem; }
+        .mobile-v { display:none; }
+        @media (max-width: 900px) { .mobile-v { display:block !important; background: yellow; color: black; font-size: 10px; position: fixed; top:0; left:0; z-index:9999; } }
         .cover-page p { font-size: 1.2rem; letter-spacing: 2px; text-transform: uppercase; }
         .intro-page { justify-content: flex-start; padding-top: 40mm; }
         .intro-page h2 { font-family: var(--font-serif); font-size: 2rem; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 20px; }
@@ -31,10 +33,10 @@
         
         /* Change from A4 pages to a fluid grid on mobile only */
         .page {
-            width: 48% !important; /* 2 columns with some breathing room */
+            width: 31% !important; /* 3 columns on mobile */
             height: auto !important;
-            min-height: 350px;
-            padding: 5px !important;
+            min-height: 250px !important;
+            padding: 2px !important;
             margin: 1% !important;
             float: left;
             border: 1px solid #eee;
@@ -56,8 +58,8 @@
         }
 
         .artwork-image-container {
-            height: 180px !important; /* Smaller thumbnails */
-            margin-bottom: 10px;
+            height: 120px !important; /* Smaller thumbnails for 3 columns */
+            margin-bottom: 5px;
         }
 
         .artwork-info {
@@ -90,6 +92,7 @@
 </head>
 <body>
     <!-- PORTADA -->
+    <div class="mobile-v">v2.4.2</div>
     <div class="page cover-page">
         <h1>CATÁLOGO DE OBRAS</h1>
         <p>Universo EDUSSE</p>

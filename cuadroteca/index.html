@@ -71,32 +71,44 @@
             .art-price {
                 font-size: 0.6rem !important;
             }
-            /* ... rest of hero compacting ... */
+            /* DENSE DETAIL OVERLAY (The Cow/Dog) */
             .hero-content {
-                max-width: 98% !important;
-                margin: 2px auto !important;
-                padding: 2px !important;
-                background: rgba(0,0,0,0.95) !important;
-                border: 1px solid #444 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                max-width: 90% !important; /* More narrow */
+                max-height: 85vh !important;
+                margin: 10px auto !important;
+                padding: 10px !important;
+                background: #000 !important;
+                border: 2px solid var(--primary) !important;
+                overflow-y: auto !important;
+                border-radius: 12px !important;
             }
             .hero-image-container {
-                min-height: 20vh !important;
-                max-height: 30vh !important;
-                margin-bottom: 2px !important;
+                width: 100% !important;
+                max-height: 30vh !important; /* EVEN SMALLER */
+                margin-bottom: 5px !important;
+                display: flex !important;
+                justify-content: center !important;
             }
-            .hero-details {
-                padding: 4px !important;
+            .hero-image-container img {
+                max-height: 100% !important;
+                width: auto !important;
+                object-fit: contain !important;
             }
-            .hero-details h2 { font-size: 0.9rem !important; margin: 0 !important; }
-            #hero-desc { font-size: 0.65rem !important; line-height: 1 !important; margin: 2px 0 !important; max-height: 40px; overflow: hidden; }
-            .hero-meta { margin-bottom: 2px !important; display: flex; justify-content: center; gap: 5px; }
-            .tag, #hero-price { font-size: 0.6rem !important; padding: 2px 5px !important; }
+            .hero-details h2 { font-size: 0.95rem !important; margin: 2px 0 !important; }
+            #hero-desc { 
+                font-size: 0.7rem !important; 
+                line-height: 1.1 !important; 
+                margin: 5px 0 !important;
+            }
+            .tag, #hero-price { font-size: 0.7rem !important; padding: 2px 8px !important; }
             .btn-comprar, .btn-outline {
-                padding: 4px !important;
-                font-size: 0.6rem !important;
-                margin: 2px !important;
+                padding: 8px !important;
+                font-size: 0.7rem !important;
+                margin: 3px !important;
             }
-            #close-hero { top: 2px !important; right: 5px !important; font-size: 1.2rem !important; }
+            #close-hero { top: 2px !important; right: 8px !important; font-size: 1.2rem !important; color: #ff0000 !important; }
         }
     </style>
 
@@ -119,7 +131,7 @@
             </div>
 
             <div class="header-center">
-                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:inline-block !important; font-size:12px; color:red; background:yellow; padding:2px;">VERSIÓN NUEVA</span></h1>
+                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:inline-block !important; font-size:12px; color:black; background:yellow; padding:2px; font-weight:bold; border:1px solid black;">v2.4.2 FINAL</span></h1>
             </div>
 
             <div class="header-right">
