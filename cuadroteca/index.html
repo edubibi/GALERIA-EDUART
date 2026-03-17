@@ -35,14 +35,43 @@
             }
             .art-grid {
                 grid-template-columns: repeat(3, 1fr) !important;
-                gap: 3px !important;
-                padding: 2px !important;
+                gap: 5px !important;
+                padding: 4px !important;
+            }
+            .category-section { margin-bottom: 2rem !important; }
+            .category-title { font-size: 1.2rem !important; margin-bottom: 1rem !important; }
+            
+            /* COLLAPSE EMPTY SPACE */
+            .art-card, .art-image-wrapper {
+                height: auto !important;
+                aspect-ratio: auto !important;
+                min-height: 0 !important;
+            }
+            .art-image-wrapper {
+                margin-bottom: 5px !important;
             }
             .art-item img, .art-image-wrapper img, .art-card img {
-                height: 75px !important;
+                height: 90px !important; /* Slightly taller but auto-fixed */
                 object-fit: cover !important;
+                display: block !important;
             }
-            /* DENSE DETAIL OVERLAY (The Cow) */
+            .art-info {
+                margin-top: 5px !important;
+                padding: 0 !important;
+                opacity: 1 !important;
+            }
+            .art-title {
+                font-size: 0.65rem !important;
+                line-height: 1.1 !important;
+                margin-bottom: 2px !important;
+                white-space: normal !important; /* Allow 2 lines if needed */
+                height: 2.2em !important; 
+                overflow: hidden !important;
+            }
+            .art-price {
+                font-size: 0.6rem !important;
+            }
+            /* ... rest of hero compacting ... */
             .hero-content {
                 max-width: 98% !important;
                 margin: 2px auto !important;
@@ -90,7 +119,7 @@
             </div>
 
             <div class="header-center">
-                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:none;">v2.4</span></h1>
+                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:none;">v2.4.1</span></h1>
             </div>
 
             <div class="header-right">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colecciones | Tu Arte</title>
-    <link rel="stylesheet" href="main.css?v=102">
+    <link rel="stylesheet" href="main.css?v=204">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
@@ -18,8 +18,9 @@
                 gap: 5px !important;
             }
             .logo img {
-                max-height: 40px !important;
+                max-height: 30px !important;
             }
+            .mobile-v { display: inline !important; font-size: 10px; color: #888; margin-left: 5px; }
             .nav-links {
                 display: flex !important;
                 flex-wrap: nowrap !important;
@@ -47,29 +48,29 @@
                 padding: 20px 10px !important;
             }
             .page-header h1 {
-                font-size: 1.5rem !important;
+                font-size: 1.2rem !important;
             }
             .btn-digital-top-right {
                 position: static !important;
                 display: block !important;
-                margin: 10px auto !important;
-                font-size: 0.75rem !important;
-                padding: 8px 15px !important;
+                margin: 5px auto !important;
+                font-size: 0.7rem !important;
+                padding: 6px 12px !important;
             }
             .collections-grid {
-                grid-template-columns: repeat(2, 1fr) !important; /* Force 2 columns */
-                gap: 10px !important;
-                padding: 5px !important;
+                grid-template-columns: repeat(3, 1fr) !important; /* 3 Columns */
+                gap: 8px !important;
+                padding: 4px !important;
             }
             .category-card {
-                padding: 5px !important;
+                padding: 4px !important;
             }
             .placeholder-cover {
-                height: 100px !important; /* Smaller covers */
+                height: 80px !important; /* Tiny covers */
             }
             .category-card h3 {
-                font-size: 0.8rem !important;
-                margin: 5px 0 !important;
+                font-size: 0.65rem !important;
+                margin: 3px 0 !important;
             }
         }
     </style>
@@ -79,7 +80,10 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
+        <div class="logo">
+            <img src="assets/logo_banner.png" alt="Logo">
+            <span class="mobile-v" style="display:none;">v2.4</span>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>

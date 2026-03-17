@@ -60,19 +60,24 @@
             }
             /* 3 COLUMN GRID FOR HOMEPAGE NFTs */
             #nfts div[style*="max-width: 400px"] {
-                max-width: 30% !important; /* Force 3 columns effectively */
+                max-width: 31% !important; 
+                height: auto !important;
+                aspect-ratio: auto !important;
                 padding: 2px !important;
+                margin: 0 !important;
             }
             #nfts img {
-                height: 70px !important; /* Ultra tiny thumbnails */
+                height: 80px !important; 
+                object-fit: cover !important;
             }
-            #nfts h3 { font-size: 0.5rem !important; }
+            #nfts h3 { font-size: 0.55rem !important; margin: 3px 0 !important; }
             #nfts a[style*="background"] {
-                padding: 2px 4px !important;
-                font-size: 0.5rem !important;
+                padding: 2px 5px !important;
+                font-size: 0.55rem !important;
             }
         }
     </style>
+    <script>console.log("v2.4.1 Loaded");</script>
 </head>
 
 <body>
@@ -81,7 +86,7 @@
     <nav class="navbar">
         <div class="logo">
             <img src="assets/logo_banner.png" alt="Logo">
-            <span class="mobile-v" style="display:none;">v2.4</span>
+            <span class="mobile-v" style="display:none;">v2.4.1</span>
         </div>
         <ul class="nav-links">
             <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
