@@ -16,7 +16,7 @@
         /* MOBILE DENSE GRID (Strictly < 900px) */
         @media (max-width: 900px) {
             .neon-header {
-                padding: 0.3rem !important;
+                padding: 0.2rem !important;
                 flex-direction: column !important;
                 gap: 2px !important;
             }
@@ -25,30 +25,59 @@
                 transform: none !important;
             }
             .neon-title {
-                font-size: 1rem !important;
+                font-size: 0.8rem !important;
             }
-            .mobile-v { display: inline !important; font-size: 10px; color: #888; margin-left: 5px; }
+            .mobile-v { display: inline !important; font-size: 9px; color: #888; margin-left: 5px; }
             .nav-btn {
-                font-size: 0.65rem !important;
-                margin-right: 0.3rem !important;
-                padding: 3px 6px !important;
+                font-size: 0.6rem !important;
+                margin-right: 0.2rem !important;
+                padding: 2px 5px !important;
             }
             .art-grid {
                 grid-template-columns: repeat(3, 1fr) !important; /* 3 Columns on mobile */
-                gap: 6px !important;
+                gap: 5px !important;
+                padding: 4px !important;
+            }
+            .art-item img, .art-image-wrapper img {
+                height: 80px !important; /* Base thumbnails tiny */
+                object-fit: cover !important;
+            }
+            .art-info h3, .art-title {
+                font-size: 0.55rem !important;
+                line-height: 1 !important;
+                margin-top: 3px !important;
+            }
+            .art-info p, .art-info .price, .art-price {
+                display: none !important;
+            }
+            /* ULTRA COMPACT HERO OVERLAY (The Cow Screen) */
+            .hero-content {
+                max-width: 98% !important;
+                margin: 5px auto !important;
+                gap: 5px !important;
                 padding: 5px !important;
             }
-            .art-item img {
-                height: 90px !important; /* Tiny thumbnails */
+            .hero-image-container {
+                min-height: 25vh !important;
+                max-height: 35vh !important;
             }
-            .art-info h3 {
-                font-size: 0.6rem !important;
-                line-height: 1.1 !important;
-                margin-top: 5px !important;
+            .hero-image-container img {
+                max-height: 100% !important;
+                object-fit: contain !important;
             }
-            .art-info p, .art-info .price {
-                display: none !important; /* Hide everything else */
+            .hero-details {
+                padding: 5px !important;
+                text-align: center !important;
             }
+            .hero-details h2 { font-size: 1rem !important; margin: 2px 0 !important; }
+            .hero-meta { margin-bottom: 5px !important; font-size: 0.7rem !important; }
+            #hero-desc { font-size: 0.75rem !important; line-height: 1.1 !important; margin-bottom: 5px !important; }
+            #hero-price { font-size: 0.9rem !important; }
+            .btn-comprar, .btn-outline {
+                padding: 6px !important;
+                font-size: 0.7rem !important;
+            }
+            #close-hero { top: 5px !important; right: 10px !important; font-size: 1.4rem !important; }
         }
     </style>
 
