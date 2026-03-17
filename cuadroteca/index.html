@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=neon">
+    <link rel="stylesheet" href="style.css?v=204">
     <style>
         /* MOBILE DENSE GRID (Strictly < 900px) */
         @media (max-width: 900px) {
@@ -34,50 +34,40 @@
                 padding: 2px 5px !important;
             }
             .art-grid {
-                grid-template-columns: repeat(3, 1fr) !important; /* 3 Columns on mobile */
-                gap: 5px !important;
-                padding: 4px !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 3px !important;
+                padding: 2px !important;
             }
-            .art-item img, .art-image-wrapper img {
-                height: 80px !important; /* Base thumbnails tiny */
+            .art-item img, .art-image-wrapper img, .art-card img {
+                height: 75px !important;
                 object-fit: cover !important;
             }
-            .art-info h3, .art-title {
-                font-size: 0.55rem !important;
-                line-height: 1 !important;
-                margin-top: 3px !important;
-            }
-            .art-info p, .art-info .price, .art-price {
-                display: none !important;
-            }
-            /* ULTRA COMPACT HERO OVERLAY (The Cow Screen) */
+            /* DENSE DETAIL OVERLAY (The Cow) */
             .hero-content {
                 max-width: 98% !important;
-                margin: 5px auto !important;
-                gap: 5px !important;
-                padding: 5px !important;
+                margin: 2px auto !important;
+                padding: 2px !important;
+                background: rgba(0,0,0,0.95) !important;
+                border: 1px solid #444 !important;
             }
             .hero-image-container {
-                min-height: 25vh !important;
-                max-height: 35vh !important;
-            }
-            .hero-image-container img {
-                max-height: 100% !important;
-                object-fit: contain !important;
+                min-height: 20vh !important;
+                max-height: 30vh !important;
+                margin-bottom: 2px !important;
             }
             .hero-details {
-                padding: 5px !important;
-                text-align: center !important;
+                padding: 4px !important;
             }
-            .hero-details h2 { font-size: 1rem !important; margin: 2px 0 !important; }
-            .hero-meta { margin-bottom: 5px !important; font-size: 0.7rem !important; }
-            #hero-desc { font-size: 0.75rem !important; line-height: 1.1 !important; margin-bottom: 5px !important; }
-            #hero-price { font-size: 0.9rem !important; }
+            .hero-details h2 { font-size: 0.9rem !important; margin: 0 !important; }
+            #hero-desc { font-size: 0.65rem !important; line-height: 1 !important; margin: 2px 0 !important; max-height: 40px; overflow: hidden; }
+            .hero-meta { margin-bottom: 2px !important; display: flex; justify-content: center; gap: 5px; }
+            .tag, #hero-price { font-size: 0.6rem !important; padding: 2px 5px !important; }
             .btn-comprar, .btn-outline {
-                padding: 6px !important;
-                font-size: 0.7rem !important;
+                padding: 4px !important;
+                font-size: 0.6rem !important;
+                margin: 2px !important;
             }
-            #close-hero { top: 5px !important; right: 10px !important; font-size: 1.4rem !important; }
+            #close-hero { top: 2px !important; right: 5px !important; font-size: 1.2rem !important; }
         }
     </style>
 
@@ -100,7 +90,7 @@
             </div>
 
             <div class="header-center">
-                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:none;">v2.3</span></h1>
+                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:none;">v2.4</span></h1>
             </div>
 
             <div class="header-right">
