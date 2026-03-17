@@ -14,68 +14,75 @@
         /* RADICAL MOBILE COMPACTING (Strictly < 900px) */
         @media (max-width: 900px) {
             .navbar {
-                padding: 0.5rem 2% !important;
+                padding: 0.3rem 2% !important;
                 flex-direction: column !important;
-                gap: 5px !important;
+                gap: 2px !important;
             }
             .logo img {
-                max-height: 40px !important; /* Smaller logo */
+                max-height: 30px !important; /* Even smaller logo */
             }
+            .mobile-v { display: inline !important; font-size: 10px; color: #888; margin-left: 5px; }
             .nav-links {
-                gap: 0.4rem !important;
+                gap: 0.3rem !important;
                 justify-content: center !important;
                 padding: 0 !important;
+                margin-top: 5px !important;
             }
+            .nav-links li { margin: 0 !important; }
             .nav-links a {
-                font-size: 0.75rem !important; /* Smaller text */
-                padding: 4px 6px !important;
+                font-size: 0.65rem !important; /* Tiny text for nav */
+                padding: 3px 5px !important;
+                letter-spacing: 0 !important;
             }
             .hero {
                 height: auto !important;
-                min-height: 40vh !important;
-                padding: 40px 20px !important;
+                min-height: 30vh !important;
+                padding: 20px !important;
             }
             .zigzag-title {
-                font-size: 1.4rem !important; /* Smaller hero text */
-                margin-bottom: 20px !important;
+                font-size: 1.1rem !important; /* Compact title */
+                margin-bottom: 10px !important;
+                line-height: 1.2 !important;
             }
-            .zigzag-title .line-2 {
-                margin-left: 0 !important;
-                display: block !important;
-            }
+            .zigzag-title span { margin-left: 0 !important; text-align: center !important; display: block !important; }
             .minimalist-buttons {
                 margin-left: 0 !important;
                 flex-direction: column !important;
                 align-items: center !important;
-                gap: 15px !important;
+                gap: 10px !important;
             }
             .hero-subtitle {
-                font-size: 0.8rem !important;
+                font-size: 0.7rem !important;
                 text-align: center !important;
+                margin-top: 10px !important;
             }
             .outline-btn {
-                padding: 0.8rem 2rem !important;
-                font-size: 0.8rem !important;
+                padding: 0.6rem 1.5rem !important;
+                font-size: 0.7rem !important;
             }
-            /* Dense Gallery for NFT sections */
+            /* Super Dense Gallery for NFT sections */
+            #nfts .container > div {
+                gap: 8px !important;
+                justify-content: space-between !important;
+            }
             #nfts div[style*="max-width: 400px"] {
-                max-width: 46% !important;
-                padding: 10px !important;
-                margin: 0 !important;
+                max-width: 31% !important; /* ~3 columns */
+                padding: 5px !important;
+                border-radius: 8px !important;
             }
             #nfts img {
-                height: 140px !important; /* Tiny thumbnails */
+                height: 90px !important; /* Tiny thumbnails */
             }
             #nfts h3 {
-                font-size: 0.75rem !important;
+                font-size: 0.6rem !important;
+                margin: 5px 0 !important;
             }
-            #nfts p {
-                font-size: 0.65rem !important;
-                display: none; /* Hide desc on mobile to save space */
+            #nfts p, #nfts a[style*="text-decoration: underline"] {
+                display: none !important; /* Hide details on mobile grid */
             }
-            #nfts a {
-                padding: 5px 10px !important;
-                font-size: 0.7rem !important;
+            #nfts a[style*="background"] {
+                padding: 3px 8px !important;
+                font-size: 0.6rem !important;
             }
         }
     </style>
@@ -85,7 +92,10 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo"><img src="assets/logo_banner.png" alt="Logo"></div>
+        <div class="logo">
+            <img src="assets/logo_banner.png" alt="Logo">
+            <span class="mobile-v" style="display:none;">v2.2</span>
+        </div>
         <ul class="nav-links">
             <li><a href="sobre-mi.html">Sobre M&iacute;</a></li>
             <li><a href="memorandum.html">Universo EDUSSE</a></li>

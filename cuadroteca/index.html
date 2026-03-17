@@ -16,35 +16,38 @@
         /* MOBILE DENSE GRID (Strictly < 900px) */
         @media (max-width: 900px) {
             .neon-header {
-                padding: 0.5rem !important;
+                padding: 0.3rem !important;
                 flex-direction: column !important;
-                gap: 5px !important;
+                gap: 2px !important;
             }
             .header-center {
                 position: static !important;
                 transform: none !important;
             }
             .neon-title {
-                font-size: 1.1rem !important;
+                font-size: 1rem !important;
             }
+            .mobile-v { display: inline !important; font-size: 10px; color: #888; margin-left: 5px; }
             .nav-btn {
-                font-size: 0.75rem !important;
-                margin-right: 0.5rem !important;
-                padding: 4px 8px !important;
+                font-size: 0.65rem !important;
+                margin-right: 0.3rem !important;
+                padding: 3px 6px !important;
             }
             .art-grid {
-                grid-template-columns: repeat(2, 1fr) !important; /* Force 2 columns */
-                gap: 8px !important;
+                grid-template-columns: repeat(3, 1fr) !important; /* 3 Columns on mobile */
+                gap: 6px !important;
                 padding: 5px !important;
             }
             .art-item img {
-                height: 120px !important; /* Smaller thumbnails */
+                height: 90px !important; /* Tiny thumbnails */
             }
             .art-info h3 {
-                font-size: 0.75rem !important;
+                font-size: 0.6rem !important;
+                line-height: 1.1 !important;
+                margin-top: 5px !important;
             }
-            .art-info p {
-                display: none !important; /* Hide desc in grid */
+            .art-info p, .art-info .price {
+                display: none !important; /* Hide everything else */
             }
         }
     </style>
@@ -68,7 +71,7 @@
             </div>
 
             <div class="header-center">
-                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span></h1>
+                <h1 class="neon-title">GALERÍA <span class="highlight">DIGITAL</span> <span class="mobile-v" style="display:none;">v2.2</span></h1>
             </div>
 
             <div class="header-right">
