@@ -69,6 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loadingMsg) loadingMsg.remove();
 
         // Renderizar una TARJETA por CATEGORÍA
+        const nftResultsContainer = document.getElementById('nft-collections-results');
+        const nftSection = document.getElementById('nft-collections-section');
+
         if (categories.length === 0) {
             resultsContainer.innerHTML = '<p style="text-align:center; width:100%;">No hay colecciones disponibles.</p>';
         } else {
@@ -79,9 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     coverImage = categoryCovers[cat] || categoryCovers[cat.replace(/ /g, '_')] || '';
                 }
 
-                if (coverImage) {
-                    // Found cover in map
-                } else {
+                if (!coverImage) {
                     const coverArt = artworkData.find(art => art.category === cat);
                     coverImage = coverArt ? coverArt.src : '';
                 }
@@ -97,6 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 let badgeStyle = "background: rgba(0,0,0,0.5);";
                 let clickAction = () => window.location.href = `cuadroteca/index.html?category=${encodeURIComponent(cat)}`;
 
+                const isNFT = cat.includes("FURSONA") || cat.includes("QUANTUM") || cat.includes("VORTEX");
+
                 if (cat === "00FURSONA GENESIS") {
                     badgeText = "TOP NFT";
                     badgeStyle = "background: rgba(160, 32, 240, 0.7);";
@@ -111,7 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <h3>${displayCat}</h3>
                 `;
-                resultsContainer.appendChild(card);
+
+                if (isNFT && nftResultsContainer) {
+                    nftResultsContainer.appendChild(card);
+                    if (nftSection) nftSection.style.display = 'block';
+                } else {
+                    resultsContainer.appendChild(card);
+                }
             });
         }
     }

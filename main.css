@@ -63,6 +63,7 @@ body {
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--accent);
+    font-weight: bold;
 }
 
 .btn-highlight {
